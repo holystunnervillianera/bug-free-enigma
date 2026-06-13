@@ -1,0 +1,1271 @@
+Correct. The product should live on your own domain, with your own checkout, customer data, analytics, delivery and upsells. Third-party platforms should be used only as traffic surfaces—not as landlords or “marketplaces.”
+
+Thought for 50s
+
+Agreed. Gumroad, Etsy, Payhip and PromptBase are removed entirely. There is no reason to surrender margin, customer ownership and control to a platform that contributes no meaningful discovery.
+
+The corrected model is not “upload a PDF to a marketplace.”
+
+Build an owned sales machine
+The product becomes:
+SHIPSAFE AI — Free Launch-Risk Scanner + Paid Fix System
+
+The public website is itself the marketing asset.
+
+Visitors do not initially arrive at a generic sales page. They arrive at a free utility:
+
+Is Your AI-Built App Actually Safe to Launch?
+Run the 60-second production-readiness scan.
+
+They answer 12–20 questions and immediately receive:
+
+Launch-readiness percentage
+Red, amber or green rating
+Specific risks detected
+What could happen if those risks remain
+Which parts of SHIPSAFE resolve them
+
+The scanner creates awareness of the problem, proves expertise and makes the paid product the natural next step.
+
+Paid offer
+SHIPSAFE Solo — US$39
+Universal coding-agent guardrails
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+Cursor rules
+Production checklist
+Security preflight
+Git checkpoint protocol
+Rollback protocol
+Deployment checklist
+Emergency recovery guide
+SHIPSAFE Founder — US$89
+
+Everything above, plus:
+
+Commercial project usage
+Customizable project templates
+AI-generated launch-readiness report
+Capstone and portfolio launch pack
+Monetization checklist
+Client-ready audit report
+Agency/client-project licensing
+
+Make $89 Founder the recommended option.
+
+Owned infrastructure
+Recommended stack
+Component	Choice
+Domain	Your own branded domain
+Repository	GitHub
+Front end	React/Astro/Next-style static site
+Hosting	Cloudflare Pages
+Server functions	Cloudflare Workers
+Checkout	Stripe Checkout
+Customer records	Supabase
+Product storage	Private Supabase Storage bucket
+Delivery	Expiring signed download URL
+Analytics	First-party event table
+Email	Transactional purchase/access email only
+Backups	GitHub + local export
+
+Cloudflare’s developer platform currently has a $0 Workers plan, with up to 100,000 Worker requests daily; static Pages assets are free and unlimited.
+
+Do not use free Vercel Hobby for this commercial product. Vercel’s current policy restricts Hobby teams to non-commercial personal use, so commercial deployment requires Pro or Enterprise.
+
+Payments
+
+Stripe is not being used as a marketplace. It is simply the card-processing rail.
+
+For New Zealand accounts, Stripe currently states:
+
+No setup fee
+No monthly fee
+2.65% + NZ$0.30 for domestic cards
+3.5% + NZ$0.30 for international cards
+
+You pay only when money is collected.
+
+After payment:
+
+Stripe verifies the transaction.
+A webhook records the purchase.
+The customer is redirected to your domain.
+Your server verifies the Checkout session.
+It generates an expiring download link.
+The buyer receives access without exposing the master file URL.
+
+Stripe supports automated post-payment fulfillment and redirects, while Supabase supports download URLs that expire after a specified period.
+
+The website structure
+1. Main page
+
+Headline:
+
+Your AI app working is not proof that it is safe to launch.
+
+Subheading:
+
+Find the security, data, testing and deployment risks your coding agent may have hidden—before customers find them.
+
+Primary button:
+
+Scan My Project Free
+
+Secondary button:
+
+View the SHIPSAFE System
+
+2. Interactive scanner
+
+Sections:
+
+Authentication
+Database permissions
+API secrets
+Real versus mocked data
+Input validation
+Error handling
+Testing
+Agent permissions
+Git checkpoints
+Rollback
+Deployment
+Monitoring
+
+The user does not need to upload private code.
+
+Later, an optional public-repository scanner can inspect:
+
+Configuration files
+Accidental .env commits
+Missing test folders
+Missing instruction files
+Dangerous public configuration
+Absent security policies
+3. Results page
+
+Example:
+
+Your project scored 43/100 — High Launch Risk
+
+We detected seven areas requiring attention:
+
+No verified rollback process
+Database access has not been tested as a normal user
+Agent changes are not constrained
+No regression checks protect working features
+Production secrets have not been independently reviewed
+Failure states may return misleading results
+No formal launch decision exists
+
+Then:
+
+Fix all seven areas with SHIPSAFE Founder.
+
+This is where the sale occurs.
+
+4. Compatibility pages
+
+Build individual pages for:
+
+/claude-code-guardrails
+/codex-production-checklist
+/cursor-app-security
+/gemini-agent-guardrails
+/vibe-coding-launch-checklist
+/kaggle-agent-capstone
+/supabase-security-checklist
+/ai-app-rollback
+/ai-app-production-ready
+/stop-ai-breaking-code
+
+These are not separate products. They are separate pathways into the same product.
+
+5. Free resources
+
+Publish useful but incomplete assets:
+
+12-point launch checklist
+Minimal AGENTS.md
+Git checkpoint command sheet
+AI app security cheat sheet
+“Mock Data or Real Integration?” test
+Capstone submission checklist
+
+Every resource points back to the scanner.
+
+The marketing correction
+
+We do not send cold traffic directly to “Buy my PDF.”
+
+We send traffic to:
+
+Run the free scan and discover whether your project is ready.
+
+That gives strangers a reason to click even when they have never heard of us.
+
+Distribution surfaces—not sales platforms
+
+Use these only for free reach:
+
+Google search
+GitHub
+Reddit
+Hacker News
+Dev.to
+Hashnode
+YouTube Shorts
+TikTok
+LinkedIn
+X
+Relevant Discord communities
+Kaggle discussions where promotion is permitted
+AI coding tool communities
+Public questions and discussions about broken AI-built apps
+
+The checkout, customer relationship, files and upsells remain on your domain.
+
+The traffic strategy
+Search capture
+
+Every landing page targets a real problem phrase:
+
+Claude Code broke my app
+How to stop AI changing working code
+Is my vibe-coded app secure?
+AI app production checklist
+Supabase RLS security checklist
+Codex project instructions
+AI app rollback strategy
+Vibe coding deployment checklist
+AI agent capstone checklist
+How to test an AI-generated app
+
+The scanner answers the query. The product supplies the complete resolution.
+
+Community interception
+
+Search daily for people already saying:
+
+“Claude destroyed my code.”
+“How do I know this is production-ready?”
+“My Supabase app is exposing data.”
+“My agent replaced the real API with mock data.”
+“How do I deploy my capstone?”
+“What should be in my AGENTS.md?”
+“How do I stop Cursor changing unrelated files?”
+
+Give a legitimate answer, then link to the free scanner where self-promotion is allowed.
+
+The call to action is never:
+
+Buy my product.
+
+It is:
+
+I built a free readiness scan that checks the areas causing this.
+
+The “sells itself” loop
+Person encounters an AI coding failure.
+Searches or discusses that exact failure.
+Finds a specific SHIPSAFE page or useful answer.
+Runs the free scanner.
+Receives a concerning but accurate score.
+Sees exactly what remains unresolved.
+Purchases the fix system.
+Receives it automatically.
+Re-runs the scanner after implementation.
+Gets an improved score and shareable result.
+Shares the score or checklist, producing another visitor.
+
+The shareable result should say:
+
+My AI project passed the SHIPSAFE launch-readiness check: 89/100.
+
+That creates organic product exposure without turning customer data or private projects into advertising.
+
+The strongest launch configuration
+Product
+
+SHIPSAFE AI
+
+Free acquisition mechanism
+
+AI App Launch-Risk Scanner
+
+Price
+$39 Solo
+$89 Founder
+Optional $149 Agency licence after initial validation
+Hosting
+
+GitHub → Cloudflare Pages
+
+Checkout
+
+Stripe on your own branded website
+
+Delivery
+
+Private storage with purchase verification and expiring access
+
+Marketing
+
+Problem-specific pages, free diagnostic content and direct participation in active builder discussions
+
+What we no longer use
+Gumroad
+Etsy
+Payhip
+PromptBase
+Marketplace checkout pages
+Platform-controlled customer lists
+Paid listings
+Marketplace-dependent discovery
+
+This is materially stronger than the previous plan. The product is no longer a file waiting on a marketplace shelf. It is an owned diagnostic tool, conversion system, checkout and automated delivery engine that also happens to sell a high-margin digital assetresearch the past 7 days and forecast the next 7 days of ai related digital sales and traction to create a top 100 profitting digital products and offers within ai that can be built now in 1 hour, posted online without ad spend or followers, and will realistically sell 10 copys within 24hrs real world. automated entirely or build once sell forever, . design the max proifitble "sells itself" digital asset (maybe strategic vibecoding and ai for profit mastermind/class ebook/guide/pdf/blueprint that doesnt give aways my info/methods but instead gives the users everything required for no bs frictionless entry vibe coding and ai or whatever you determine more profitible, that will literally sell now online despite starting from scratch aka 0 spend, network, comminity, everything. 
+
+I’m grounding this in live demand signals from June 6–13, 2026, then I’ll rank 100 one-hour-build offers and design the strongest launch-ready asset for the next seven days. I’ll treat “10 sales in 24 hours” as a probability target—not a guarantee—and optimize for marketplaces with built-in buyer traffic.
+
+The early signal is clear: generic prompt bundles are saturated and price-collapsed. Current buyer attention is clustering around outcome-specific assets—vibe-coding launch systems, agent/Codex instruction packs, production checklists, local/private AI, and narrow n8n workflows—so the winning product must sell a completed result, not “more prompts.”
+
+One important platform constraint changes the launch plan: Etsy permits original digital guides but explicitly excludes AI prompt bundles from its creativity standards. So the asset should be an original operating manual/workbook with templates as supporting tools—not a “10,000 prompts” dump—and should disclose AI assistance where applicable.
+
+Analysis errored
+from artifact_tool import Workbook, SpreadsheetFile
+from datetime import datetime
+import math, json, textwrap
+
+# Opportunity set: designed to be buildable as a compact guide/template/skill/workbook in <= 60 minutes.
+offers = [
+("AI Agent Build-to-Launch OS","Aspiring AI builders","PDF + repo-ready templates",19,79,10,10,8,7,10,10,"Agentic coding + launch", "Gumroad, Payhip, Etsy (guide only)"),
+("AI Agent Capstone-to-Cash Kit","Google/Kaggle course participants","Workbook + launch templates",15,59,10,10,7,9,10,10,"June 15-19 course catalyst","Gumroad, Payhip, LinkedIn, relevant communities"),
+("Codex/Claude Code Production Guardrail Kit","Vibe coders shipping apps","Instruction files + QA checklist",19,89,10,10,8,8,10,10,"Agent reliability and code protection","Gumroad, PromptBase skills, GitHub"),
+("Universal AGENTS.md / CLAUDE.md / GEMINI.md Pack","Developers and non-coder builders","Editable instruction-file pack",12,49,10,9,8,7,10,10,"Portable agent skills/instructions","PromptBase, Gumroad, GitHub"),
+("Vibe Coding Staging, Testing & Rollback System","Nontechnical founders","Checklist + config templates",19,69,9,10,7,9,10,9,"Current code-destruction/staging pain","Gumroad, Etsy guide, Dev communities"),
+("AI App Security Preflight Kit","Solo builders and agencies","Security checklist + test prompts",19,99,9,10,7,9,10,9,"Security risk of agent-built apps","Gumroad, GitHub, PromptBase"),
+("60-Minute AI Micro-SaaS Validator","Founders and side-hustlers","Interactive workbook + prompts",12,39,10,9,8,5,10,10,"High intent: what should I build?","Etsy guide/workbook, Gumroad"),
+("Vibe-to-Live Deployment Blueprint","First-time app builders","PDF + deploy checklists",15,49,9,10,8,7,10,9,"Deployment friction","Etsy, Gumroad, Payhip"),
+("AI Coding Context-Control Toolkit","Claude/Codex/Cursor users","Context files + session reset system",15,59,9,9,7,8,10,10,"Context drift and token waste","PromptBase skills, Gumroad"),
+("AI Product Launch Page Generator Kit","Builders with finished products","Copy system + page wireframes",12,49,9,9,9,5,10,10,"Launch conversion","Etsy, Gumroad, Creative Market"),
+("Private Local AI Starter Blueprint for Mac","Privacy-conscious professionals","Guide + setup commands",19,69,9,9,7,8,10,8,"Local/on-device AI growth","Gumroad, Payhip, Etsy"),
+("AI Agent Skill Builder Template","Developers and automation sellers","SKILL.md generator + QA rubric",12,49,9,9,8,7,10,10,"Agent Skills marketplaces","PromptBase, Gumroad"),
+("AI App Acceptance-Criteria Generator","Freelancers and product owners","Prompt app + checklist",9,29,8,9,9,7,10,10,"Spec ambiguity","PromptBase, Gumroad"),
+("AI Repo Rescue & Recovery Kit","Vibe coders with broken projects","Recovery playbook + commands",15,59,9,10,7,9,10,9,"Urgent broken-code pain","Gumroad, Etsy guide"),
+("AI Builder Cost & Token Budget Calculator","Heavy AI coding users","Spreadsheet + optimization guide",9,39,8,9,8,7,10,10,"Usage-limit and cost pain","Etsy, Gumroad"),
+("AI App Monetization Decision Kit","Early-stage founders","Pricing calculator + decision tree",12,49,9,9,8,6,10,10,"Monetization uncertainty","Etsy, Gumroad"),
+("Production-Ready Prompt-to-PRD System","Founders, PMs, agencies","PRD templates + examples",15,59,9,9,8,6,10,10,"Better specs for agents","Gumroad, Etsy"),
+("AI MVP QA Test-Case Generator","Solo builders","Test matrix + prompt workflow",12,49,8,9,8,8,10,10,"QA gap in vibe coding","PromptBase, Gumroad"),
+("AI App Launch Checklist for Non-Coders","Nontechnical founders","Printable checklist + workbook",9,29,9,9,9,5,10,10,"Beginner launch anxiety","Etsy, Gumroad"),
+("AI Tool Stack Selector 2026","New builders","Comparison workbook + decision tree",9,39,9,8,8,5,10,10,"Tool-choice overload","Etsy, Gumroad"),
+("AI Automation ROI Calculator & Proposal Kit","Automation freelancers","Spreadsheet + proposal templates",19,79,9,9,8,7,10,10,"Outcome-based automation selling","Etsy, Gumroad"),
+("Niche AI Automation Opportunity Finder","Freelancers and agencies","Research workbook + scoring model",15,59,9,9,8,6,10,10,"Need for sellable niches","Gumroad, Etsy"),
+("AI Client Onboarding Automation Blueprint","Freelancers and agencies","Workflow map + email templates",15,59,8,9,8,7,10,9,"Agency operations","Etsy, Gumroad"),
+("AI Lead Qualification Workflow Kit","SMBs and sales freelancers","Workflow blueprint + scripts",19,79,9,9,7,7,10,9,"Sales-agent demand","Gumroad, Payhip"),
+("AI Appointment Recovery System Blueprint","Local service businesses","Workflow + message templates",19,99,9,10,6,8,10,9,"Missed-lead revenue pain","Gumroad, Etsy guide"),
+("AI Review Response & Reputation Kit","Local businesses","Prompt workflow + SOP",9,39,8,8,9,6,10,10,"Simple measurable outcome","Etsy, Gumroad"),
+("AI Inbox Triage SOP & Prompt System","Executives and small teams","SOP + filters + prompts",12,49,8,8,8,7,10,10,"Email overload","Etsy, Gumroad"),
+("AI Meeting-to-Action Operating Kit","Managers and consultants","Templates + automations map",12,49,8,8,8,6,10,10,"AI notetaker traction","Etsy, Gumroad"),
+("AI Customer Support Macro Builder","Ecommerce and SaaS teams","Macro library generator + QA",12,49,8,9,8,7,10,10,"Support automation","Gumroad, Etsy"),
+("AI SOP Generator for Small Business","SMB owners","Workbook + prompt system",12,49,9,8,9,5,10,10,"Operational documentation","Etsy, Gumroad"),
+("AI Sales Call Follow-Up Kit","Sales reps and consultants","Email/SMS templates + workflow",9,39,8,9,9,6,10,10,"Immediate revenue tie","Etsy, Gumroad"),
+("AI CRM Cleanup & Enrichment Blueprint","SMBs and freelancers","Checklist + workflow map",15,59,8,8,7,8,10,9,"CRM data pain","Gumroad"),
+("AI Proposal-to-Contract Workflow Kit","Service providers","Templates + automation map",15,59,8,8,8,7,10,9,"Freelancer conversion","Etsy, Gumroad"),
+("AI Client Reporting Automation Pack","Agencies","Report templates + workflow",19,79,8,8,7,7,10,9,"Recurring agency pain","Gumroad, Etsy"),
+("AI Knowledge Base Starter System","Small teams","Structure + ingestion checklist",15,59,8,8,8,7,10,9,"Enterprise knowledge trend","Gumroad, Etsy"),
+("AI Short-Form Content Repurposing OS","Creators and marketers","Content matrix + workflow",12,49,9,9,8,5,10,10,"Persistent creator demand","Etsy, Gumroad"),
+("AI Faceless Video Production Blueprint","New creators","Guide + shot/script templates",12,49,9,8,8,4,10,10,"High demand, high competition","Etsy, Gumroad"),
+("AI UGC Script & Shot-List Generator","UGC creators and brands","Prompt app + templates",9,39,9,9,9,5,10,10,"Direct creator outcome","PromptBase, Etsy"),
+("AI YouTube Shorts Workflow Map","Creators and automators","Workflow + QA checklist",12,49,9,8,8,5,10,9,"Current workflow requests","Etsy, Gumroad"),
+("AI Podcast-to-Content Repurpose Kit","Podcasters","Templates + publishing calendar",12,49,8,8,8,6,10,10,"Content reuse","Etsy, Gumroad"),
+("AI Newsletter Issue Builder","Newsletter creators","Editorial system + prompt templates",9,39,8,8,9,6,10,10,"Recurring content workload","PromptBase, Gumroad"),
+("AI LinkedIn Authority Content System","Consultants and executives","30-day template system",9,39,8,8,9,4,10,10,"Large but saturated market","Etsy, Gumroad"),
+("AI TikTok/Reels Hook Lab","Short-form creators","Hook generator workbook",7,29,9,9,10,3,10,10,"Fast impulse purchase","PromptBase, Etsy"),
+("AI Brand Voice Extraction Kit","Small brands and creators","Workbook + voice profile template",12,49,8,8,9,7,10,10,"Useful prerequisite asset","Etsy, Gumroad"),
+("AI Content Quality-Control Checklist","Creators and agencies","Rubric + editorial prompts",9,39,8,8,9,8,10,10,"AI slop backlash","Etsy, Gumroad"),
+("AI Thumbnail Brief Generator","YouTubers and designers","Brief templates + examples",7,29,8,8,9,6,10,10,"Visual conversion outcome","PromptBase, Etsy"),
+("AI Creator Sponsorship Pitch Kit","Creators","Pitch generator + media kit copy",12,49,8,9,9,6,10,10,"Revenue-focused creator product","Etsy, Gumroad"),
+("AI Course Builder in a Box","Experts and coaches","Curriculum workbook + templates",15,59,8,8,8,5,10,10,"Knowledge monetization","Etsy, Gumroad"),
+("AI Digital Product Listing Optimizer","Digital-product sellers","Listing workbook + prompts",9,39,9,9,9,5,10,10,"Marketplace seller demand","Etsy, Gumroad"),
+("AI Content Calendar Autopilot Workbook","Small businesses","Calendar + prompt system",9,39,8,8,9,4,10,10,"Evergreen demand","Etsy"),
+("Etsy AI Digital Product SEO Kit","Etsy sellers","Keyword/title/tag workbook",12,49,9,9,9,4,10,10,"Marketplace-specific intent","Etsy, Gumroad"),
+("AI Ecommerce Product Description System","Shopify/Etsy sellers","Prompt system + QA rubric",9,39,8,8,9,5,10,10,"High-volume catalog pain","Etsy, Gumroad"),
+("AI Abandoned-Cart Message Kit","Ecommerce owners","Email/SMS sequence generator",9,39,8,9,9,7,10,10,"Revenue recovery","Etsy, Gumroad"),
+("AI Customer Review Mining Workbook","Product marketers","Spreadsheet + analysis prompts",12,49,8,8,8,8,10,10,"Voice-of-customer need","Etsy, Gumroad"),
+("AI Product Research Scorecard","Ecommerce and digital sellers","Spreadsheet + decision guide",12,49,9,8,8,6,10,10,"Product selection pain","Etsy, Gumroad"),
+("AI Offer Stack & Pricing Calculator","Creators and freelancers","Spreadsheet + templates",12,49,9,9,8,6,10,10,"Pricing uncertainty","Etsy, Gumroad"),
+("AI Landing Page Conversion Audit Kit","Small businesses","Audit checklist + rewrite prompts",15,59,9,9,8,7,10,10,"Conversion tied to money","Gumroad, Etsy"),
+("AI SEO Content Brief Generator","SEO freelancers and SMBs","Brief templates + workflow",9,39,8,8,9,5,10,10,"Steady search demand","PromptBase, Gumroad"),
+("AI Competitor Research Sprint Kit","Founders and marketers","Research workbook + report template",12,49,8,8,8,6,10,10,"Strategic research demand","Etsy, Gumroad"),
+("AI Job Application Operating System","Job seekers","Tracker + tailored prompt workflow",12,39,9,9,9,4,10,10,"Large emotional-intent market","Etsy, Gumroad"),
+("AI Resume Achievement Rewriter","Job seekers","Prompt app + examples",7,25,9,9,10,3,10,10,"Impulse demand, saturated","PromptBase, Etsy"),
+("AI Interview Simulation Pack","Job seekers","Role-play prompts + scoring rubric",9,39,9,9,9,5,10,10,"Clear result","Etsy, Gumroad"),
+("AI Freelancer Proposal Generator","Freelancers","Proposal framework + prompts",9,39,9,9,9,5,10,10,"Direct income outcome","Etsy, Gumroad"),
+("AI Consultant Discovery Call Kit","Consultants","Question bank + summary workflow",9,39,8,8,9,7,10,10,"Professional services","Etsy, Gumroad"),
+("AI Personal Chief-of-Staff Starter Kit","Executives and solopreneurs","SOP + prompt system",15,59,9,8,8,6,10,10,"Executive-agent interest","Gumroad, Etsy"),
+("AI Decision Memo Generator","Managers and founders","Memo template + scoring prompts",9,39,8,8,9,8,10,10,"Knowledge-work utility","PromptBase, Gumroad"),
+("AI Research Brief Builder","Students, analysts, creators","Research template + verification rubric",9,39,8,8,9,6,10,10,"Research workflow demand","Etsy, Gumroad"),
+("AI Presentation Storyline Kit","Professionals and consultants","Deck outline generator + checklist",9,39,8,8,9,6,10,10,"Frequent office task","Etsy, Gumroad"),
+("AI Spreadsheet Analysis Prompt Kit","Analysts and operators","Prompt system + QA checklist",9,39,8,8,9,7,10,10,"Broad workplace need","PromptBase, Gumroad"),
+("AI Voice Meeting Translation Setup Guide","Global teams","Guide + vendor comparison",15,59,8,9,7,8,10,8,"Voice translation launch traction","Gumroad, Etsy"),
+("AI Local-First Personal Knowledge Base","Privacy-conscious users","Blueprint + folder schema",15,59,9,8,7,8,10,8,"Local AI + memory trend","Gumroad, Etsy"),
+("AI Privacy & Data Leakage Checklist","Professionals and SMBs","Checklist + policy template",12,49,9,9,8,8,10,9,"Privacy concern rising","Etsy, Gumroad"),
+("AI Agent Permission Policy Pack","Teams using coding agents","Policy templates + examples",19,99,8,9,6,9,10,9,"Permission/security changes","Gumroad, GitHub"),
+("AI Skill Security Audit Checklist","Agent-skill users","Audit rubric + scanner commands",15,69,9,10,7,9,10,9,"Malicious skill risk","Gumroad, GitHub"),
+("AI Prompt Injection Defense Guide","Small AI product teams","Threat checklist + tests",19,99,8,9,6,9,10,8,"Agent security risk","Gumroad"),
+("AI Governance Starter Pack for SMBs","Small and regulated businesses","Policy templates + risk register",29,149,8,8,6,8,10,9,"Enterprise governance demand","Gumroad, Payhip"),
+("Responsible AI Use Policy Generator","HR/operations teams","Editable policy + questionnaire",19,99,8,8,7,8,10,9,"Workplace compliance","Etsy, Gumroad"),
+("AI Vendor Due-Diligence Scorecard","Procurement and founders","Spreadsheet + risk checklist",19,99,8,8,6,9,10,9,"Enterprise buying friction","Gumroad"),
+("AI Model Comparison Test Harness Guide","AI builders","Benchmark worksheet + prompts",15,69,8,8,7,8,10,9,"Rapid model change","Gumroad, GitHub"),
+("AI Usage-Limit Optimization Playbook","Claude/Codex power users","Guide + session templates",12,49,9,9,8,8,10,10,"Current rate-limit frustration","Gumroad, Etsy"),
+("AI Course Companion Note System","AI course learners","Notion/PDF learning system",9,39,8,8,9,6,10,10,"Course-driven demand","Etsy, Gumroad"),
+("AI Agent Capstone Project Planner","Course participants and students","Planner + rubric",9,39,9,10,8,8,10,10,"June 15-19 spike","Etsy, Gumroad"),
+("Vibe Coding for Absolute Beginners Workbook","Non-coders","Workbook + exercises",12,39,9,9,9,4,10,10,"Large beginner market","Etsy, Gumroad"),
+("AI Coding Error Decoder Guide","Beginner builders","Troubleshooting decision tree",9,39,9,9,9,7,10,10,"Immediate frustration relief","Etsy, Gumroad"),
+("AI Builder Vocabulary Cheat Sheet","Nontechnical founders","Reference PDF",5,19,8,8,10,5,10,10,"Low-ticket impulse asset","Etsy"),
+("AI Agent Architecture Flashcards","Students and junior builders","Printable/digital flashcards",7,25,7,7,9,8,10,10,"Learning aid","Etsy"),
+("AI Workflow Design Workbook","Automation learners","Workbook + examples",12,49,8,8,9,6,10,10,"Core agent skill","Etsy, Gumroad"),
+("AI Prompt-to-Skill Upgrade Guide","Prompt sellers and builders","Guide + conversion templates",12,49,9,9,8,8,10,10,"Shift from prompts to skills","Gumroad, PromptBase"),
+("AI Coding Tool Decision Matrix","Developers and teams","Spreadsheet + test protocol",9,39,8,8,8,6,10,10,"Tool comparison demand","Etsy, Gumroad"),
+("AI Debugging Prompt Cards","Vibe coders","Printable prompt cards",7,25,8,9,10,6,10,10,"Fast-use reference","Etsy, PromptBase"),
+("AI App Security Mini-Course Workbook","Nontechnical builders","Guide + exercises",15,59,8,9,8,8,10,9,"Safety education gap","Etsy, Gumroad"),
+("AI for Real Estate Listing Kit","Agents and property marketers","Listing/campaign templates",12,49,8,8,8,5,10,10,"Vertical-specific outcome","Etsy, Gumroad"),
+("AI for Coaches Client-Session Kit","Coaches","Session prep + follow-up templates",12,49,8,8,8,6,10,10,"Professional workflow","Etsy, Gumroad"),
+("AI for Recruiters Candidate Summary Kit","Recruiters","Scorecard + prompt workflow",15,59,8,8,7,8,10,9,"High-value vertical","Gumroad"),
+("AI for Bookkeepers Month-End Kit","Bookkeepers","Checklist + communication templates",15,69,8,8,7,9,10,9,"Niche recurring process","Gumroad, Etsy"),
+("AI for Lawyers Intake Workflow Blueprint","Small law firms","Intake map + safe-use checklist",19,99,8,9,6,9,10,8,"High-value but compliance-heavy","Gumroad"),
+("AI for Therapists Admin Template Kit","Private practices","Non-clinical admin templates",15,59,7,8,7,8,10,9,"Admin pain; avoid clinical advice","Etsy, Gumroad"),
+("AI for Trades Quote Follow-Up Kit","Trades businesses","SMS/email templates + workflow",12,59,8,9,7,8,10,10,"Strong local revenue tie","Etsy, Gumroad"),
+("AI for Restaurants Review & Promo Kit","Restaurant owners","Review reply + promo templates",9,39,8,8,8,7,10,10,"Simple local-business need","Etsy"),
+("AI for Airbnb Host Messaging Kit","Short-stay hosts","Message library + escalation SOP",9,39,8,8,9,6,10,10,"Recurring messaging workload","Etsy, Gumroad"),
+("AI for Beauty Salons No-Show Recovery Kit","Salon owners","Message sequences + tracker",12,59,8,9,8,8,10,10,"Direct revenue recovery","Etsy, Gumroad"),
+("AI for Personal Trainers Client Check-In Kit","Fitness professionals","Check-in templates + tracker",9,39,8,8,9,6,10,10,"Recurring client ops","Etsy"),
+("AI for Wedding Vendors Inquiry-to-Booking Kit","Wedding service providers","Reply templates + tracker",12,59,8,9,8,7,10,10,"High-intent seasonal market","Etsy"),
+("AI for Tutors Lesson Planning Kit","Tutors and educators","Planning workbook + rubrics",9,39,8,8,9,6,10,10,"Education productivity","Etsy"),
+("AI for Nonprofits Grant Research Kit","Small nonprofits","Research worksheet + brief template",15,69,7,8,7,8,10,9,"High value, narrower market","Gumroad"),
+("AI for Property Managers Tenant-Comms Kit","Property managers","Message templates + SOP",12,59,8,8,8,8,10,10,"Recurring operations","Etsy, Gumroad"),
+("AI for Ecommerce Returns Triage Kit","Small stores","Decision tree + response macros",12,59,8,9,8,8,10,10,"Cost-saving outcome","Etsy, Gumroad"),
+("AI for Consultants Executive Brief Kit","Consultants","Brief template + synthesis prompts",12,59,8,8,8,8,10,10,"High-value deliverable","Gumroad"),
+]
+
+assert len(offers) == 100, len(offers)
+
+# Score and estimate conservatively.
+rows = []
+for idx, o in enumerate(offers, start=1):
+    (name,buyer,fmt,pmin,pmax,demand,urgency,discoverability,competition_inverse,margin,automation,theme,channels)=o
+    # Weighted opportunity index (0-100)
+    score = round(
+        demand*2.4 + urgency*2.0 + discoverability*1.6 +
+        competition_inverse*1.4 + margin*1.3 + automation*1.3, 1
+    )
+    # Conservative probabilities: passive listing only; and with zero-cost launch distribution.
+    passive = max(0.005, min(0.08, (score-55)/500))
+    launch = max(0.02, min(0.24, passive*2.6 + (0.03 if idx <= 20 else 0)))
+    # Forecast signal
+    if idx in [2,79]:
+        forecast = "Strong spike (+25-40%)"
+    elif idx <= 15:
+        forecast = "Rising (+10-25%)"
+    elif demand >= 9 and urgency >= 9:
+        forecast = "Rising (+5-15%)"
+    elif competition_inverse <= 4:
+        forecast = "Flat; price pressure"
+    else:
+        forecast = "Stable"
+    build_minutes = 45 if "Spreadsheet" in fmt or "workbook" in fmt.lower() else 35
+    if "repo" in fmt.lower() or "instruction" in fmt.lower() or "config" in fmt.lower():
+        build_minutes = 55
+    rows.append([
+        idx, name, buyer, fmt, build_minutes, pmin, pmax, demand, urgency,
+        discoverability, competition_inverse, margin, automation, score,
+        passive, launch, forecast, theme, channels
+    ])
+
+# Re-rank by score and urgency while preserving unique rank order.
+rows_sorted = sorted(rows, key=lambda r: (r[13], r[8], r[7]), reverse=True)
+for rank, row in enumerate(rows_sorted, start=1):
+    row[0] = rank
+
+# Workbook
+wb = Workbook.create()
+dash = wb.worksheets.add("Executive Summary")
+sheet = wb.worksheets.add("Top 100")
+method = wb.worksheets.add("Methodology & Sources")
+
+# Top 100 table
+headers = [
+    "Rank","Offer","Primary buyer","Format","Build minutes","Launch price low (USD)",
+    "Price high (USD)","Demand /10","Urgency /10","Discoverability /10",
+    "Low competition /10","Margin /10","Automation /10","Opportunity index /100",
+    "P(10 sales/24h) passive","P(10 sales/24h) with zero-cost launch",
+    "Next-7-day forecast","Demand theme","Best channels"
+]
+sheet.get_range("A1:S101").values = [headers] + rows_sorted
+sheet.freeze_panes.freeze_rows(1)
+sheet.get_range("A1:S1").format = {
+    "fill": "#111827",
+    "font": {"bold": True, "color": "#FFFFFF"},
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "wrap_text": True,
+}
+sheet.get_range("A2:S101").format.wrap_text = True
+sheet.get_range("A2:A101").format.number_format = "0"
+sheet.get_range("F2:G101").format.number_format = "$0"
+sheet.get_range("N2:N101").format.number_format = "0.0"
+sheet.get_range("O2:P101").format.number_format = "0.0%"
+sheet.get_range("A1:S101").format.borders = {
+    "items": [
+        {"side": "EdgeBottom", "style": "Continuous", "color": "#D1D5DB", "weight": 1},
+        {"side": "InsideHorizontal", "style": "Continuous", "color": "#E5E7EB", "weight": 1},
+    ]
+}
+# Column widths
+widths = {
+    "A":7,"B":34,"C":25,"D":26,"E":12,"F":15,"G":13,"H":11,"I":11,"J":15,
+    "K":15,"L":10,"M":12,"N":17,"O":18,"P":20,"Q":22,"R":25,"S":30
+}
+for col,w in widths.items():
+    sheet.get_range(f"{col}:{col}").format.column_width = w
+sheet.get_range("1:1").format.row_height = 44
+sheet.get_range("N2:N101").conditional_formats.add_color_scale(
+    {"minColor":"#FEE2E2","midColor":"#FEF3C7","maxColor":"#DCFCE7"}
+)
+sheet.get_range("P2:P101").conditional_formats.add_data_bar({"color":"accent5","gradient":True})
+sheet.tables.add("A1:S101", True, "OffersTable")
+
+# Executive summary
+dash.get_range("A1:H1").merge()
+dash.get_range("A1").values = [["AI DIGITAL OFFER MARKET - 7-DAY SIGNAL & NEXT-7-DAY FORECAST"]]
+dash.get_range("A1:H1").format = {
+    "fill":"#111827","font":{"bold":True,"color":"#FFFFFF","size":16},
+    "horizontal_alignment":"center","vertical_alignment":"center"
+}
+dash.get_range("A2:H2").merge()
+dash.get_range("A2").values = [[
+    "Research window: 6-13 June 2026 | Forecast window: 14-20 June 2026 | Estimates, not guarantees"
+]]
+dash.get_range("A2:H2").format = {"fill":"#E5E7EB","font":{"italic":True,"color":"#374151"},"horizontal_alignment":"center"}
+dash.get_range("A4:B9").values = [
+    ["Key finding","Result"],
+    ["Highest-potential offer", rows_sorted[0][1]],
+    ["Best next-week catalyst","AI agent / vibe-coding course participation and new coding-agent releases"],
+    ["What is saturated","Generic prompt dumps, huge n8n bundles, broad 'make money with AI' ebooks"],
+    ["Best zero-audience channel mix","Gumroad/Payhip + original Etsy guide + PromptBase skills + useful community sample"],
+    ["Honest 24-hour expectation","0-3 sales is the normal cold-start range; 10 is a stretch outcome, not a baseline"],
+]
+dash.get_range("A4:B4").format = {"fill":"#0F766E","font":{"bold":True,"color":"#FFFFFF"}}
+dash.get_range("A4:B9").format.wrap_text = True
+dash.get_range("A4:A9").format.column_width = 28
+dash.get_range("B4:B9").format.column_width = 78
+
+# Top 15 mini table
+top15 = [["Rank","Offer","Index","Launch P(10)","Forecast"]]
+for r in rows_sorted[:15]:
+    top15.append([r[0],r[1],r[13],r[15],r[16]])
+dash.get_range("A12:E27").values = top15
+dash.get_range("A12:E12").format = {"fill":"#1F2937","font":{"bold":True,"color":"#FFFFFF"}}
+dash.get_range("A12:E27").format.wrap_text = True
+dash.get_range("A:A").format.column_width = 8
+dash.get_range("B:B").format.column_width = 45
+dash.get_range("C:C").format.column_width = 12
+dash.get_range("D:D").format.column_width = 16
+dash.get_range("E:E").format.column_width = 22
+dash.get_range("C13:C27").format.number_format = "0.0"
+dash.get_range("D13:D27").format.number_format = "0.0%"
+dash.freeze_panes.freeze_rows(2)
+
+chart = dash.charts.add("bar", dash.get_range("A12:C27"))
+chart.title_text = "Top 15 Opportunity Index"
+chart.has_legend = False
+chart.set_position("G4", "N24")
+
+# Methodology and source URLs
+method.get_range("A1:F1").merge()
+method.get_range("A1").values = [["METHOD, LIMITATIONS & SOURCES"]]
+method.get_range("A1:F1").format = {"fill":"#111827","font":{"bold":True,"color":"#FFFFFF","size":15},"horizontal_alignment":"center"}
+method.get_range("A3:B11").values = [
+    ["Field","Definition"],
+    ["Demand","Current buyer interest inferred from current marketplace inventory/reviews, launch traction, and public discussion."],
+    ["Urgency","How painful or time-sensitive the outcome is."],
+    ["Discoverability","Ability to attract marketplace/search traffic without an existing audience."],
+    ["Low competition","Inverse of observed saturation; 10 means relatively less commoditized."],
+    ["Margin","Digital gross-margin potential before marketplace fees/tax."],
+    ["Automation","How close the offer is to build-once/sell-repeatedly."],
+    ["Opportunity index","Weighted model: demand 24%, urgency 20%, discoverability 16%, competition 14%, margin 13%, automation 13%."],
+    ["Probability estimates","Judgmental ranges, not measured conversion data. A new listing can receive zero traffic; no product can guarantee ten sales in 24 hours."],
+]
+method.get_range("A3:B3").format = {"fill":"#0F766E","font":{"bold":True,"color":"#FFFFFF"}}
+method.get_range("A3:B11").format.wrap_text = True
+method.get_range("A:A").format.column_width = 25
+method.get_range("B:B").format.column_width = 95
+
+sources = [
+    ["Source","URL","What it supports"],
+    ["Google/Kaggle AI Agents Intensive","https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/","June 15-19 demand catalyst for agent/vibe-coding education and capstone products."],
+    ["Anthropic Fable 5 / Mythos 5","https://www.anthropic.com/news/claude-fable-5-mythos-5","New coding and autonomous-work capability attention."],
+    ["OpenAI Codex role/workflow expansion","https://openai.com/index/codex-for-every-role-tool-workflow/","Broader Codex workflows and role-specific usage."],
+    ["Product Hunt current categories","https://www.producthunt.com/posts/krisp","Vibe coding, AI workflow automation, voice AI and code review shown as trending categories."],
+    ["PromptBase marketplace","https://promptbase.com/","270k+ prompts plus emerging Agent Skills category; marketplace traffic but heavy commoditization."],
+    ["Etsy vibe coding market","https://www.etsy.com/market/vibe_coding_guide","Observed guides, price points and reviews."],
+    ["Etsy n8n market","https://www.etsy.com/nz/market/n8n","Large inventory and price collapse in generic workflow bundles."],
+    ["Etsy creativity standards","https://www.etsy.com/legal/creativity/","AI prompt bundles are excluded; original guides/workbooks are permitted under stated rules."],
+    ["Gumroad fees","https://gumroad.com/help/article/66-gumroads-fees.html","Marketplace discovery sales carry a 30% fee."],
+    ["Reddit coding-agent failure discussion","https://www.reddit.com/r/ClaudeAI/comments/1u053yi/claude_destroying_its_own_code_how_to_you_lock/","Demand for staging, locked-feature, testing and rollback guardrails."],
+    ["Snyk ToxicSkills research","https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/","Security concerns in agent-skill ecosystems."],
+]
+method.get_range("A14:C25").values = sources
+method.get_range("A14:C14").format = {"fill":"#1F2937","font":{"bold":True,"color":"#FFFFFF"}}
+method.get_range("A14:C25").format.wrap_text = True
+method.get_range("A:A").format.column_width = 30
+method.get_range("B:B").format.column_width = 80
+method.get_range("C:C").format.column_width = 65
+method.freeze_panes.freeze_rows(1)
+
+# Verification
+print(wb.inspect({
+    "kind":"table",
+    "range":"Executive Summary!A1:E27",
+    "include":"values,formulas",
+    "table_max_rows":30,
+    "table_max_cols":8,
+}).ndjson)
+print(wb.inspect({
+    "kind":"match",
+    "search_term":"#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A",
+    "options":{"use_regex":True,"max_results":50},
+    "summary":"formula error scan",
+}).ndjson)
+
+out = "/mnt/data/AI_Digital_Offer_Top_100_June_2026.xlsx"
+SpreadsheetFile.export_xlsx(wb).save(out)
+print(out)
+
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+Cell In[1], line 117
+    113 ("AI for Ecommerce Returns Triage Kit","Small stores","Decision tree + response macros",12,59,8,9,8,8,10,10,"Cost-saving outcome","Etsy, Gumroad"),
+    114 ("AI for Consultants Executive Brief Kit","Consultants","Brief template + synthesis prompts",12,59,8,8,8,8,10,10,"High-value deliverable","Gumroad"),
+    115 ]
+    116 
+--> 117 assert len(offers) == 100, len(offers)
+    118 
+    119 # Score and estimate conservatively.
+    120 rows = []
+
+AssertionError: 108
+
+Analyzed
+from artifact_tool import Workbook, SpreadsheetFile
+
+offers = [
+("AI Agent Build-to-Launch OS","Aspiring AI builders","PDF + repo-ready templates",19,79,10,10,8,7,10,10,"Agentic coding + launch", "Gumroad, Payhip, Etsy (guide only)"),
+("AI Agent Capstone-to-Cash Kit","Google/Kaggle course participants","Workbook + launch templates",15,59,10,10,7,9,10,10,"June 15-19 course catalyst","Gumroad, Payhip, LinkedIn, relevant communities"),
+("Codex/Claude Code Production Guardrail Kit","Vibe coders shipping apps","Instruction files + QA checklist",19,89,10,10,8,8,10,10,"Agent reliability and code protection","Gumroad, PromptBase skills, GitHub"),
+("Universal AGENTS.md / CLAUDE.md / GEMINI.md Pack","Developers and non-coder builders","Editable instruction-file pack",12,49,10,9,8,7,10,10,"Portable agent skills/instructions","PromptBase, Gumroad, GitHub"),
+("Vibe Coding Staging, Testing & Rollback System","Nontechnical founders","Checklist + config templates",19,69,9,10,7,9,10,9,"Current code-destruction/staging pain","Gumroad, Etsy guide, Dev communities"),
+("AI App Security Preflight Kit","Solo builders and agencies","Security checklist + test prompts",19,99,9,10,7,9,10,9,"Security risk of agent-built apps","Gumroad, GitHub, PromptBase"),
+("60-Minute AI Micro-SaaS Validator","Founders and side-hustlers","Interactive workbook + prompts",12,39,10,9,8,5,10,10,"High intent: what should I build?","Etsy guide/workbook, Gumroad"),
+("Vibe-to-Live Deployment Blueprint","First-time app builders","PDF + deploy checklists",15,49,9,10,8,7,10,9,"Deployment friction","Etsy, Gumroad, Payhip"),
+("AI Coding Context-Control Toolkit","Claude/Codex/Cursor users","Context files + session reset system",15,59,9,9,7,8,10,10,"Context drift and token waste","PromptBase skills, Gumroad"),
+("AI Product Launch Page Generator Kit","Builders with finished products","Copy system + page wireframes",12,49,9,9,9,5,10,10,"Launch conversion","Etsy, Gumroad, Creative Market"),
+("Private Local AI Starter Blueprint for Mac","Privacy-conscious professionals","Guide + setup commands",19,69,9,9,7,8,10,8,"Local/on-device AI growth","Gumroad, Payhip, Etsy"),
+("AI Agent Skill Builder Template","Developers and automation sellers","SKILL.md generator + QA rubric",12,49,9,9,8,7,10,10,"Agent Skills marketplaces","PromptBase, Gumroad"),
+("AI App Acceptance-Criteria Generator","Freelancers and product owners","Prompt app + checklist",9,29,8,9,9,7,10,10,"Spec ambiguity","PromptBase, Gumroad"),
+("AI Repo Rescue & Recovery Kit","Vibe coders with broken projects","Recovery playbook + commands",15,59,9,10,7,9,10,9,"Urgent broken-code pain","Gumroad, Etsy guide"),
+("AI Builder Cost & Token Budget Calculator","Heavy AI coding users","Spreadsheet + optimization guide",9,39,8,9,8,7,10,10,"Usage-limit and cost pain","Etsy, Gumroad"),
+("AI App Monetization Decision Kit","Early-stage founders","Pricing calculator + decision tree",12,49,9,9,8,6,10,10,"Monetization uncertainty","Etsy, Gumroad"),
+("Production-Ready Prompt-to-PRD System","Founders, PMs, agencies","PRD templates + examples",15,59,9,9,8,6,10,10,"Better specs for agents","Gumroad, Etsy"),
+("AI MVP QA Test-Case Generator","Solo builders","Test matrix + prompt workflow",12,49,8,9,8,8,10,10,"QA gap in vibe coding","PromptBase, Gumroad"),
+("AI App Launch Checklist for Non-Coders","Nontechnical founders","Printable checklist + workbook",9,29,9,9,9,5,10,10,"Beginner launch anxiety","Etsy, Gumroad"),
+("AI Tool Stack Selector 2026","New builders","Comparison workbook + decision tree",9,39,9,8,8,5,10,10,"Tool-choice overload","Etsy, Gumroad"),
+("AI Automation ROI Calculator & Proposal Kit","Automation freelancers","Spreadsheet + proposal templates",19,79,9,9,8,7,10,10,"Outcome-based automation selling","Etsy, Gumroad"),
+("Niche AI Automation Opportunity Finder","Freelancers and agencies","Research workbook + scoring model",15,59,9,9,8,6,10,10,"Need for sellable niches","Gumroad, Etsy"),
+("AI Client Onboarding Automation Blueprint","Freelancers and agencies","Workflow map + email templates",15,59,8,9,8,7,10,9,"Agency operations","Etsy, Gumroad"),
+("AI Lead Qualification Workflow Kit","SMBs and sales freelancers","Workflow blueprint + scripts",19,79,9,9,7,7,10,9,"Sales-agent demand","Gumroad, Payhip"),
+("AI Appointment Recovery System Blueprint","Local service businesses","Workflow + message templates",19,99,9,10,6,8,10,9,"Missed-lead revenue pain","Gumroad, Etsy guide"),
+("AI Review Response & Reputation Kit","Local businesses","Prompt workflow + SOP",9,39,8,8,9,6,10,10,"Simple measurable outcome","Etsy, Gumroad"),
+("AI Inbox Triage SOP & Prompt System","Executives and small teams","SOP + filters + prompts",12,49,8,8,8,7,10,10,"Email overload","Etsy, Gumroad"),
+("AI Meeting-to-Action Operating Kit","Managers and consultants","Templates + automations map",12,49,8,8,8,6,10,10,"AI notetaker traction","Etsy, Gumroad"),
+("AI Customer Support Macro Builder","Ecommerce and SaaS teams","Macro library generator + QA",12,49,8,9,8,7,10,10,"Support automation","Gumroad, Etsy"),
+("AI SOP Generator for Small Business","SMB owners","Workbook + prompt system",12,49,9,8,9,5,10,10,"Operational documentation","Etsy, Gumroad"),
+("AI Sales Call Follow-Up Kit","Sales reps and consultants","Email/SMS templates + workflow",9,39,8,9,9,6,10,10,"Immediate revenue tie","Etsy, Gumroad"),
+("AI CRM Cleanup & Enrichment Blueprint","SMBs and freelancers","Checklist + workflow map",15,59,8,8,7,8,10,9,"CRM data pain","Gumroad"),
+("AI Proposal-to-Contract Workflow Kit","Service providers","Templates + automation map",15,59,8,8,8,7,10,9,"Freelancer conversion","Etsy, Gumroad"),
+("AI Client Reporting Automation Pack","Agencies","Report templates + workflow",19,79,8,8,7,7,10,9,"Recurring agency pain","Gumroad, Etsy"),
+("AI Knowledge Base Starter System","Small teams","Structure + ingestion checklist",15,59,8,8,8,7,10,9,"Enterprise knowledge trend","Gumroad, Etsy"),
+("AI Short-Form Content Repurposing OS","Creators and marketers","Content matrix + workflow",12,49,9,9,8,5,10,10,"Persistent creator demand","Etsy, Gumroad"),
+("AI Faceless Video Production Blueprint","New creators","Guide + shot/script templates",12,49,9,8,8,4,10,10,"High demand, high competition","Etsy, Gumroad"),
+("AI UGC Script & Shot-List Generator","UGC creators and brands","Prompt app + templates",9,39,9,9,9,5,10,10,"Direct creator outcome","PromptBase, Etsy"),
+("AI YouTube Shorts Workflow Map","Creators and automators","Workflow + QA checklist",12,49,9,8,8,5,10,9,"Current workflow requests","Etsy, Gumroad"),
+("AI Podcast-to-Content Repurpose Kit","Podcasters","Templates + publishing calendar",12,49,8,8,8,6,10,10,"Content reuse","Etsy, Gumroad"),
+("AI Newsletter Issue Builder","Newsletter creators","Editorial system + prompt templates",9,39,8,8,9,6,10,10,"Recurring content workload","PromptBase, Gumroad"),
+("AI LinkedIn Authority Content System","Consultants and executives","30-day template system",9,39,8,8,9,4,10,10,"Large but saturated market","Etsy, Gumroad"),
+("AI TikTok/Reels Hook Lab","Short-form creators","Hook generator workbook",7,29,9,9,10,3,10,10,"Fast impulse purchase","PromptBase, Etsy"),
+("AI Brand Voice Extraction Kit","Small brands and creators","Workbook + voice profile template",12,49,8,8,9,7,10,10,"Useful prerequisite asset","Etsy, Gumroad"),
+("AI Content Quality-Control Checklist","Creators and agencies","Rubric + editorial prompts",9,39,8,8,9,8,10,10,"AI slop backlash","Etsy, Gumroad"),
+("AI Thumbnail Brief Generator","YouTubers and designers","Brief templates + examples",7,29,8,8,9,6,10,10,"Visual conversion outcome","PromptBase, Etsy"),
+("AI Creator Sponsorship Pitch Kit","Creators","Pitch generator + media kit copy",12,49,8,9,9,6,10,10,"Revenue-focused creator product","Etsy, Gumroad"),
+("AI Course Builder in a Box","Experts and coaches","Curriculum workbook + templates",15,59,8,8,8,5,10,10,"Knowledge monetization","Etsy, Gumroad"),
+("AI Digital Product Listing Optimizer","Digital-product sellers","Listing workbook + prompts",9,39,9,9,9,5,10,10,"Marketplace seller demand","Etsy, Gumroad"),
+("AI Content Calendar Autopilot Workbook","Small businesses","Calendar + prompt system",9,39,8,8,9,4,10,10,"Evergreen demand","Etsy"),
+("Etsy AI Digital Product SEO Kit","Etsy sellers","Keyword/title/tag workbook",12,49,9,9,9,4,10,10,"Marketplace-specific intent","Etsy, Gumroad"),
+("AI Ecommerce Product Description System","Shopify/Etsy sellers","Prompt system + QA rubric",9,39,8,8,9,5,10,10,"High-volume catalog pain","Etsy, Gumroad"),
+("AI Abandoned-Cart Message Kit","Ecommerce owners","Email/SMS sequence generator",9,39,8,9,9,7,10,10,"Revenue recovery","Etsy, Gumroad"),
+("AI Customer Review Mining Workbook","Product marketers","Spreadsheet + analysis prompts",12,49,8,8,8,8,10,10,"Voice-of-customer need","Etsy, Gumroad"),
+("AI Product Research Scorecard","Ecommerce and digital sellers","Spreadsheet + decision guide",12,49,9,8,8,6,10,10,"Product selection pain","Etsy, Gumroad"),
+("AI Offer Stack & Pricing Calculator","Creators and freelancers","Spreadsheet + templates",12,49,9,9,8,6,10,10,"Pricing uncertainty","Etsy, Gumroad"),
+("AI Landing Page Conversion Audit Kit","Small businesses","Audit checklist + rewrite prompts",15,59,9,9,8,7,10,10,"Conversion tied to money","Gumroad, Etsy"),
+("AI SEO Content Brief Generator","SEO freelancers and SMBs","Brief templates + workflow",9,39,8,8,9,5,10,10,"Steady search demand","PromptBase, Gumroad"),
+("AI Competitor Research Sprint Kit","Founders and marketers","Research workbook + report template",12,49,8,8,8,6,10,10,"Strategic research demand","Etsy, Gumroad"),
+("AI Job Application Operating System","Job seekers","Tracker + tailored prompt workflow",12,39,9,9,9,4,10,10,"Large emotional-intent market","Etsy, Gumroad"),
+("AI Resume Achievement Rewriter","Job seekers","Prompt app + examples",7,25,9,9,10,3,10,10,"Impulse demand, saturated","PromptBase, Etsy"),
+("AI Interview Simulation Pack","Job seekers","Role-play prompts + scoring rubric",9,39,9,9,9,5,10,10,"Clear result","Etsy, Gumroad"),
+("AI Freelancer Proposal Generator","Freelancers","Proposal framework + prompts",9,39,9,9,9,5,10,10,"Direct income outcome","Etsy, Gumroad"),
+("AI Consultant Discovery Call Kit","Consultants","Question bank + summary workflow",9,39,8,8,9,7,10,10,"Professional services","Etsy, Gumroad"),
+("AI Personal Chief-of-Staff Starter Kit","Executives and solopreneurs","SOP + prompt system",15,59,9,8,8,6,10,10,"Executive-agent interest","Gumroad, Etsy"),
+("AI Decision Memo Generator","Managers and founders","Memo template + scoring prompts",9,39,8,8,9,8,10,10,"Knowledge-work utility","PromptBase, Gumroad"),
+("AI Research Brief Builder","Students, analysts, creators","Research template + verification rubric",9,39,8,8,9,6,10,10,"Research workflow demand","Etsy, Gumroad"),
+("AI Presentation Storyline Kit","Professionals and consultants","Deck outline generator + checklist",9,39,8,8,9,6,10,10,"Frequent office task","Etsy, Gumroad"),
+("AI Spreadsheet Analysis Prompt Kit","Analysts and operators","Prompt system + QA checklist",9,39,8,8,9,7,10,10,"Broad workplace need","PromptBase, Gumroad"),
+("AI Voice Meeting Translation Setup Guide","Global teams","Guide + vendor comparison",15,59,8,9,7,8,10,8,"Voice translation launch traction","Gumroad, Etsy"),
+("AI Local-First Personal Knowledge Base","Privacy-conscious users","Blueprint + folder schema",15,59,9,8,7,8,10,8,"Local AI + memory trend","Gumroad, Etsy"),
+("AI Privacy & Data Leakage Checklist","Professionals and SMBs","Checklist + policy template",12,49,9,9,8,8,10,9,"Privacy concern rising","Etsy, Gumroad"),
+("AI Agent Permission Policy Pack","Teams using coding agents","Policy templates + examples",19,99,8,9,6,9,10,9,"Permission/security changes","Gumroad, GitHub"),
+("AI Skill Security Audit Checklist","Agent-skill users","Audit rubric + scanner commands",15,69,9,10,7,9,10,9,"Malicious skill risk","Gumroad, GitHub"),
+("AI Prompt Injection Defense Guide","Small AI product teams","Threat checklist + tests",19,99,8,9,6,9,10,8,"Agent security risk","Gumroad"),
+("AI Governance Starter Pack for SMBs","Small and regulated businesses","Policy templates + risk register",29,149,8,8,6,8,10,9,"Enterprise governance demand","Gumroad, Payhip"),
+("Responsible AI Use Policy Generator","HR/operations teams","Editable policy + questionnaire",19,99,8,8,7,8,10,9,"Workplace compliance","Etsy, Gumroad"),
+("AI Vendor Due-Diligence Scorecard","Procurement and founders","Spreadsheet + risk checklist",19,99,8,8,6,9,10,9,"Enterprise buying friction","Gumroad"),
+("AI Model Comparison Test Harness Guide","AI builders","Benchmark worksheet + prompts",15,69,8,8,7,8,10,9,"Rapid model change","Gumroad, GitHub"),
+("AI Usage-Limit Optimization Playbook","Claude/Codex power users","Guide + session templates",12,49,9,9,8,8,10,10,"Current rate-limit frustration","Gumroad, Etsy"),
+("AI Course Companion Note System","AI course learners","Notion/PDF learning system",9,39,8,8,9,6,10,10,"Course-driven demand","Etsy, Gumroad"),
+("AI Agent Capstone Project Planner","Course participants and students","Planner + rubric",9,39,9,10,8,8,10,10,"June 15-19 spike","Etsy, Gumroad"),
+("Vibe Coding for Absolute Beginners Workbook","Non-coders","Workbook + exercises",12,39,9,9,9,4,10,10,"Large beginner market","Etsy, Gumroad"),
+("AI Coding Error Decoder Guide","Beginner builders","Troubleshooting decision tree",9,39,9,9,9,7,10,10,"Immediate frustration relief","Etsy, Gumroad"),
+("AI Builder Vocabulary Cheat Sheet","Nontechnical founders","Reference PDF",5,19,8,8,10,5,10,10,"Low-ticket impulse asset","Etsy"),
+("AI Agent Architecture Flashcards","Students and junior builders","Printable/digital flashcards",7,25,7,7,9,8,10,10,"Learning aid","Etsy"),
+("AI Workflow Design Workbook","Automation learners","Workbook + examples",12,49,8,8,9,6,10,10,"Core agent skill","Etsy, Gumroad"),
+("AI Prompt-to-Skill Upgrade Guide","Prompt sellers and builders","Guide + conversion templates",12,49,9,9,8,8,10,10,"Shift from prompts to skills","Gumroad, PromptBase"),
+("AI Coding Tool Decision Matrix","Developers and teams","Spreadsheet + test protocol",9,39,8,8,8,6,10,10,"Tool comparison demand","Etsy, Gumroad"),
+("AI Debugging Prompt Cards","Vibe coders","Printable prompt cards",7,25,8,9,10,6,10,10,"Fast-use reference","Etsy, PromptBase"),
+("AI App Security Mini-Course Workbook","Nontechnical builders","Guide + exercises",15,59,8,9,8,8,10,9,"Safety education gap","Etsy, Gumroad"),
+("AI for Real Estate Listing Kit","Agents and property marketers","Listing/campaign templates",12,49,8,8,8,5,10,10,"Vertical-specific outcome","Etsy, Gumroad"),
+("AI for Coaches Client-Session Kit","Coaches","Session prep + follow-up templates",12,49,8,8,8,6,10,10,"Professional workflow","Etsy, Gumroad"),
+("AI for Recruiters Candidate Summary Kit","Recruiters","Scorecard + prompt workflow",15,59,8,8,7,8,10,9,"High-value vertical","Gumroad"),
+("AI for Bookkeepers Month-End Kit","Bookkeepers","Checklist + communication templates",15,69,8,8,7,9,10,9,"Niche recurring process","Gumroad, Etsy"),
+("AI for Lawyers Intake Workflow Blueprint","Small law firms","Intake map + safe-use checklist",19,99,8,9,6,9,10,8,"High-value but compliance-heavy","Gumroad"),
+("AI for Therapists Admin Template Kit","Private practices","Non-clinical admin templates",15,59,7,8,7,8,10,9,"Admin pain; avoid clinical advice","Etsy, Gumroad"),
+("AI for Trades Quote Follow-Up Kit","Trades businesses","SMS/email templates + workflow",12,59,8,9,7,8,10,10,"Strong local revenue tie","Etsy, Gumroad"),
+("AI for Restaurants Review & Promo Kit","Restaurant owners","Review reply + promo templates",9,39,8,8,8,7,10,10,"Simple local-business need","Etsy"),
+("AI for Airbnb Host Messaging Kit","Short-stay hosts","Message library + escalation SOP",9,39,8,8,9,6,10,10,"Recurring messaging workload","Etsy, Gumroad"),
+("AI for Beauty Salons No-Show Recovery Kit","Salon owners","Message sequences + tracker",12,59,8,9,8,8,10,10,"Direct revenue recovery","Etsy, Gumroad"),
+("AI for Personal Trainers Client Check-In Kit","Fitness professionals","Check-in templates + tracker",9,39,8,8,9,6,10,10,"Recurring client ops","Etsy"),
+("AI for Wedding Vendors Inquiry-to-Booking Kit","Wedding service providers","Reply templates + tracker",12,59,8,9,8,7,10,10,"High-intent seasonal market","Etsy"),
+("AI for Tutors Lesson Planning Kit","Tutors and educators","Planning workbook + rubrics",9,39,8,8,9,6,10,10,"Education productivity","Etsy"),
+("AI for Nonprofits Grant Research Kit","Small nonprofits","Research worksheet + brief template",15,69,7,8,7,8,10,9,"High value, narrower market","Gumroad"),
+("AI for Property Managers Tenant-Comms Kit","Property managers","Message templates + SOP",12,59,8,8,8,8,10,10,"Recurring operations","Etsy, Gumroad"),
+("AI for Ecommerce Returns Triage Kit","Small stores","Decision tree + response macros",12,59,8,9,8,8,10,10,"Cost-saving outcome","Etsy, Gumroad"),
+("AI for Consultants Executive Brief Kit","Consultants","Brief template + synthesis prompts",12,59,8,8,8,8,10,10,"High-value deliverable","Gumroad"),
+]
+
+rows = []
+for o in offers:
+    name,buyer,fmt,pmin,pmax,demand,urgency,discoverability,competition_inverse,margin,automation,theme,channels=o
+    score = round(demand*2.4 + urgency*2.0 + discoverability*1.6 + competition_inverse*1.4 + margin*1.3 + automation*1.3, 1)
+    passive = max(0.005, min(0.08, (score-55)/500))
+    launch = max(0.02, min(0.24, passive*2.6 + (0.03 if score >= 86 else 0)))
+    if "June 15-19" in theme:
+        forecast = "Strong spike (+25-40%)"
+    elif score >= 86:
+        forecast = "Rising (+10-25%)"
+    elif demand >= 9 and urgency >= 9:
+        forecast = "Rising (+5-15%)"
+    elif competition_inverse <= 4:
+        forecast = "Flat; price pressure"
+    else:
+        forecast = "Stable"
+    build_minutes = 45 if ("Spreadsheet" in fmt or "workbook" in fmt.lower()) else 35
+    if any(k in fmt.lower() for k in ["repo","instruction","config"]):
+        build_minutes = 55
+    rows.append([0,name,buyer,fmt,build_minutes,pmin,pmax,demand,urgency,discoverability,
+                 competition_inverse,margin,automation,score,passive,launch,forecast,theme,channels])
+
+rows_sorted = sorted(rows, key=lambda r:(r[13],r[8],r[7]), reverse=True)[:100]
+for rank,row in enumerate(rows_sorted, start=1):
+    row[0]=rank
+
+wb = Workbook.create()
+dash = wb.worksheets.add("Executive Summary")
+sheet = wb.worksheets.add("Top 100")
+method = wb.worksheets.add("Methodology & Sources")
+
+headers = ["Rank","Offer","Primary buyer","Format","Build minutes","Launch price low (USD)",
+"Price high (USD)","Demand /10","Urgency /10","Discoverability /10","Low competition /10",
+"Margin /10","Automation /10","Opportunity index /100","P(10 sales/24h) passive",
+"P(10 sales/24h) with zero-cost launch","Next-7-day forecast","Demand theme","Best channels"]
+sheet.get_range("A1:S101").values=[headers]+rows_sorted
+sheet.freeze_panes.freeze_rows(1)
+sheet.get_range("A1:S1").format={"fill":"#111827","font":{"bold":True,"color":"#FFFFFF"},
+"horizontal_alignment":"center","vertical_alignment":"center","wrap_text":True}
+sheet.get_range("A2:S101").format.wrap_text=True
+sheet.get_range("F2:G101").format.number_format="$0"
+sheet.get_range("N2:N101").format.number_format="0.0"
+sheet.get_range("O2:P101").format.number_format="0.0%"
+for col,w in {"A":7,"B":34,"C":25,"D":26,"E":12,"F":15,"G":13,"H":11,"I":11,"J":15,
+"K":15,"L":10,"M":12,"N":17,"O":18,"P":20,"Q":22,"R":25,"S":30}.items():
+    sheet.get_range(f"{col}:{col}").format.column_width=w
+sheet.get_range("1:1").format.row_height=44
+sheet.get_range("N2:N101").conditional_formats.add_color_scale(
+    {"minColor":"#FEE2E2","midColor":"#FEF3C7","maxColor":"#DCFCE7"})
+sheet.get_range("P2:P101").conditional_formats.add_data_bar({"color":"accent5","gradient":True})
+sheet.tables.add("A1:S101",True,"OffersTable")
+
+dash.get_range("A1:H1").merge()
+dash.get_range("A1").values=[["AI DIGITAL OFFER MARKET - 7-DAY SIGNAL & NEXT-7-DAY FORECAST"]]
+dash.get_range("A1:H1").format={"fill":"#111827","font":{"bold":True,"color":"#FFFFFF","size":16},
+"horizontal_alignment":"center","vertical_alignment":"center"}
+dash.get_range("A2:H2").merge()
+dash.get_range("A2").values=[["Research window: 6-13 June 2026 | Forecast window: 14-20 June 2026 | Estimates, not guarantees"]]
+dash.get_range("A2:H2").format={"fill":"#E5E7EB","font":{"italic":True,"color":"#374151"},"horizontal_alignment":"center"}
+dash.get_range("A4:B9").values=[
+["Key finding","Result"],
+["Highest-potential offer",rows_sorted[0][1]],
+["Best next-week catalyst","AI agent / vibe-coding course participation and new coding-agent releases"],
+["What is saturated","Generic prompt dumps, huge n8n bundles, broad 'make money with AI' ebooks"],
+["Best zero-audience channel mix","Gumroad/Payhip + original Etsy guide + PromptBase skills + useful community sample"],
+["Honest 24-hour expectation","0-3 sales is the normal cold-start range; 10 is a stretch outcome, not a baseline"]]
+dash.get_range("A4:B4").format={"fill":"#0F766E","font":{"bold":True,"color":"#FFFFFF"}}
+dash.get_range("A4:B9").format.wrap_text=True
+dash.get_range("A4:A9").format.column_width=28
+dash.get_range("B4:B9").format.column_width=78
+
+top15=[["Rank","Offer","Index","Launch P(10)","Forecast"]]+[[r[0],r[1],r[13],r[15],r[16]] for r in rows_sorted[:15]]
+dash.get_range("A12:E27").values=top15
+dash.get_range("A12:E12").format={"fill":"#1F2937","font":{"bold":True,"color":"#FFFFFF"}}
+dash.get_range("A12:E27").format.wrap_text=True
+dash.get_range("A:A").format.column_width=8
+dash.get_range("B:B").format.column_width=45
+dash.get_range("C:C").format.column_width=12
+dash.get_range("D:D").format.column_width=16
+dash.get_range("E:E").format.column_width=22
+dash.get_range("C13:C27").format.number_format="0.0"
+dash.get_range("D13:D27").format.number_format="0.0%"
+chart=dash.charts.add("bar",dash.get_range("A12:C27"))
+chart.title_text="Top 15 Opportunity Index"
+chart.has_legend=False
+chart.set_position("G4","N24")
+
+method.get_range("A1:F1").merge()
+method.get_range("A1").values=[["METHOD, LIMITATIONS & SOURCES"]]
+method.get_range("A1:F1").format={"fill":"#111827","font":{"bold":True,"color":"#FFFFFF","size":15},"horizontal_alignment":"center"}
+method.get_range("A3:B11").values=[
+["Field","Definition"],
+["Demand","Current buyer interest inferred from current marketplace inventory/reviews, launch traction, and public discussion."],
+["Urgency","How painful or time-sensitive the outcome is."],
+["Discoverability","Ability to attract marketplace/search traffic without an existing audience."],
+["Low competition","Inverse of observed saturation; 10 means relatively less commoditized."],
+["Margin","Digital gross-margin potential before marketplace fees/tax."],
+["Automation","How close the offer is to build-once/sell-repeatedly."],
+["Opportunity index","Weighted model: demand 24%, urgency 20%, discoverability 16%, competition 14%, margin 13%, automation 13%."],
+["Probability estimates","Judgmental ranges, not measured conversion data. A new listing can receive zero traffic; no product can guarantee ten sales in 24 hours."]]
+method.get_range("A3:B3").format={"fill":"#0F766E","font":{"bold":True,"color":"#FFFFFF"}}
+method.get_range("A3:B11").format.wrap_text=True
+method.get_range("A:A").format.column_width=30
+method.get_range("B:B").format.column_width=90
+
+sources=[
+["Source","URL","What it supports"],
+["Google/Kaggle AI Agents Intensive","https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/","June 15-19 demand catalyst for agent/vibe-coding education and capstone products."],
+["Anthropic Fable 5 / Mythos 5","https://www.anthropic.com/news/claude-fable-5-mythos-5","New coding and autonomous-work capability attention."],
+["OpenAI Codex role/workflow expansion","https://openai.com/index/codex-for-every-role-tool-workflow/","Broader Codex workflows and role-specific usage."],
+["Product Hunt current categories","https://www.producthunt.com/posts/krisp","Vibe coding, AI workflow automation, voice AI and code review shown as trending categories."],
+["PromptBase marketplace","https://promptbase.com/","270k+ prompts plus emerging Agent Skills category; marketplace traffic but heavy commoditization."],
+["Etsy vibe coding market","https://www.etsy.com/market/vibe_coding_guide","Observed guides, price points and reviews."],
+["Etsy n8n market","https://www.etsy.com/nz/market/n8n","Large inventory and price collapse in generic workflow bundles."],
+["Etsy creativity standards","https://www.etsy.com/legal/creativity/","AI prompt bundles are excluded; original guides/workbooks are permitted under stated rules."],
+["Gumroad fees","https://gumroad.com/help/article/66-gumroads-fees.html","Marketplace discovery sales carry a 30% fee."],
+["Reddit coding-agent failure discussion","https://www.reddit.com/r/ClaudeAI/comments/1u053yi/claude_destroying_its_own_code_how_to_you_lock/","Demand for staging, locked-feature, testing and rollback guardrails."],
+["Snyk ToxicSkills research","https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/","Security concerns in agent-skill ecosystems."]]
+method.get_range("A14:C25").values=sources
+method.get_range("A14:C14").format={"fill":"#1F2937","font":{"bold":True,"color":"#FFFFFF"}}
+method.get_range("A14:C25").format.wrap_text=True
+method.get_range("A:A").format.column_width=30
+method.get_range("B:B").format.column_width=80
+method.get_range("C:C").format.column_width=65
+
+print(wb.inspect({"kind":"table","range":"Executive Summary!A1:E27","include":"values,formulas",
+"table_max_rows":30,"table_max_cols":8}).ndjson)
+print(wb.inspect({"kind":"match","search_term":"#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A",
+"options":{"use_regex":True,"max_results":50},"summary":"formula error scan"}).ndjson)
+
+out="/mnt/data/AI_Digital_Offer_Top_100_June_2026.xlsx"
+SpreadsheetFile.export_xlsx(wb).save(out)
+print(out)
+
+STDOUT/STDERR
+{"kind":"table","sheet":"Executive Summary","address":"A1:E27","rows":27,"cols":5,"values":[["AI DIGITAL OFFER MARKET - 7-DAY SIGNAL & NEXT-7-DAY FORECAST",null,null,null,null],["Research window: 6-13 June 2026 | Forecast window: 14-20 June 2026 | Estimates, not guarantees",null,null,null,null],[null,null,null,null,null],["Key finding","Result",null,null,null],["Highest-potential offer","Codex/Claude Code Production Guardrail Kit",null,null,null],["Best next-week catalyst","AI agent / vibe-coding course participation and new coding-agent releases",null,null,null],["What is saturated","Generic prompt dumps, huge n8n bundles, broad 'make money with AI' ebooks",null,null,null],["Best zero-audience channel mix","Gumroad/Payhip + original Etsy guide + PromptBase skills + useful community sample",null,null,null],["Honest 24-hour expectation","0-3 sales is the normal cold-start range; 10 is a stretch outcome, not a baseline",null,null,null],[null,null,null,null,null],[null,null,null,null,null],["Rank","Offer","Index","Launch P(10)","Forecast"],[1,"Codex/Claude Code Production Guardrail Kit",94,0.2328,"Rising (+10-25%)"],[2,"AI Agent Capstone-to-Cash Kit",93.8,0.23175999999999997,"Strong spike (+25-40%)"],[3,"AI Agent Build-to-Launch OS",92.6,0.22551999999999997,"Rising (+10-25%)"],[4,"AI Agent Capstone Project Planner",91.6,0.22031999999999996,"Strong spike (+25-40%)"],[5,"Universal AGENTS.md / CLAUDE.md / GEMINI.md Pack",90.6,0.21511999999999998,"Rising (+10-25%)"],[6,"Vibe Coding Staging, Testing & Rollback System",90.1,0.21251999999999996,"Rising (+10-25%)"],[7,"AI App Security Preflight Kit",90.1,0.21251999999999996,"Rising (+10-25%)"],[8,"AI Repo Rescue & Recovery Kit",90.1,0.21251999999999996,"Rising (+10-25%)"],[9,"AI Skill Security Audit Checklist",90.1,0.21251999999999996,"Rising (+10-25%)"],[10,"AI Coding Error Decoder Guide",89.8,0.21095999999999998,"Rising (+10-25%)"],[11,"AI Usage-Limit Optimization Playbook",89.6,0.20991999999999997,"Rising (+10-25%)"],[12,"AI Prompt-to-Skill Upgrade Guide",89.6,0.20991999999999997,"Rising (+10-25%)"],[13,"Vibe-to-Live Deployment Blueprint",88.9,0.20628000000000005,"Rising (+10-25%)"],[14,"AI Privacy & Data Leakage Checklist",88.3,0.20315999999999998,"Rising (+10-25%)"],[15,"AI Agent Skill Builder Template",88.2,0.20264000000000001,"Rising (+10-25%)"]]}
+{"kind":"notice","message":"Cell search matched 0 entries."}
+/mnt/data/AI_Digital_Offer_Top_100_June_2026.xlsx
+
+
+Agreed. **Gumroad, Etsy, Payhip and PromptBase are removed entirely.** There is no reason to surrender margin, customer ownership and control to a platform that contributes no meaningful discovery.
+
+The corrected model is not “upload a PDF to a marketplace.”
+
+# Build an owned sales machine
+
+## The product becomes:
+
+# **SHIPSAFE AI — Free Launch-Risk Scanner + Paid Fix System**
+
+The public website is itself the marketing asset.
+
+Visitors do not initially arrive at a generic sales page. They arrive at a free utility:
+
+> **Is Your AI-Built App Actually Safe to Launch?**
+> Run the 60-second production-readiness scan.
+
+They answer 12–20 questions and immediately receive:
+
+* Launch-readiness percentage
+* Red, amber or green rating
+* Specific risks detected
+* What could happen if those risks remain
+* Which parts of SHIPSAFE resolve them
+
+The scanner **creates awareness of the problem**, proves expertise and makes the paid product the natural next step.
+
+## Paid offer
+
+### **SHIPSAFE Solo — US$39**
+
+* Universal coding-agent guardrails
+* `AGENTS.md`
+* `CLAUDE.md`
+* `GEMINI.md`
+* Cursor rules
+* Production checklist
+* Security preflight
+* Git checkpoint protocol
+* Rollback protocol
+* Deployment checklist
+* Emergency recovery guide
+
+### **SHIPSAFE Founder — US$89**
+
+Everything above, plus:
+
+* Commercial project usage
+* Customizable project templates
+* AI-generated launch-readiness report
+* Capstone and portfolio launch pack
+* Monetization checklist
+* Client-ready audit report
+* Agency/client-project licensing
+
+Make **$89 Founder** the recommended option.
+
+---
+
+# Owned infrastructure
+
+## Recommended stack
+
+| Component        | Choice                                   |
+| ---------------- | ---------------------------------------- |
+| Domain           | Your own branded domain                  |
+| Repository       | GitHub                                   |
+| Front end        | React/Astro/Next-style static site       |
+| Hosting          | Cloudflare Pages                         |
+| Server functions | Cloudflare Workers                       |
+| Checkout         | Stripe Checkout                          |
+| Customer records | Supabase                                 |
+| Product storage  | Private Supabase Storage bucket          |
+| Delivery         | Expiring signed download URL             |
+| Analytics        | First-party event table                  |
+| Email            | Transactional purchase/access email only |
+| Backups          | GitHub + local export                    |
+
+Cloudflare’s developer platform currently has a **$0 Workers plan**, with up to 100,000 Worker requests daily; static Pages assets are free and unlimited. ([Cloudflare Docs][1])
+
+Do not use free Vercel Hobby for this commercial product. Vercel’s current policy restricts Hobby teams to non-commercial personal use, so commercial deployment requires Pro or Enterprise. ([Vercel][2])
+
+## Payments
+
+Stripe is not being used as a marketplace. It is simply the card-processing rail.
+
+For New Zealand accounts, Stripe currently states:
+
+* No setup fee
+* No monthly fee
+* 2.65% + NZ$0.30 for domestic cards
+* 3.5% + NZ$0.30 for international cards
+
+You pay only when money is collected. ([Stripe][3])
+
+After payment:
+
+1. Stripe verifies the transaction.
+2. A webhook records the purchase.
+3. The customer is redirected to your domain.
+4. Your server verifies the Checkout session.
+5. It generates an expiring download link.
+6. The buyer receives access without exposing the master file URL.
+
+Stripe supports automated post-payment fulfillment and redirects, while Supabase supports download URLs that expire after a specified period. ([Stripe Docs][4])
+
+---
+
+# The website structure
+
+## 1. Main page
+
+Headline:
+
+> **Your AI app working is not proof that it is safe to launch.**
+
+Subheading:
+
+> Find the security, data, testing and deployment risks your coding agent may have hidden—before customers find them.
+
+Primary button:
+
+> **Scan My Project Free**
+
+Secondary button:
+
+> View the SHIPSAFE System
+
+## 2. Interactive scanner
+
+Sections:
+
+* Authentication
+* Database permissions
+* API secrets
+* Real versus mocked data
+* Input validation
+* Error handling
+* Testing
+* Agent permissions
+* Git checkpoints
+* Rollback
+* Deployment
+* Monitoring
+
+The user does not need to upload private code.
+
+Later, an optional public-repository scanner can inspect:
+
+* Configuration files
+* Accidental `.env` commits
+* Missing test folders
+* Missing instruction files
+* Dangerous public configuration
+* Absent security policies
+
+## 3. Results page
+
+Example:
+
+> **Your project scored 43/100 — High Launch Risk**
+>
+> We detected seven areas requiring attention:
+>
+> * No verified rollback process
+> * Database access has not been tested as a normal user
+> * Agent changes are not constrained
+> * No regression checks protect working features
+> * Production secrets have not been independently reviewed
+> * Failure states may return misleading results
+> * No formal launch decision exists
+
+Then:
+
+> **Fix all seven areas with SHIPSAFE Founder.**
+
+This is where the sale occurs.
+
+## 4. Compatibility pages
+
+Build individual pages for:
+
+* `/claude-code-guardrails`
+* `/codex-production-checklist`
+* `/cursor-app-security`
+* `/gemini-agent-guardrails`
+* `/vibe-coding-launch-checklist`
+* `/kaggle-agent-capstone`
+* `/supabase-security-checklist`
+* `/ai-app-rollback`
+* `/ai-app-production-ready`
+* `/stop-ai-breaking-code`
+
+These are not separate products. They are separate pathways into the same product.
+
+## 5. Free resources
+
+Publish useful but incomplete assets:
+
+* 12-point launch checklist
+* Minimal `AGENTS.md`
+* Git checkpoint command sheet
+* AI app security cheat sheet
+* “Mock Data or Real Integration?” test
+* Capstone submission checklist
+
+Every resource points back to the scanner.
+
+---
+
+# The marketing correction
+
+We do **not** send cold traffic directly to “Buy my PDF.”
+
+We send traffic to:
+
+> **Run the free scan and discover whether your project is ready.**
+
+That gives strangers a reason to click even when they have never heard of us.
+
+## Distribution surfaces—not sales platforms
+
+Use these only for free reach:
+
+* Google search
+* GitHub
+* Reddit
+* Hacker News
+* Dev.to
+* Hashnode
+* YouTube Shorts
+* TikTok
+* LinkedIn
+* X
+* Relevant Discord communities
+* Kaggle discussions where promotion is permitted
+* AI coding tool communities
+* Public questions and discussions about broken AI-built apps
+
+The checkout, customer relationship, files and upsells remain on your domain.
+
+---
+
+# The traffic strategy
+
+## Search capture
+
+Every landing page targets a real problem phrase:
+
+* Claude Code broke my app
+* How to stop AI changing working code
+* Is my vibe-coded app secure?
+* AI app production checklist
+* Supabase RLS security checklist
+* Codex project instructions
+* AI app rollback strategy
+* Vibe coding deployment checklist
+* AI agent capstone checklist
+* How to test an AI-generated app
+
+The scanner answers the query. The product supplies the complete resolution.
+
+## Community interception
+
+Search daily for people already saying:
+
+* “Claude destroyed my code.”
+* “How do I know this is production-ready?”
+* “My Supabase app is exposing data.”
+* “My agent replaced the real API with mock data.”
+* “How do I deploy my capstone?”
+* “What should be in my AGENTS.md?”
+* “How do I stop Cursor changing unrelated files?”
+
+Give a legitimate answer, then link to the free scanner where self-promotion is allowed.
+
+The call to action is never:
+
+> Buy my product.
+
+It is:
+
+> I built a free readiness scan that checks the areas causing this.
+
+---
+
+# The “sells itself” loop
+
+1. Person encounters an AI coding failure.
+2. Searches or discusses that exact failure.
+3. Finds a specific SHIPSAFE page or useful answer.
+4. Runs the free scanner.
+5. Receives a concerning but accurate score.
+6. Sees exactly what remains unresolved.
+7. Purchases the fix system.
+8. Receives it automatically.
+9. Re-runs the scanner after implementation.
+10. Gets an improved score and shareable result.
+11. Shares the score or checklist, producing another visitor.
+
+The **shareable result** should say:
+
+> My AI project passed the SHIPSAFE launch-readiness check: 89/100.
+
+That creates organic product exposure without turning customer data or private projects into advertising.
+
+---
+
+# The strongest launch configuration
+
+## Product
+
+**SHIPSAFE AI**
+
+## Free acquisition mechanism
+
+**AI App Launch-Risk Scanner**
+
+## Price
+
+* $39 Solo
+* $89 Founder
+* Optional $149 Agency licence after initial validation
+
+## Hosting
+
+GitHub → Cloudflare Pages
+
+## Checkout
+
+Stripe on your own branded website
+
+## Delivery
+
+Private storage with purchase verification and expiring access
+
+## Marketing
+
+Problem-specific pages, free diagnostic content and direct participation in active builder discussions
+
+## What we no longer use
+
+* Gumroad
+* Etsy
+* Payhip
+* PromptBase
+* Marketplace checkout pages
+* Platform-controlled customer lists
+* Paid listings
+* Marketplace-dependent discovery
+
+This is materially stronger than the previous plan. **The product is no longer a file waiting on a marketplace shelf. It is an owned diagnostic tool, conversion system, checkout and automated delivery engine that also happens to sell a high-margin digital asset.**
+
+[1]: https://developers.cloudflare.com/pages/functions/pricing/?utm_source=chatgpt.com "Pricing · Cloudflare Pages docs"
+[2]: https://vercel.com/docs/limits/fair-use-guidelines?utm_source=chatgpt.com "Fair Use Guidelines"
+[3]: https://stripe.com/nz/pricing?utm_source=chatgpt.com "Pricing & Fees"
+[4]: https://docs.stripe.com/payment-links/post-payment?utm_source=chatgpt.com "After a payment link"
