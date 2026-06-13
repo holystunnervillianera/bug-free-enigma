@@ -1,0 +1,2867 @@
+Agreed. **Gumroad, Etsy, Payhip and PromptBase are removed entirely.** There is no reason to surrender margin, customer ownership and control to a platform that contributes no meaningful discovery.
+
+The corrected model is not “upload a PDF to a marketplace.”
+
+# Build an owned sales machine
+
+## The product becomes:
+
+# **SHIPSAFE AI — Free Launch-Risk Scanner + Paid Fix System**
+
+The public website is itself the marketing asset.
+
+Visitors do not initially arrive at a generic sales page. They arrive at a free utility:
+
+> **Is Your AI-Built App Actually Safe to Launch?**
+> Run the 60-second production-readiness scan.
+
+They answer 12–20 questions and immediately receive:
+
+* Launch-readiness percentage
+* Red, amber or green rating
+* Specific risks detected
+* What could happen if those risks remain
+* Which parts of SHIPSAFE resolve them
+
+The scanner **creates awareness of the problem**, proves expertise and makes the paid product the natural next step.
+
+## Paid offer
+
+### **SHIPSAFE Solo — US$39**
+
+* Universal coding-agent guardrails
+* `AGENTS.md`
+* `CLAUDE.md`
+* `GEMINI.md`
+* Cursor rules
+* Production checklist
+* Security preflight
+* Git checkpoint protocol
+* Rollback protocol
+* Deployment checklist
+* Emergency recovery guide
+
+### **SHIPSAFE Founder — US$89**
+
+Everything above, plus:
+
+* Commercial project usage
+* Customizable project templates
+* AI-generated launch-readiness report
+* Capstone and portfolio launch pack
+* Monetization checklist
+* Client-ready audit report
+* Agency/client-project licensing
+
+Make **$89 Founder** the recommended option.
+
+---
+
+# Owned infrastructure
+
+## Recommended stack
+
+| Component        | Choice                                   |
+| ---------------- | ---------------------------------------- |
+| Domain           | Your own branded domain                  |
+| Repository       | GitHub                                   |
+| Front end        | React/Astro/Next-style static site       |
+| Hosting          | Cloudflare Pages                         |
+| Server functions | Cloudflare Workers                       |
+| Checkout         | Stripe Checkout                          |
+| Customer records | Supabase                                 |
+| Product storage  | Private Supabase Storage bucket          |
+| Delivery         | Expiring signed download URL             |
+| Analytics        | First-party event table                  |
+| Email            | Transactional purchase/access email only |
+| Backups          | GitHub + local export                    |
+
+Cloudflare’s developer platform currently has a **$0 Workers plan**, with up to 100,000 Worker requests daily; static Pages assets are free and unlimited. ([Cloudflare Docs][1])
+
+Do not use free Vercel Hobby for this commercial product. Vercel’s current policy restricts Hobby teams to non-commercial personal use, so commercial deployment requires Pro or Enterprise. ([Vercel][2])
+
+## Payments
+
+Stripe is not being used as a marketplace. It is simply the card-processing rail.
+
+For New Zealand accounts, Stripe currently states:
+
+* No setup fee
+* No monthly fee
+* 2.65% + NZ$0.30 for domestic cards
+* 3.5% + NZ$0.30 for international cards
+
+You pay only when money is collected. ([Stripe][3])
+
+After payment:
+
+1. Stripe verifies the transaction.
+2. A webhook records the purchase.
+3. The customer is redirected to your domain.
+4. Your server verifies the Checkout session.
+5. It generates an expiring download link.
+6. The buyer receives access without exposing the master file URL.
+
+Stripe supports automated post-payment fulfillment and redirects, while Supabase supports download URLs that expire after a specified period. ([Stripe Docs][4])
+
+---
+
+# The website structure
+
+## 1. Main page
+
+Headline:
+
+> **Your AI app working is not proof that it is safe to launch.**
+
+Subheading:
+
+> Find the security, data, testing and deployment risks your coding agent may have hidden—before customers find them.
+
+Primary button:
+
+> **Scan My Project Free**
+
+Secondary button:
+
+> View the SHIPSAFE System
+
+## 2. Interactive scanner
+
+Sections:
+
+* Authentication
+* Database permissions
+* API secrets
+* Real versus mocked data
+* Input validation
+* Error handling
+* Testing
+* Agent permissions
+* Git checkpoints
+* Rollback
+* Deployment
+* Monitoring
+
+The user does not need to upload private code.
+
+Later, an optional public-repository scanner can inspect:
+
+* Configuration files
+* Accidental `.env` commits
+* Missing test folders
+* Missing instruction files
+* Dangerous public configuration
+* Absent security policies
+
+## 3. Results page
+
+Example:
+
+> **Your project scored 43/100 — High Launch Risk**
+>
+> We detected seven areas requiring attention:
+>
+> * No verified rollback process
+> * Database access has not been tested as a normal user
+> * Agent changes are not constrained
+> * No regression checks protect working features
+> * Production secrets have not been independently reviewed
+> * Failure states may return misleading results
+> * No formal launch decision exists
+
+Then:
+
+> **Fix all seven areas with SHIPSAFE Founder.**
+
+This is where the sale occurs.
+
+## 4. Compatibility pages
+
+Build individual pages for:
+
+* `/claude-code-guardrails`
+* `/codex-production-checklist`
+* `/cursor-app-security`
+* `/gemini-agent-guardrails`
+* `/vibe-coding-launch-checklist`
+* `/kaggle-agent-capstone`
+* `/supabase-security-checklist`
+* `/ai-app-rollback`
+* `/ai-app-production-ready`
+* `/stop-ai-breaking-code`
+
+These are not separate products. They are separate pathways into the same product.
+
+## 5. Free resources
+
+Publish useful but incomplete assets:
+
+* 12-point launch checklist
+* Minimal `AGENTS.md`
+* Git checkpoint command sheet
+* AI app security cheat sheet
+* “Mock Data or Real Integration?” test
+* Capstone submission checklist
+
+Every resource points back to the scanner.
+
+---
+
+# The marketing correction
+
+We do **not** send cold traffic directly to “Buy my PDF.”
+
+We send traffic to:
+
+> **Run the free scan and discover whether your project is ready.**
+
+That gives strangers a reason to click even when they have never heard of us.
+
+## Distribution surfaces—not sales platforms
+
+Use these only for free reach:
+
+* Google search
+* GitHub
+* Reddit
+* Hacker News
+* Dev.to
+* Hashnode
+* YouTube Shorts
+* TikTok
+* LinkedIn
+* X
+* Relevant Discord communities
+* Kaggle discussions where promotion is permitted
+* AI coding tool communities
+* Public questions and discussions about broken AI-built apps
+
+The checkout, customer relationship, files and upsells remain on your domain.
+
+---
+
+# The traffic strategy
+
+## Search capture
+
+Every landing page targets a real problem phrase:
+
+* Claude Code broke my app
+* How to stop AI changing working code
+* Is my vibe-coded app secure?
+* AI app production checklist
+* Supabase RLS security checklist
+* Codex project instructions
+* AI app rollback strategy
+* Vibe coding deployment checklist
+* AI agent capstone checklist
+* How to test an AI-generated app
+
+The scanner answers the query. The product supplies the complete resolution.
+
+## Community interception
+
+Search daily for people already saying:
+
+* “Claude destroyed my code.”
+* “How do I know this is production-ready?”
+* “My Supabase app is exposing data.”
+* “My agent replaced the real API with mock data.”
+* “How do I deploy my capstone?”
+* “What should be in my AGENTS.md?”
+* “How do I stop Cursor changing unrelated files?”
+
+Give a legitimate answer, then link to the free scanner where self-promotion is allowed.
+
+The call to action is never:
+
+> Buy my product.
+
+It is:
+
+> I built a free readiness scan that checks the areas causing this.
+
+---
+
+# The “sells itself” loop
+
+1. Person encounters an AI coding failure.
+2. Searches or discusses that exact failure.
+3. Finds a specific SHIPSAFE page or useful answer.
+4. Runs the free scanner.
+5. Receives a concerning but accurate score.
+6. Sees exactly what remains unresolved.
+7. Purchases the fix system.
+8. Receives it automatically.
+9. Re-runs the scanner after implementation.
+10. Gets an improved score and shareable result.
+11. Shares the score or checklist, producing another visitor.
+
+The **shareable result** should say:
+
+> My AI project passed the SHIPSAFE launch-readiness check: 89/100.
+
+That creates organic product exposure without turning customer data or private projects into advertising.
+
+---
+
+# The strongest launch configuration
+
+## Product
+
+**SHIPSAFE AI**
+
+## Free acquisition mechanism
+
+**AI App Launch-Risk Scanner**
+
+## Price
+
+* $39 Solo
+* $89 Founder
+* Optional $149 Agency licence after initial validation
+
+## Hosting
+
+GitHub → Cloudflare Pages
+
+## Checkout
+
+Stripe on your own branded website
+
+## Delivery
+
+Private storage with purchase verification and expiring access
+
+## Marketing
+
+Problem-specific pages, free diagnostic content and direct participation in active builder discussions
+
+## What we no longer use
+
+* Gumroad
+* Etsy
+* Payhip
+* PromptBase
+* Marketplace checkout pages
+* Platform-controlled customer lists
+* Paid listings
+* Marketplace-dependent discovery
+
+This is materially stronger than the previous plan. **The product is no longer a file waiting on a marketplace shelf. It is an owned diagnostic tool, conversion system, checkout and automated delivery engine that also happens to sell a high-margin digital asset.**
+
+[1]: https://developers.cloudflare.com/pages/functions/pricing/?utm_source=chatgpt.com "Pricing · Cloudflare Pages docs"
+[2]: https://vercel.com/docs/limits/fair-use-guidelines?utm_source=chatgpt.com "Fair Use Guidelines"
+[3]: https://stripe.com/nz/pricing?utm_source=chatgpt.com "Pricing & Fees"
+[4]: https://docs.stripe.com/payment-links/post-payment?utm_source=chatgpt.com "After a payment link"
+
+# Built.
+
+The complete **SHIPSAFE AI product system** is ready: **61 production assets**, visually verified PDFs/DOCX files, tested spreadsheets, reusable project templates, safe utility scripts, customer licences, inventories, and checksums.
+
+## Keep this private
+
+### [Download the SHIPSAFE AI Seller Master](sandbox:/mnt/data/SHIPSAFE_AI_Seller_Master_v1.0.zip)
+
+This is your source-of-truth package containing:
+
+* Editable operating manual and Quick Start DOCX files
+* Finished customer PDFs
+* AGENTS.md, CLAUDE.md, GEMINI.md and Cursor guardrails
+* Project context, scope-lock and acceptance-criteria systems
+* Testing, regression and release-evidence templates
+* Security, secrets, authorization, RLS and prompt-injection checks
+* Git checkpoint and emergency recovery protocols
+* Formula-driven launch-readiness scorecard
+* Capstone, README, demo and portfolio templates
+* Client audit and commercial-delivery templates
+* Licence, disclaimer, references, inventory and SHA-256 checksums
+
+## Ready-to-deliver customer editions
+
+### [Download the Solo Edition](sandbox:/mnt/data/SHIPSAFE_AI_Solo_v1.0.zip)
+
+For buyers securing and launching their own projects. It excludes reusable client-audit assets and editable premium source documents.
+
+### [Download the Commercial Edition](sandbox:/mnt/data/SHIPSAFE_AI_Commercial_v1.0.zip)
+
+Includes client-service assets, editable source files and a commercial project-use licence. Buyers may use completed outputs with clients but cannot redistribute or resell the underlying system.
+
+## Review the core assets
+
+[Open the finished 18-page Operating Manual](sandbox:/mnt/data/SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Operating_Manual.pdf)
+
+[Open the Launch Readiness Scorecard](sandbox:/mnt/data/SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS/SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx)
+
+[Open the three-page Quick Start](sandbox:/mnt/data/SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf)
+
+[Open the printable 12-Point Fast Test](sandbox:/mnt/data/SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/12_Point_AI_App_Fast_Test_Printable.pdf)
+
+All three ZIP archives passed integrity testing. **SHIPSAFE AI is still treated as a working product name; complete a trademark/name-conflict check before publishing it commercially.**
+
+
+
+Then we move into **commercialisation**, with the product itself left untouched.
+
+## Locked direction
+
+**Brand:** SHIPSAFE AI
+**Category:** AI-built application launch assurance
+**Core promise:** Know whether your AI-built app is genuinely safe, functional and ready to launch—then fix what is not.
+**Positioning:** Premium technical certainty for nontechnical and AI-assisted builders.
+**Tone:** Precise, authoritative, calm, anti-hype.
+**Visual direction:** Dark technical foundation, clean white space, sharp diagnostic accents, no generic robot imagery.
+
+## Conversion structure
+
+The launch identity will revolve around one statement:
+
+> **Your AI-built app working is not proof that it is ready to launch.**
+
+Then the product proves the risk through:
+
+1. Invisible failure examples
+2. The 12-point fast test
+3. A launch-readiness score
+4. The consequences of unresolved failures
+5. SHIPSAFE as the complete correction system
+
+## Launch offer
+
+**SHIPSAFE Solo — $39 launch price**
+For builders securing and launching their own project.
+
+**SHIPSAFE Commercial — $129 launch price**
+For freelancers, consultants and agencies using the system across client work.
+
+Commercial should not be only twice the Solo price. Its client-use rights, editable materials and audit assets justify materially higher value.
+
+## Next deliverable
+
+The commercial launch pack should contain:
+
+* Final brand and product messaging
+* Complete long-form sales-page copy
+* Compact listing and checkout copy
+* Product mockup direction
+* Feature and value architecture
+* Objection handling and FAQ
+* Solo versus Commercial comparison
+* Seven-day launch campaign
+* Daily flagship posts
+* Short-form post variations
+* Free diagnostic lead asset copy
+* Launch graphics copy
+* Email and direct-message copy
+* Usage instructions for every campaign asset
+* One seller-only master launch document
+
+The campaign will sell **certainty and avoided loss**, not “a bundle of templates.”
+
+
+
+
+
+
+
+Thinking
+Inspecting available files for launch pack creation
+bash -lc ls -R /mnt/data | sed -n '1,240p'
+/mnt/data:
+AI_Digital_Offer_Top_100_June_2026.xlsx
+SHIPSAFE_AI_Commercial_v1.0.zip
+SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx
+SHIPSAFE_AI_Seller_Master_v1.0.zip
+SHIPSAFE_AI_Solo_v1.0.zip
+SHIPSAFE_AI_v1.0
+SHIPSAFE_scorecard_preview.png
+client_contact.png
+client_contact2.png
+manual_contact.png
+quick_contact.png
+quick_contact2.png
+shipsafe_client_render
+shipsafe_quick_render
+user-xGhj4OS5ogrsQ7Ww4hr2gAwy
+
+/mnt/data/SHIPSAFE_AI_v1.0:
+00_START_HERE
+06_LAUNCH_READINESS
+09_BONUS_QUICK_TOOLS
+README.md
+SELLER_PACKAGING_MAP.md
+SOURCE_REFERENCES.md
+
+/mnt/data/SHIPSAFE_AI_v1.0/00_START_HERE:
+SHIPSAFE_AI_Operating_Manual.pdf
+SHIPSAFE_AI_Quick_Start.pdf
+
+/mnt/data/SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS:
+SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx
+
+/mnt/data/SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS:
+12_Point_AI_App_Fast_Test_Printable.pdf
+
+/mnt/data/shipsafe_client_render:
+Client_Readiness_Audit_Template.pdf
+page-1.png
+page-2.png
+page-3.png
+
+/mnt/data/shipsafe_quick_render:
+SHIPSAFE_AI_Quick_Start.pdf
+page-1.png
+page-2.png
+page-3.png
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy:
+aef21388489744cc9d5c6df4ceb546a1
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy/aef21388489744cc9d5c6df4ceb546a1:
+mnt
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy/aef21388489744cc9d5c6df4ceb546a1/mnt:
+data
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy/aef21388489744cc9d5c6df4ceb546a1/mnt/data:
+SHIPSAFE_scorecard_preview.png
+client_contact.png
+client_contact2.png
+manual_contact.png
+pdf_verify
+quick_contact.png
+quick_contact2.png
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy/aef21388489744cc9d5c6df4ceb546a1/mnt/data/pdf_verify:
+fast
+
+/mnt/data/user-xGhj4OS5ogrsQ7Ww4hr2gAwy/aef21388489744cc9d5c6df4ceb546a1/mnt/data/pdf_verify/fast:
+page-1.png
+Reading skill documentation from file
+bash -lc cat /home/oai/skills/docx/SKILL.md && printf '\n---PDF---\n' && cat /home/oai/skills/pdfs/SKILL.md
+---
+name: docx
+description: Create, edit, redline, and comment on `.docx` files inside the container, with a strict render-and-verify workflow. Use `render_docx.py` to generate page PNGs (and optional PDF) for visual QA, then iterate until layout is flawless before delivering the final DOCX. 
+---
+
+
+# DOCX Skill (Read • Create • Edit • Redline • Comment)
+
+Use this skill when you need to create or modify `.docx` files **in this container environment** and verify them visually.
+
+## Non-negotiable: render → inspect PNGs → iterate
+
+**You do not “know” a DOCX is satisfactory until you’ve rendered it and visually inspected page images.**  
+DOCX text extraction (or reading XML) will miss layout defects: clipping, overlap, missing glyphs, broken tables, spacing drift, and header/footer issues.
+
+**Shipping gate:** before delivering any DOCX, you must:
+- Run `render_docx.py` to produce `page-<N>.png` images (optionally also a PDF with `--emit_pdf`)
+- Open the PNGs (100% zoom) and confirm every page is clean
+- If anything looks off, fix the DOCX and **re-render** (repeat until flawless)
+
+If rendering fails, fix rendering first (LibreOffice profile/HOME) rather than guessing.
+
+**Deliverable discipline:** Rendered artifacts (PNGs and optional PDFs) are for internal QA only. Unless the user explicitly asks for intermediates, **return only the requested final deliverable** (e.g., when the task asks for a DOCX, deliver the DOCX — not page images or PDFs).
+
+
+
+## Quick start (common one-liners)
+
+```bash
+# 1) Render any DOCX to PNGs (visual QA)
+python render_docx.py input.docx --output_dir out
+
+# 2) Remove reviewer comments (finalization)
+python scripts/comments_strip.py input.docx --out no_comments.docx
+
+# 3) Accept tracked changes (finalization)
+python scripts/accept_tracked_changes.py input.docx --mode accept --out accepted.docx
+
+# 4) Accessibility audit (+ optional safe fixes)
+python scripts/a11y_audit.py input.docx
+python scripts/a11y_audit.py input.docx --out_json a11y_report.json
+python scripts/a11y_audit.py input.docx --fix_image_alt from_filename --out a11y_fixed.docx
+
+# 5) Redact sensitive text (layout-preserving by default)
+python scripts/redact_docx.py input.docx redacted.docx --emails --phones
+```
+
+## Package layout
+
+This skill is organized for progressive discovery: start here, then jump into task- or OOXML-specific docs.
+
+DOCS SKILL PACKAGE
+
+Root:
+- SKILL.md: short overview + routing
+- manifest.txt: machine-readable list of files to download (one relative path per line)
+- render_docx.py: canonical DOCX→PNG renderer (container-safe LO profile + writable HOME + verbose logs)
+
+Tasks:
+- tasks/read_review.md
+- tasks/create_edit.md
+- tasks/verify_render.md
+- tasks/accessibility_a11y.md
+- tasks/comments_manage.md
+- tasks/protection_restrict_editing.md
+- tasks/privacy_scrub_metadata.md
+- tasks/multi_doc_merge.md
+- tasks/style_lint_normalize.md
+- tasks/forms_content_controls.md
+- tasks/captions_crossrefs.md
+- tasks/redaction_anonymization.md
+- tasks/clean_tracked_changes.md
+- tasks/compare_diff.md
+- tasks/templates_style_packs.md
+- tasks/watermarks_background.md
+- tasks/footnotes_endnotes.md
+- tasks/fixtures_edge_cases.md
+- tasks/navigation_internal_links.md
+
+OOXML:
+- ooxml/tracked_changes.md
+- ooxml/comments.md
+- ooxml/hyperlinks_and_fields.md
+- ooxml/rels_and_content_types.md
+
+Troubleshooting:
+- troubleshooting/libreoffice_headless.md
+- troubleshooting/run_splitting.md
+
+Scripts:
+
+**Core building blocks (importable helpers):**
+- `scripts/docx_ooxml_patch.py` — low-level OOXML patch helper (tracked changes, comments, hyperlinks, relationships). Other scripts reuse this.
+- `scripts/fields_materialize.py` — materialize `SEQ`/`REF` field *display text* for deterministic headless rendering/QA.
+
+**High-leverage utilities (also importable, but commonly invoked as CLIs):**
+- `render_docx.py` — canonical DOCX → PNG renderer (optional PDF via `--emit_pdf`; do not deliver intermediates unless asked).
+- `scripts/render_and_diff.py` — render + per-page image diff between two DOCXs.
+- `scripts/content_controls.py` — list / wrap / fill Word content controls (SDTs) for forms/templates.
+- `scripts/captions_and_crossrefs.py` — insert Caption paragraphs for tables/figures + optional bookmarks around caption numbers.
+- `scripts/insert_ref_fields.py` — replace `[[REF:bookmark]]` markers with real `REF` fields (cross-references).
+- `scripts/internal_nav.py` — add internal navigation links (static TOC + Top/Bottom + figN/tblN jump links).
+- `scripts/style_lint.py` — report common formatting/style inconsistencies.
+- `scripts/style_normalize.py` — conservative cleanup (clear run-level overrides; optional paragraph overrides).
+- `scripts/redact_docx.py` — layout-preserving redaction/anonymization.
+- `scripts/privacy_scrub.py` — remove personal metadata + `rsid*` attributes.
+- `scripts/set_protection.py` — restrict editing (read-only / comments / forms).
+- `scripts/comments_extract.py` — extract comments to JSON (text, author/date, resolved flag, anchored snippets).
+- `scripts/comments_strip.py` — remove all comments (final-delivery mode).
+
+**Audits / conversions / niche helpers:**
+- `scripts/fields_report.py`, `scripts/heading_audit.py`, `scripts/section_audit.py`, `scripts/images_audit.py`, `scripts/footnotes_report.py`, `scripts/watermark_audit_remove.py`
+- `scripts/xlsx_to_docx_table.py`, `scripts/docx_table_to_csv.py`
+- `scripts/insert_toc.py`, `scripts/insert_note.py`, `scripts/apply_template_styles.py`, `scripts/accept_tracked_changes.py`, `scripts/make_fixtures.py`
+
+**v7 additions (stress-test helpers):**
+- `scripts/watermark_add.py` — add a detectable VML watermark object into an existing header.
+- `scripts/comments_add.py` — add multiple comments (by paragraph substring match) and wire up comments.xml plumbing if needed.
+- `scripts/comments_apply_patch.py` — append/replace comment text and mark/clear resolved state (`w:done=1`).
+- `scripts/add_tracked_replacements.py` — generate tracked-change replacements (`<w:del>` + `<w:ins>`) in-place.
+- `scripts/a11y_audit.py` — audit a11y issues; can also apply simple fixes via `--fix_table_headers` / `--fix_image_alt`.
+- `scripts/flatten_ref_fields.py` — replace REF/PAGEREF field blocks with their cached visible text for deterministic rendering.
+
+> `scripts/xlsx_to_docx_table.py` also marks header rows as repeating headers (`w:tblHeader`) to improve a11y and multi-page tables.
+
+Examples:
+- examples/end_to_end_smoke_test.md
+
+> Note: `manifest.txt` is **machine-readable** and is used by download tooling. It must contain only relative file paths (one per line).
+
+
+## Coverage map (scripts ↔ task guides)
+
+This is a quick index so you can jump from a helper script to the right task guide.
+
+### Layout & style
+- `style_lint.py`, `style_normalize.py` → `tasks/style_lint_normalize.md`
+- `apply_template_styles.py` → `tasks/templates_style_packs.md`
+- `section_audit.py` → `tasks/sections_layout.md`
+- `heading_audit.py` → `tasks/headings_numbering.md`
+
+### Figures / images
+- `images_audit.py`, `a11y_audit.py` → `tasks/images_figures.md`, `tasks/accessibility_a11y.md`
+- `captions_and_crossrefs.py` → `tasks/captions_crossrefs.md`
+
+### Tables / spreadsheets
+- `xlsx_to_docx_table.py` → `tasks/tables_spreadsheets.md`
+- `docx_table_to_csv.py` → `tasks/tables_spreadsheets.md`
+
+### Fields & references
+- `fields_report.py`, `fields_materialize.py` → `tasks/fields_update.md`
+- `insert_ref_fields.py`, `flatten_ref_fields.py` → `tasks/fields_update.md`, `tasks/captions_crossrefs.md`
+- `insert_toc.py` → `tasks/toc_workflow.md`
+
+### Review lifecycle (comments / tracked changes)
+- `add_tracked_replacements.py`, `accept_tracked_changes.py` → `tasks/clean_tracked_changes.md`
+- `comments_add.py`, `comments_extract.py`, `comments_apply_patch.py`, `comments_strip.py` → `tasks/comments_manage.md`
+
+### Privacy / publishing
+- `privacy_scrub.py` → `tasks/privacy_scrub_metadata.md`
+- `redact_docx.py` → `tasks/redaction_anonymization.md`
+- `watermark_add.py`, `watermark_audit_remove.py` → `tasks/watermarks_background.md`
+
+### Navigation & multi-doc assembly
+- `internal_nav.py` → `tasks/navigation_internal_links.md`
+- `merge_docx_append.py` → `tasks/multi_doc_merge.md`
+
+### Forms & protection
+- `content_controls.py` → `tasks/forms_content_controls.md`
+- `set_protection.py` → `tasks/protection_restrict_editing.md`
+
+### QA / regression
+- `render_and_diff.py`, `render_docx.py` → `tasks/compare_diff.md`, `tasks/verify_render.md`
+- `make_fixtures.py` → `tasks/fixtures_edge_cases.md`
+- `docx_ooxml_patch.py` → used across guides for targeted patches
+
+## Skill folder contents
+- `tasks/` — task playbooks (what to do step-by-step)
+- `ooxml/` — advanced OOXML patches (tracked changes, comments, hyperlinks, fields)
+- `scripts/` — reusable helper scripts
+- `examples/` — small runnable examples
+
+## Default workflow (80/20)
+
+**Rule of thumb:** every meaningful edit batch must end with a render + PNG review. No exceptions.
+"80/20" here means: follow the simplest workflow that covers *most* DOCX tasks reliably.
+
+**Golden path (don’t mix-and-match unless debugging):**
+1. **Author/edit with `python-docx`** (paragraphs, runs, styles, tables, headers/footers).
+2. **Render → inspect PNGs immediately** (DOCX → PNGs). Treat this as your feedback loop.
+3. **Fix and repeat** until the PNGs are visually perfect.
+4. **Only if needed**: use OOXML patching for tracked changes, comments, hyperlinks, or fields.
+5. **Re-render and inspect again** after *any* OOXML patch or layout-sensitive change.
+6. **Deliver only after the latest PNG review passes** (all pages, 100% zoom).
+
+## Visual review (recommended)
+Use the packaged renderer (dedicated LibreOffice profile + writable HOME):
+
+```bash
+python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+# If debugging LibreOffice:
+python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --verbose
+# Optional: also write <input_stem>.pdf to --output_dir (for debugging/archival):
+python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --emit_pdf
+```
+
+Then inspect the generated `page-<N>.png` files.
+
+**Success criteria (render + visual QA):**
+- PNGs exist for each page
+- Page count matches expectations
+- **Inspect every page at 100% zoom** (no “spot check” for final delivery)
+- No clipping/overlap, no broken tables, no missing glyphs, no header/footer misplacement
+
+**Note:** LibreOffice sometimes prints scary-looking stderr (e.g., `error : Unknown IO error`) even when output is correct. Treat the render as successful if the PNGs exist and look right (and if you used `--emit_pdf`, the PDF exists and is non-empty).
+
+### What rendering does and doesn’t validate
+
+- **Great for:** layout correctness, fonts, spacing, tables, headers/footers, and whether **tracked changes** visually appear.
+- **Not reliable for:** **comments** (often not rendered in headless PDF export). For comments, also do **structural checks** (comments.xml + anchors + rels + content-types).
+
+## Quality reminders
+- Don’t ship visible defects (clipped/overlapping text, broken tables, unreadable glyphs).
+- Don’t leak tool citation tokens into the DOCX (convert them to normal human citations).
+- Prefer ASCII punctuation (avoid exotic Unicode hyphens/dashes that render inconsistently).
+
+## Where to go next
+- If the task is **reading/reviewing**: `tasks/read_review.md`
+- If the task is **creating/editing**: `tasks/create_edit.md`
+- If you need an **accessibility audit** (alt text, headings, tables, links): `tasks/accessibility_a11y.md`
+- If you need to **extract or remove comments**: `tasks/comments_manage.md`
+- If you need to **restrict editing / make read-only**: `tasks/protection_restrict_editing.md`
+- If you need to **scrub personal metadata** (author/rsid/custom props): `tasks/privacy_scrub_metadata.md`
+- If you need to **merge/append DOCXs**: `tasks/multi_doc_merge.md`
+- If you need **format consistency / style cleanup**: `tasks/style_lint_normalize.md`
+- If you need **forms / content controls (SDTs)**: `tasks/forms_content_controls.md`
+- If you need **captions + cross-references**: `tasks/captions_crossrefs.md`
+- If you need **redaction/anonymization**: `tasks/redaction_anonymization.md`
+- If the task is **verification/raster review**: `tasks/verify_render.md`
+- If your render looks wrong but content is right (stale fields): `tasks/fields_update.md`
+- If you need a **Table of Contents**: `tasks/toc_workflow.md`
+- If you need **internal navigation links** (static TOC + Back-to-TOC + Top/Bottom): `tasks/navigation_internal_links.md`
+- If headings/numbering/TOC levels are messy: `tasks/headings_numbering.md`
+- If you have mixed portrait/landscape or margin weirdness: `tasks/sections_layout.md`
+- If images shift or overlap across renderers: `tasks/images_figures.md`
+- If you need spreadsheet ↔ table round-tripping: `tasks/tables_spreadsheets.md`
+- If you need **tracked changes (redlines)**: `ooxml/tracked_changes.md`
+- If you need **comments**: `ooxml/comments.md`
+- If you need **hyperlinks/fields/page numbers/headers**: `ooxml/hyperlinks_and_fields.md`
+- If LibreOffice headless is failing: `troubleshooting/libreoffice_headless.md`
+- If you need a **clean copy** with tracked changes accepted: `tasks/clean_tracked_changes.md`
+- If you need to **diff two DOCXs** (render + per-page diff): `tasks/compare_diff.md`
+- If you need **templates / style packs (DOTX)**: `tasks/templates_style_packs.md`
+- If you need **watermark audit/removal**: `tasks/watermarks_background.md`
+- If you need **true footnotes/endnotes**: `tasks/footnotes_endnotes.md`
+- If you want reproducible fixtures for edge cases: `tasks/fixtures_edge_cases.md`
+
+---PDF---
+---
+name: pdfs
+description: Reliable, workflow-driven PDF processing: render → verify → operate → re-render/verify, covering reading, inspection, extraction, editing, forms, OCR, redaction, conversion, and diffing. Prefer authoring in DOCX or PPTX (then converting to PDF) for text-heavy docs or slide-like layouts; use ReportLab here for programmatic PDF generation.
+---
+
+# PDF Skill (Read • Inspect • Extract • Edit • Render • Forms • OCR • Redact • Convert • Diff)
+
+This skill is designed for **reliable, workflow-driven** PDF work: **render -> verify -> operate -> re-render verify**.
+
+## Before you touch PDFs: should this be DOCX/PPTX instead?
+
+Even if the user asks for a PDF deliverable, the best workflow is often:
+
+- **Text-heavy, business-doc layout (headings, TOC, long tables, rich lists)** -> use the **DOCX skill** to author, then convert to PDF with `lo_convert_to_pdf.py`.
+- **Slide-like visual layout (charts, callouts, fixed positioning, figure captions)** -> use the **Slides skill** (PPTX) to author, then export to PDF.
+- **Programmatic generation** -> ReportLab (this skill) is fine.
+
+If you find yourself hand-tuning line breaks or typography in ReportLab, you probably picked the wrong authoring format.
+
+---
+
+## Core loop (always)
+
+1) Render to images
+
+```bash
+python /home/oai/skills/pdfs/scripts/render_pdf.py input.pdf --out_dir /mnt/data/_renders/in --dpi 200
+```
+
+2) Inspect PNGs (tables/figures/layout are authoritative)
+
+3) Perform the edit/extract/create
+
+4) Re-render and compare
+
+```bash
+python /home/oai/skills/pdfs/scripts/compare_renders.py before.pdf after.pdf --out_dir /mnt/data/_diff --dpi 200
+```
+
+---
+
+## Task index (progressive)
+
+Start with the smallest task that answers the user:
+
+### Read / review
+- `tasks/read_review.md`
+
+### Extract (text/layout/tables/images/attachments/forms)
+- `tasks/extract.md`
+- `tasks/coords.md` (coordinate sanity)
+
+### Edit (merge/split/rotate/crop/watermark/paginate/encrypt/repair)
+- `tasks/edit.md`
+- `tasks/compare.md` (visual regression)
+
+### Forms
+- Fillable forms: `tasks/forms_annotations.md`
+- Debugging/introspection: `tasks/forms_debugging.md`
+- Non-fillable / stamping workflow: `tasks/forms_nonfillable.md`
+
+### OCR
+- `tasks/ocr.md`
+
+### Preflight / normalize
+- `tasks/preflight.md`
+
+### Redaction
+- `tasks/redact.md`
+
+### Renderer parity
+- `tasks/parity.md`
+
+### Batch processing
+- `tasks/batch.md`
+
+### Create / convert
+- `tasks/create.md`
+- `tasks/convert.md`
+- `tasks/js_tools.md` (pdf-lib, pdfjs)
+
+
+---
+
+## Package map (where things live)
+
+This pack includes a `manifest.txt` that is a **pure list of relative file paths** used by download tooling.
+
+Quick map:
+
+- **tasks/** (what to do)
+  - `read_review.md` - render-first reading/review
+  - `extract.md` - extract text/layout/tables/images/attachments/forms
+  - `coords.md` - coordinate system cheatsheet (PDF pt vs image px)
+  - `edit.md` - merge/split/select/rotate/crop/watermark/paginate/encrypt/repair
+  - `compare.md` - visual diff workflow
+  - `forms_annotations.md` - fillable forms + appearance pitfalls + correctness checklist
+  - `forms_debugging.md` - widget-level introspection + acceptable values
+  - `forms_nonfillable.md` - stamp-by-boxes workflow for non-fillable forms
+  - `ocr.md` - OCR scanned PDFs to searchable
+  - `preflight.md` - quick triage + normalization guidance
+  - `redact.md` - true redaction workflows
+  - `parity.md` - render parity across engines
+  - `batch.md` - batch helpers for corpora
+  - `create.md` - choose reportlab/latex/html/docx/pptx pipeline
+  - `convert.md` - docx/pptx/html/markdown/latex to PDF conversion
+  - `js_tools.md` - pdf-lib/pdfjs helper CLIs
+
+- **scripts/** (run these)
+  - `render_pdf.py` - render to PNGs (pdfium or poppler)
+  - `compare_renders.py` - render-and-diff two PDFs (pixel diff)
+  - `pdf_inspect.py` - metadata/structure overview
+  - `pdf_extract.py` - text/words/chars/tables/images/attachments/annots/forms
+  - `pdf_edit.py` - editing toolkit (merge/split/select/rotate/crop/watermark/paginate/encrypt/repair/optimize)
+  - `pdf_preflight.py` - preflight/triage warnings
+  - `pdf_redact.py` - true redaction (remove underlying content)
+  - `renderer_parity.py` - diff pdftoppm vs pdfium renders
+  - `batch_pdf.py` - batch runner for common ops
+  - `box_picker_html.py` - generate interactive HTML to pick rectangles -> JSON in PDF coords
+  - `place_text_by_boxes.py` - stamp text/checkmarks into rectangles (non-fillable forms)
+  - `ocr_pdf.py` - OCR wrapper
+  - `html_to_pdf.py`, `md_to_pdf.py`, `latex_to_pdf.py`, `lo_convert_to_pdf.py` - conversion helpers
+
+- **js/** (Node helpers)
+  - `install_deps.sh` - installs pdf-lib + pdfjs-dist
+  - `fill_form.mjs` - fill + optional flatten (supports flags and positional args)
+  - `extract_form_fields.mjs` - list AcroForm fields
+  - `extract_text_pdfjs.mjs` - extract text via pdfjs-dist
+
+- **examples/**
+  - `smoke_test.md` - runnable smoke flows
+
+- **troubleshooting/**
+  - `common.md` - common pitfalls and fixes
+
+---
+
+## Final deliverable expectations
+
+- No clipped text, overlaps, black squares, or broken glyphs in rendered PNGs.
+- Verify in at least **one** renderer (`pdfium` or `pdftoppm`). For tricky forms, verify in **two**.
+- Remove intermediate artifacts from the deliverable folder (keep only final PDF(s)).
+- Avoid Unicode dashes that some renderers mishandle; prefer ASCII `-`.
+Finalizing content details and verification
+I need to create content, possibly using the current date or timing from previous research. The user mentioned course details, so I may need to verify those online, especially if I’m including current course dates. I’ll also check for any potential name conflicts. I'll put everything in DOCX and PDF format and zip it up.
+
+Finalizing reusable content creation
+The user is asking for reusable content related to the launch pack, which means I’ll include at least one writing block, possibly core positioning or a primary headline. I’ll check the existing master zip to see if source assets are there, then create a new version of the master zip with the updated content.
+
+Inspecting contents of seller master zip
+bash -lc unzip -l /mnt/data/SHIPSAFE_AI_Seller_Master_v1.0.zip | sed -n '1,240p'
+Archive:  /mnt/data/SHIPSAFE_AI_Seller_Master_v1.0.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+     2566  2026-06-13 02:03   SHIPSAFE_AI_v1.0/00_START_HERE/FILE_INVENTORY.txt
+    47270  2026-06-13 02:00   SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Operating_Manual.docx
+   229275  2026-06-13 02:01   SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Operating_Manual.pdf
+    39546  2026-06-13 02:02   SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Quick_Start.docx
+    70780  2026-06-13 02:02   SHIPSAFE_AI_v1.0/00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf
+      996  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/.cursor/rules/shipsafe.mdc
+     1504  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/AGENTS.md
+      968  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/CLAUDE.md
+      908  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/DO_NOT_BREAK_MY_APP.md
+      968  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/GEMINI.md
+      330  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/TASK_COMPLETION_REPORT.md
+     3306  2026-06-13 02:00   SHIPSAFE_AI_v1.0/01_AGENT_GUARDRAILS/UNIVERSAL_PROJECT_GUARDRAILS.md
+      345  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/ACCEPTANCE_CRITERIA.md
+      319  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/CHANGE_PLAN.md
+      119  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/DECISION_LOG.md
+      605  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/DEFINITION_OF_DONE.md
+      528  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/PROJECT_CONTEXT.md
+      432  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/PROTECTED_FILES.md
+      542  2026-06-13 02:00   SHIPSAFE_AI_v1.0/02_PROJECT_CONTROL/SCOPE_LOCK.md
+      888  2026-06-13 02:00   SHIPSAFE_AI_v1.0/03_TESTING_AND_QA/FAILURE_MODE_TESTS.md
+     1072  2026-06-13 02:00   SHIPSAFE_AI_v1.0/03_TESTING_AND_QA/MANUAL_QA_CHECKLIST.md
+      782  2026-06-13 02:00   SHIPSAFE_AI_v1.0/03_TESTING_AND_QA/REGRESSION_TEST_MATRIX.csv
+      496  2026-06-13 02:00   SHIPSAFE_AI_v1.0/03_TESTING_AND_QA/RELEASE_EVIDENCE_PACKET.md
+      879  2026-06-13 02:00   SHIPSAFE_AI_v1.0/03_TESTING_AND_QA/TEST_STRATEGY.md
+      665  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/AUTHORIZATION_TESTS.md
+      567  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/AUTHORIZATION_TEST_MATRIX.csv
+      847  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/PROMPT_INJECTION_AND_AGENT_TESTS.md
+      886  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/SECRETS_CHECKLIST.md
+     1786  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/SECURITY_PREFLIGHT.md
+      892  2026-06-13 02:00   SHIPSAFE_AI_v1.0/04_SECURITY_PREFLIGHT/SUPABASE_RLS_TEST_GUIDE.md
+      870  2026-06-13 02:00   SHIPSAFE_AI_v1.0/05_CHECKPOINTS_AND_ROLLBACK/CHECKPOINT_PROTOCOL.md
+     1227  2026-06-13 02:00   SHIPSAFE_AI_v1.0/05_CHECKPOINTS_AND_ROLLBACK/RECOVERY_RUNBOOK.md
+      432  2026-06-13 02:00   SHIPSAFE_AI_v1.0/05_CHECKPOINTS_AND_ROLLBACK/ROLLBACK_PLAN.md
+      540  2026-06-13 02:00   SHIPSAFE_AI_v1.0/05_CHECKPOINTS_AND_ROLLBACK/scripts/collect-recovery-context.sh
+      727  2026-06-13 02:00   SHIPSAFE_AI_v1.0/05_CHECKPOINTS_AND_ROLLBACK/scripts/create-known-good-checkpoint.sh
+      624  2026-06-13 02:00   SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS/GO_NO_GO_DECISION.md
+      320  2026-06-13 02:00   SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS/LAUNCH_READINESS_CERTIFICATE_TEMPLATE.md
+      648  2026-06-13 02:00   SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS/POST_DEPLOY_SMOKE_TEST.md
+    31554  2026-06-13 02:00   SHIPSAFE_AI_v1.0/06_LAUNCH_READINESS/SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx
+      637  2026-06-13 02:00   SHIPSAFE_AI_v1.0/07_CAPSTONE_AND_PORTFOLIO/CAPSTONE_PLANNER.md
+      253  2026-06-13 02:00   SHIPSAFE_AI_v1.0/07_CAPSTONE_AND_PORTFOLIO/CASE_STUDY_TEMPLATE.md
+      610  2026-06-13 02:00   SHIPSAFE_AI_v1.0/07_CAPSTONE_AND_PORTFOLIO/DEMO_SCRIPT.md
+      348  2026-06-13 02:00   SHIPSAFE_AI_v1.0/07_CAPSTONE_AND_PORTFOLIO/README_TEMPLATE.md
+      554  2026-06-13 02:00   SHIPSAFE_AI_v1.0/07_CAPSTONE_AND_PORTFOLIO/SUBMISSION_CHECKLIST.md
+      560  2026-06-13 02:00   SHIPSAFE_AI_v1.0/08_CLIENT_AND_COMMERCIAL/AUDIT_REPORT_TEMPLATE.md
+      670  2026-06-13 02:00   SHIPSAFE_AI_v1.0/08_CLIENT_AND_COMMERCIAL/CLIENT_INTAKE.md
+    39258  2026-06-13 02:02   SHIPSAFE_AI_v1.0/08_CLIENT_AND_COMMERCIAL/Client_Readiness_Audit_Template.docx
+    74154  2026-06-13 02:02   SHIPSAFE_AI_v1.0/08_CLIENT_AND_COMMERCIAL/Client_Readiness_Audit_Template.pdf
+      507  2026-06-13 02:00   SHIPSAFE_AI_v1.0/08_CLIENT_AND_COMMERCIAL/DELIVERABLE_ACCEPTANCE.md
+     1001  2026-06-13 02:00   SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/12_POINT_FAST_TEST.md
+     4085  2026-06-13 02:03   SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/12_Point_AI_App_Fast_Test_Printable.pdf
+      388  2026-06-13 02:00   SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/AGENT_TASK_BRIEF.md
+      170  2026-06-13 02:00   SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/AI_APP_RISK_REGISTER.md
+     4148  2026-06-13 02:00   SHIPSAFE_AI_v1.0/09_BONUS_QUICK_TOOLS/SCANNER_QUESTION_BANK.json
+     6526  2026-06-13 02:03   SHIPSAFE_AI_v1.0/CHECKSUMS_SHA256.txt
+      782  2026-06-13 02:00   SHIPSAFE_AI_v1.0/DISCLAIMER.txt
+      828  2026-06-13 02:00   SHIPSAFE_AI_v1.0/LICENSE.txt
+      972  2026-06-13 02:00   SHIPSAFE_AI_v1.0/README.md
+      780  2026-06-13 02:03   SHIPSAFE_AI_v1.0/SELLER_PACKAGING_MAP.md
+     1386  2026-06-13 02:00   SHIPSAFE_AI_v1.0/SOURCE_REFERENCES.md
+      133  2026-06-13 02:00   SHIPSAFE_AI_v1.0/VERSION.txt
+---------                     -------
+   586759                     61 files
+Building and verifying content for launch pack
+I’ll extract the seller master to a working directory, add a new folder for the launch pack, and create a DOCX with 50 pages of content. Since the user is happy and asked to continue, I won’t need new web research, but I’ll align with current pricing and campaign dates. I'll also check current course details and traction with AI coding agents, focusing on official sources.
+
+Creating docx with content, pricing, and details
+Creating launch content and packaging it
+I need to create a detailed 35-50 page document using Python-docx and source content for a seller-only ZIP package. This should include several markdown files and DOCX files like the commercial launch master and campaign materials. I'll also be careful to reference past assets and ensure the feature list is accurate. Once everything is written, I’ll zip up the files.
+
+Extracting files and checking contents
+The file is in a zip, and the source folder might not show the DOCX directly. I’ll extract the seller master to a working directory. Once I do that, I’ll check the README and inventory to ensure I have everything needed—might need to confirm the files and contents are all intact.
+
+Extracting and inspecting source files for content generation
+bash -lc rm -rf /mnt/data/shipsafe_launch_work && mkdir -p /mnt/data/shipsafe_launch_work && cd /mnt/data/shipsafe_launch_work && unzip -q /mnt/data/SHIPSAFE_AI_Seller_Master_v1.0.zip && sed -n '1,220p' SHIPSAFE_AI_v1.0/README.md && printf '\n--- inventory ---\n' && sed -n '1,240p' SHIPSAFE_AI_v1.0/00_START_HERE/FILE_INVENTORY.txt
+# SHIPSAFE AI v1.0
+
+Production guardrails, verification controls, security checks, and recovery procedures for AI-built applications.
+
+## Start here
+
+1. Open `00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf`.
+2. Copy the appropriate instruction file from `01_AGENT_GUARDRAILS` into your project.
+3. Complete `02_PROJECT_CONTROL/PROJECT_CONTEXT.md` and `SCOPE_LOCK.md`.
+4. Use `06_LAUNCH_READINESS/SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx` to assess the project.
+5. Do not launch while any Critical control is failed or unknown.
+
+## Operating rule
+
+A coding agent's statement that work is complete is not evidence. Completion requires independently reviewable proof: changed files, commands run, test output, security checks, and acceptance-criteria results.
+
+## Important limitation
+
+SHIPSAFE AI is an engineering control framework, not a security guarantee, legal opinion, compliance certification, penetration test, or substitute for qualified review of high-risk systems.
+
+--- inventory ---
+00_START_HERE/FILE_INVENTORY.txt
+00_START_HERE/SHIPSAFE_AI_Operating_Manual.docx
+00_START_HERE/SHIPSAFE_AI_Operating_Manual.pdf
+00_START_HERE/SHIPSAFE_AI_Quick_Start.docx
+00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf
+01_AGENT_GUARDRAILS/.cursor/rules/shipsafe.mdc
+01_AGENT_GUARDRAILS/AGENTS.md
+01_AGENT_GUARDRAILS/CLAUDE.md
+01_AGENT_GUARDRAILS/DO_NOT_BREAK_MY_APP.md
+01_AGENT_GUARDRAILS/GEMINI.md
+01_AGENT_GUARDRAILS/TASK_COMPLETION_REPORT.md
+01_AGENT_GUARDRAILS/UNIVERSAL_PROJECT_GUARDRAILS.md
+02_PROJECT_CONTROL/ACCEPTANCE_CRITERIA.md
+02_PROJECT_CONTROL/CHANGE_PLAN.md
+02_PROJECT_CONTROL/DECISION_LOG.md
+02_PROJECT_CONTROL/DEFINITION_OF_DONE.md
+02_PROJECT_CONTROL/PROJECT_CONTEXT.md
+02_PROJECT_CONTROL/PROTECTED_FILES.md
+02_PROJECT_CONTROL/SCOPE_LOCK.md
+03_TESTING_AND_QA/FAILURE_MODE_TESTS.md
+03_TESTING_AND_QA/MANUAL_QA_CHECKLIST.md
+03_TESTING_AND_QA/REGRESSION_TEST_MATRIX.csv
+03_TESTING_AND_QA/RELEASE_EVIDENCE_PACKET.md
+03_TESTING_AND_QA/TEST_STRATEGY.md
+04_SECURITY_PREFLIGHT/AUTHORIZATION_TESTS.md
+04_SECURITY_PREFLIGHT/AUTHORIZATION_TEST_MATRIX.csv
+04_SECURITY_PREFLIGHT/PROMPT_INJECTION_AND_AGENT_TESTS.md
+04_SECURITY_PREFLIGHT/SECRETS_CHECKLIST.md
+04_SECURITY_PREFLIGHT/SECURITY_PREFLIGHT.md
+04_SECURITY_PREFLIGHT/SUPABASE_RLS_TEST_GUIDE.md
+05_CHECKPOINTS_AND_ROLLBACK/CHECKPOINT_PROTOCOL.md
+05_CHECKPOINTS_AND_ROLLBACK/RECOVERY_RUNBOOK.md
+05_CHECKPOINTS_AND_ROLLBACK/ROLLBACK_PLAN.md
+05_CHECKPOINTS_AND_ROLLBACK/scripts/collect-recovery-context.sh
+05_CHECKPOINTS_AND_ROLLBACK/scripts/create-known-good-checkpoint.sh
+06_LAUNCH_READINESS/GO_NO_GO_DECISION.md
+06_LAUNCH_READINESS/LAUNCH_READINESS_CERTIFICATE_TEMPLATE.md
+06_LAUNCH_READINESS/POST_DEPLOY_SMOKE_TEST.md
+06_LAUNCH_READINESS/SHIPSAFE_AI_Launch_Readiness_Scorecard.xlsx
+07_CAPSTONE_AND_PORTFOLIO/CAPSTONE_PLANNER.md
+07_CAPSTONE_AND_PORTFOLIO/CASE_STUDY_TEMPLATE.md
+07_CAPSTONE_AND_PORTFOLIO/DEMO_SCRIPT.md
+07_CAPSTONE_AND_PORTFOLIO/README_TEMPLATE.md
+07_CAPSTONE_AND_PORTFOLIO/SUBMISSION_CHECKLIST.md
+08_CLIENT_AND_COMMERCIAL/AUDIT_REPORT_TEMPLATE.md
+08_CLIENT_AND_COMMERCIAL/CLIENT_INTAKE.md
+08_CLIENT_AND_COMMERCIAL/Client_Readiness_Audit_Template.docx
+08_CLIENT_AND_COMMERCIAL/Client_Readiness_Audit_Template.pdf
+08_CLIENT_AND_COMMERCIAL/DELIVERABLE_ACCEPTANCE.md
+09_BONUS_QUICK_TOOLS/12_POINT_FAST_TEST.md
+09_BONUS_QUICK_TOOLS/12_Point_AI_App_Fast_Test_Printable.pdf
+09_BONUS_QUICK_TOOLS/AGENT_TASK_BRIEF.md
+09_BONUS_QUICK_TOOLS/AI_APP_RISK_REGISTER.md
+09_BONUS_QUICK_TOOLS/SCANNER_QUESTION_BANK.json
+DISCLAIMER.txt
+LICENSE.txt
+README.md
+SELLER_PACKAGING_MAP.md
+SOURCE_REFERENCES.md
+VERSION.txt
+Designing and creating launch document
+I’ll build the document using a Python script, focusing on the core launch message and course details. No need for heavy research, just key references like market timing, URLs, and course alignment. I’ll include source notes at the end for clarity. Using Python-docx, I will create a structured DOCX with custom styles, including a cover page and optional table of contents.
+
+Creating ship-safe AI launch content
+I need to write about 70 pages, focusing on structured content with markdown files. I’ll include posts for the 7-day campaign in separate documents, along with a master doc. I’ll stick to the working name "SHIPSAFE AI" for now, and the visual style will include dark navy, teal, and amber accents. Standard fonts for consistency and tables to organize details. I'll also include pricing, maybe proposing $39/$129 for launch tiers and $59/$179 for standard.
+
+Building detailed campaign and content materials
+I need to produce copy for checkout, listings, microcopy, and graphics directions. For example, 10 static cards for carousel, product mockups, and 7 ad-free social posts, along with other assets for a 7-day launch plan. I'll also need email and DM copy, SEO titles, and content for a free diagnostic funnel including landing page, questions, score bands, and CTAs for marketability.
+
+Creating and organizing launch assets
+I need to prepare the launch operations checklist, brand guide, and several asset files
+
+Building content and validating layout
+I’m aiming for roughly 60-80 pages for the main document but aim for efficiency, generating markdown files first. Once the content is ready, I’ll concatenate everything into the master doc. For layout, I’ll script the process, ensuring high-quality images and contact sheets, inspecting each rendered page carefully at 130 dpi.
+
+Evaluating revenue projections based on usage data analysis
+bash -lc cat > /mnt/data/shipsafe_launch_build.py <<'PY'
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
+from docx.enum.section import WD_SECTION
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.enum.style import WD_STYLE_TYPE
+from docx.enum.text import WD_LINE_SPACING
+from pathlib import Path
+import shutil, os, json, hashlib, textwrap, zipfile, datetime
+
+ROOT = Path('/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0')
+if ROOT.exists():
+    shutil.rmtree(ROOT)
+ROOT.mkdir(parents=True)
+COPY = ROOT / 'COPY_BANK'
+COPY.mkdir()
+OPS = ROOT / 'SELLER_OPERATIONS'
+OPS.mkdir()
+VIS = ROOT / 'VISUAL_COPY'
+VIS.mkdir()
+
+NAVY = '0B1220'
+TEAL = '0E7490'
+LIGHT_TEAL = 'CFFAFE'
+SLATE = '334155'
+LIGHT = 'F1F5F9'
+MID = 'CBD5E1'
+WHITE = 'FFFFFF'
+RED = '991B1B'
+LIGHT_RED = 'FEE2E2'
+AMBER = '92400E'
+LIGHT_AMBER = 'FEF3C7'
+GREEN = '166534'
+LIGHT_GREEN = 'DCFCE7'
+
+# ---------- Content ----------
+brand = {
+    'name': 'SHIPSAFE AI',
+    'category': 'Launch assurance for AI-built applications',
+    'one_liner': 'A production guardrail, verification, security, and recovery system for applications built with AI coding agents.',
+    'core_promise': 'Know whether your AI-built app is genuinely safe, functional, and ready to launch - then fix what is not.',
+    'primary_headline': 'Your AI-built app working is not proof that it is ready to launch.',
+    'secondary_headline': 'Stop guessing. Verify the code, permissions, data, tests, recovery path, and launch evidence before real users expose the gaps.',
+    'enemy': 'Fluent false confidence: an application that looks finished while critical controls remain unverified.',
+    'mechanism': 'The SHIPSAFE Verification Loop: Constrain -> Inspect -> Test -> Secure -> Recover -> Prove -> Launch.',
+    'tone': ['Precise', 'Authoritative', 'Calm', 'Protective', 'Evidence-led', 'Anti-hype'],
+    'avoid': ['fearmongering', 'guaranteed-security claims', 'generic AI imagery', 'developer gatekeeping', 'vague “best practice” filler', 'unlimited support promises'],
+}
+
+pricing = [
+    {
+        'tier':'SHIPSAFE Solo',
+        'launch':'US$39',
+        'standard':'US$59',
+        'buyer':'A founder, learner, operator, or independent builder launching their own applications.',
+        'rights':'Use for projects owned and operated by the purchaser. No client-service use, resale, redistribution, sublicensing, or template sharing.',
+        'contains':'Finished operating manual, quick start, agent guardrails, project-control templates, testing and security checks, checkpoint and rollback procedures, readiness scorecard, capstone assets, and bonus quick tools.',
+    },
+    {
+        'tier':'SHIPSAFE Commercial',
+        'launch':'US$129',
+        'standard':'US$179',
+        'buyer':'A freelancer, consultant, studio, or agency applying the system inside paid client work.',
+        'rights':'Use internally across client engagements and deliver completed reports or adapted outputs to clients. The underlying files, templates, and system may not be resold, redistributed, sublicensed, or offered as a competing template product.',
+        'contains':'Everything in Solo, plus editable premium source documents, client intake, audit-report assets, acceptance templates, and commercial project-use rights.',
+    }
+]
+
+features = [
+    ('Agent guardrails', 'Persistent instructions for Claude Code, Codex, Gemini, Cursor, and other coding agents so working code, protected files, tests, and high-risk decisions are not casually overwritten.'),
+    ('Scope and change control', 'Project context, scope lock, protected-file list, change plan, acceptance criteria, decision log, and definition of done.'),
+    ('Testing and failure verification', 'Manual QA, regression test matrix, failure-mode tests, release evidence, and a requirement that completion claims be supported by proof.'),
+    ('Security preflight', 'Authorization, secrets, prompt-injection, input, storage, RLS, dependency, and data-leakage checks.'),
+    ('Checkpoints and recovery', 'Known-good checkpoints, rollback planning, recovery context collection, and an emergency recovery runbook.'),
+    ('Launch-readiness scoring', 'A weighted spreadsheet with 68 controls, category scores, critical-failure tracking, and an evidence-based go/no-go decision.'),
+    ('Capstone and portfolio pack', 'Project planner, submission checklist, README, demo script, and case-study structure.'),
+    ('Commercial audit system', 'Client intake, readiness audit, report structure, and deliverable acceptance tools for paid client work.'),
+]
+
+hidden_failures = [
+    ('The interface works, but the data is mocked.', 'A generated fallback, fixture, or static response can make a broken integration appear functional.'),
+    ('Authentication works, but authorization does not.', 'A user may be signed in and still be able to retrieve another user’s records by changing an identifier.'),
+    ('The secret is outside .env, but still inside the browser bundle.', 'Public client code, build-time variables, logs, or source maps can expose credentials and private configuration.'),
+    ('The agent “fixed” the error by hiding it.', 'Broad exception handling, empty fallbacks, removed validation, or suppressed errors can convert a visible failure into false success.'),
+    ('A working feature was changed during an unrelated task.', 'Without protected files, regression checks, and a minimal-diff rule, local improvement can create remote damage.'),
+    ('The repository can be rolled back, but the database cannot.', 'Code recovery does not reverse destructive or incompatible data migrations.'),
+    ('Admin controls are hidden, not protected.', 'A missing button is not server-side authorization.'),
+    ('The app passed the developer’s session, not a clean-user test.', 'Cookies, cached permissions, local state, and privileged accounts can conceal first-user failures.'),
+]
+
+who_for = [
+    'Nontechnical and lightly technical founders using AI coding agents to ship products.',
+    'Developers who want persistent control files and evidence requirements around agentic coding.',
+    'Google/Kaggle course participants completing an AI-agent capstone during June 15-19, 2026.',
+    'Freelancers and consultants who need a repeatable readiness audit before handing client projects over.',
+    'Builders using Claude Code, Codex, Gemini, Cursor, Supabase, or comparable agentic development workflows.',
+]
+who_not = [
+    'Anyone seeking a security guarantee, penetration test, legal opinion, or compliance certification.',
+    'Teams unwilling to inspect evidence or make launch decisions themselves.',
+    'Buyers wanting a one-click tool that automatically fixes every codebase.',
+    'People looking for a generic prompt dump or a “make money overnight” guide.',
+]
+
+faq = [
+    ('Is SHIPSAFE AI a security guarantee?', 'No. It is an engineering control and verification framework. It reduces avoidable uncertainty and exposes missing evidence, but it is not a penetration test, compliance certification, legal opinion, or guarantee against defects or attacks.'),
+    ('Do I need to be a developer?', 'No. The Quick Start, scorecard, checklists, and agent files are designed to make technical verification legible to nontechnical builders. Some remediation work may still require qualified technical help.'),
+    ('Which coding agents does it support?', 'The pack includes dedicated files for Claude Code, Codex-style AGENTS.md workflows, Gemini, and Cursor, plus universal guardrails that can be adapted to other agents.'),
+    ('Does it scan my private code?', 'No. The product is delivered as local files and templates. Buyers decide what to share with their tools. The 12-point fast test and readiness scorecard can be completed without uploading source code to SHIPSAFE.'),
+    ('Will it fix my application automatically?', 'No. It tells the builder and their coding agent what must be verified, what evidence is missing, where launch risk exists, and how to control, test, and recover the work.'),
+    ('What is the difference between Solo and Commercial?', 'Solo is for projects owned and operated by the purchaser. Commercial adds client-use rights, editable premium source materials, and client audit assets for paid engagements.'),
+    ('Can I resell the templates?', 'No. Neither licence permits resale, redistribution, sublicensing, white-labelling of the underlying system, or offering the files as a competing template product.'),
+    ('Can I use Commercial for multiple clients?', 'Yes, inside paid client work, subject to the included licence. You may deliver completed reports and project-specific outputs, but not the reusable source system itself.'),
+    ('Is this only useful during the Google/Kaggle course?', 'No. The course provides a timely acquisition angle. The controls are evergreen for any AI-built app, agent, micro-SaaS, internal tool, or client project.'),
+    ('What happens after purchase?', 'The buyer downloads the edition they purchased, opens the Quick Start, installs the appropriate guardrail files, completes project context and scope controls, runs the readiness assessment, resolves failures, and records the go/no-go decision.'),
+    ('Are updates included?', 'The purchase covers the version delivered. Do not promise lifetime updates or implementation support unless you intentionally add those terms later.'),
+    ('Why is “Unknown” treated as zero in the scorecard?', 'Because an unverified control is not evidence of safety or correctness. The framework rewards proof, not assumption.'),
+]
+
+objections = [
+    ('“My app already works.”', 'Working in one session proves only that one path produced an acceptable result once. It does not verify authorization, data isolation, failure behavior, secret handling, regression protection, recovery, or a clean-user journey.'),
+    ('“My AI tool already tests its work.”', 'The same system that generated the implementation should not be the only authority deciding whether it is complete. SHIPSAFE requires independently reviewable evidence and explicit launch criteria.'),
+    ('“I can ask ChatGPT for a checklist.”', 'A generated checklist is not a persistent operating system. SHIPSAFE connects agent boundaries, project scope, security tests, regression protection, recovery, evidence, scoring, and licensing into one reusable workflow.'),
+    ('“I can use free security scanners.”', 'Automated scanners are useful but narrow. They do not confirm business logic, mock data, acceptance criteria, authorization journeys, agent scope, rollback readiness, or whether a failure was converted into fake success.'),
+    ('“This sounds too technical.”', 'The product is specifically designed to translate technical launch risk into structured questions, pass/fail evidence, and a clear go/no-go decision.'),
+    ('“I will deal with it after launch.”', 'After launch, every unresolved issue is exposed to real users, real data, public reputation, and production dependencies. The cheapest time to create a checkpoint and prove access boundaries is before release.'),
+    ('“I only built a small MVP.”', 'Small scope lowers complexity; it does not eliminate authentication, data, credential, failure, billing, or recovery risk.'),
+]
+
+# Sales page sections
+sales_page = [
+    ('HERO', [
+        brand['primary_headline'],
+        brand['secondary_headline'],
+        'SHIPSAFE AI gives builders the exact guardrails, tests, security checks, rollback procedures, and evidence system required to move from “it seems to work” to an informed launch decision.',
+        'Primary CTA: Get SHIPSAFE AI',
+        'Secondary CTA: See what it checks',
+        'Trust line: Local files. No source-code upload required. No subscription. No false guarantee.',
+    ]),
+    ('THE PROBLEM', [
+        'AI coding agents can create complete-looking applications quickly. They can also modify multiple files, run commands, invent plausible implementation details, hide failed integrations behind fallbacks, and declare a task complete without independently proving the result.',
+        'That creates a new category of launch risk: fluent false confidence.',
+        'The application may look finished while its permissions, data boundaries, secrets, failure paths, tests, recovery procedures, or production configuration remain unverified.',
+    ]),
+    ('THE COST OF GUESSING', [
+        'A broken button is visible. A missing authorization check is not.',
+        'A syntax error stops the build. Mocked success can pass a demonstration.',
+        'A failed deployment is obvious. A database migration with no recovery path may appear successful until rollback is needed.',
+        'SHIPSAFE AI is designed for the invisible failures - the ones that survive a superficial demo.',
+    ]),
+    ('THE MECHANISM', [
+        brand['mechanism'],
+        '1. Constrain: define scope, protected files, decision gates, and what the agent may change.',
+        '2. Inspect: inventory generated code, dependencies, data paths, permissions, mocks, and external integrations.',
+        '3. Test: verify primary journeys, failure modes, clean-user behavior, and regression protection.',
+        '4. Secure: test authorization, secrets, inputs, storage, RLS, agent permissions, and prompt-injection boundaries.',
+        '5. Recover: create known-good checkpoints, version migrations, and prove the rollback procedure.',
+        '6. Prove: collect changed files, commands, test output, security results, and acceptance-criteria evidence.',
+        '7. Launch: make an explicit go/no-go decision using the readiness score, critical controls, and residual-risk record.',
+    ]),
+    ('WHAT IS INCLUDED', [f'{name}: {desc}' for name, desc in features]),
+    ('THE READINESS SCORECARD', [
+        'The included spreadsheet evaluates 68 launch controls across scope, recovery, functional correctness, authentication, data privacy, secrets, AI safety, observability, deployment, and agent evidence.',
+        'Unknown controls score zero until verified. Critical failures remain visible. Category scores reveal exactly where launch confidence is weakest.',
+        'The output is not a decorative badge. It is an evidence-led decision: Launch Ready, Conditional Launch, Staging Ready, High Risk, or Stop - Not Ready.',
+    ]),
+    ('WHO IT IS FOR', who_for),
+    ('WHO IT IS NOT FOR', who_not),
+    ('WHY IT IS DIFFERENT', [
+        'Not a prompt bundle. The files become persistent project controls.',
+        'Not a generic checklist. The controls connect to evidence, scoring, rollback, and release decisions.',
+        'Not an automated-security promise. The product clearly separates verification from guarantee.',
+        'Not tied to one platform. Dedicated and universal files support multiple coding-agent workflows.',
+        'Not support-dependent. The buyer receives a self-contained system with a defined operating sequence.',
+    ]),
+    ('HOW TO USE IT', [
+        '1. Open the three-page Quick Start.',
+        '2. Copy the appropriate agent instruction file into the project.',
+        '3. Complete Project Context, Scope Lock, Protected Files, and Acceptance Criteria.',
+        '4. Create a known-good checkpoint.',
+        '5. Run the Launch Readiness Scorecard and authorization/regression tests.',
+        '6. Resolve or explicitly accept remaining risk.',
+        '7. Complete the release evidence packet and go/no-go decision.',
+    ]),
+    ('PRICING', [
+        'SHIPSAFE Solo - US$39 founding launch price; US$59 standard price.',
+        'SHIPSAFE Commercial - US$129 founding launch price; US$179 standard price.',
+        'One-time purchase. No subscription. No implementation service included. Licence terms apply.',
+    ]),
+    ('FINAL CTA', [
+        'Do not ask an AI coding agent whether its own work is safe to launch.',
+        'Give the project boundaries. Demand evidence. Test the invisible paths. Preserve a recovery point. Make the launch decision yourself.',
+        'CTA: Get SHIPSAFE AI',
+        'Microcopy: Download the complete edition immediately after purchase. Start with the Quick Start. Keep the master files private.',
+    ]),
+]
+
+checkout_copy = {
+    'solo_title':'SHIPSAFE AI - Solo Edition',
+    'solo_short':'Production guardrails, security checks, testing controls, rollback procedures, and a 68-control launch-readiness scorecard for your own AI-built projects.',
+    'commercial_title':'SHIPSAFE AI - Commercial Edition',
+    'commercial_short':'The complete SHIPSAFE system plus editable source files, client audit assets, and commercial project-use rights for freelancers, consultants, studios, and agencies.',
+    'order_bump':'Optional future add-on idea: SHIPSAFE Vertical Test Packs. Do not include or promise this until it exists.',
+    'confirmation':'Your files are ready. Download the ZIP, keep the original archive unchanged, and begin with 00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf.',
+    'licence_note':'By purchasing, you receive the licence stated inside your edition. You do not receive ownership of the SHIPSAFE AI brand, templates, or underlying system.',
+    'refund_position':'Because this is an immediately delivered digital product, define the refund policy clearly before sale and apply the consumer-law requirements relevant to the seller and buyer. Do not copy an absolute “no refunds” statement without legal review.',
+}
+
+# Free fast test questions + results
+fast_test = [
+    ('Can a normal user retrieve or modify another user’s record by changing an ID, URL, query, or request body?', 'Critical'),
+    ('Have you tested the product from a clean account or private browser session?', 'High'),
+    ('Can you identify every mock, fixture, placeholder, fallback, or hardcoded success response?', 'Critical'),
+    ('Has every public/client-side bundle been checked for secrets and private configuration?', 'Critical'),
+    ('Does the coding agent report every changed file, command, test, and unresolved assumption?', 'High'),
+    ('Are protected features covered by regression tests before unrelated changes are accepted?', 'Critical'),
+    ('Can you restore the last known-good application version and the compatible database state?', 'Critical'),
+    ('Do failed integrations produce visible failure rather than invented, empty, or static success?', 'Critical'),
+    ('Are admin and privileged actions enforced server-side rather than merely hidden in the interface?', 'Critical'),
+    ('Are uploads, URLs, webhooks, forms, and AI-retrieved content treated as untrusted input?', 'High'),
+    ('Are development, staging, and production configuration separated?', 'High'),
+    ('Is there a written launch/no-launch decision supported by test and security evidence?', 'High'),
+]
+
+result_bands = [
+    ('0-2 unresolved', 'Near launch review', 'Your project may be close, but any Critical unresolved item still blocks a responsible launch decision. Complete the evidence packet and re-test the affected controls.'),
+    ('3-5 unresolved', 'Material launch risk', 'Several important controls remain unverified. The product may work while data, authorization, failure, or recovery gaps remain hidden.'),
+    ('6-8 unresolved', 'High launch risk', 'Do not rely on the demonstration as evidence. Establish boundaries, checkpoints, clean-user tests, and a structured security preflight before launch.'),
+    ('9-12 unresolved', 'Stop - not ready', 'The project lacks enough verified control to justify public launch. Preserve the current state, install guardrails, and complete the full readiness workflow.'),
+]
+
+# Seven day campaign
+campaign = [
+    {
+        'day':'Saturday, June 13', 'theme':'Category creation: working is not ready',
+        'goal':'Introduce the invisible-risk category and publish the product without sounding like another AI template launch.',
+        'flagship':"""Your AI-built app working is not proof that it is ready to launch.\n\nA generated application can load, accept input, and produce a clean demo while still:\n- returning mocked data when the real integration fails\n- allowing one user to request another user’s records\n- shipping private configuration inside the browser bundle\n- suppressing errors until every failure looks like success\n- changing a working feature during an unrelated fix\n- leaving no compatible rollback path for the database\n\nThe dangerous failures are not always the ones that crash. They are the ones that survive the demonstration.\n\nI built SHIPSAFE AI to give AI-assisted builders persistent agent guardrails, security and authorization tests, regression controls, recovery procedures, and a 68-control launch-readiness decision system.\n\nThe rule is simple: an agent’s statement that the task is complete is not evidence.\n\nChanged files, commands, tests, security results, acceptance criteria, and a recovery point are evidence.""",
+        'cta':'Run the free 12-point fast test or review SHIPSAFE AI.',
+        'proof':'Show the scorecard dashboard and one agent guardrail file.',
+    },
+    {
+        'day':'Sunday, June 14', 'theme':'Protect the project before the first major agent session',
+        'goal':'Reach people preparing for the Google/Kaggle course and anyone starting a new AI-built app.',
+        'flagship':"""Before an AI coding agent writes the next feature, give the project five things:\n\n1. PROJECT_CONTEXT.md - what the product is, who it serves, and how the system works.\n2. SCOPE_LOCK.md - what is in scope, out of scope, and forbidden without approval.\n3. PROTECTED_FILES.md - the files and behaviors that must not be casually replaced.\n4. ACCEPTANCE_CRITERIA.md - the evidence required before a task can be called complete.\n5. A known-good checkpoint - the exact state you can return to when the “small fix” becomes a rewrite.\n\n“Be careful” is not a control system. Persistent boundaries are.""",
+        'cta':'Use the free setup list; the complete files are inside SHIPSAFE AI.',
+        'proof':'Share a redacted view of the five-file project-control layer.',
+    },
+    {
+        'day':'Monday, June 15', 'theme':'Course day one: capstone boundaries',
+        'goal':'Intercept active course attention with a genuinely useful setup protocol.',
+        'flagship':"""Starting an AI-agent capstone today? Decide this before you build:\n\n- the one user outcome the demo must prove\n- what the agent may change without asking\n- which files, features, and data paths are protected\n- what counts as a real integration rather than a mock\n- which tests must pass before the next task begins\n- how you will restore the last working version\n\nA capstone becomes easier when the scope is smaller and the evidence is stronger.\n\nDo not use the final day to discover that the agent built a convincing interface around an unverified backend.""",
+        'cta':'Use the Capstone Planner and Submission Checklist inside SHIPSAFE AI.',
+        'proof':'Show one completed example criterion, not product screenshots only.',
+    },
+    {
+        'day':'Tuesday, June 16', 'theme':'False success',
+        'goal':'Make the buyer recognize a failure pattern they cannot solve with a generic prompt.',
+        'flagship':"""Four ways an AI coding agent can make a broken application look functional:\n\n1. Catch the exception and return an empty response.\n2. Replace the failed API call with static sample data.\n3. Remove the validation causing the test to fail.\n4. Display a success state before the durable operation completes.\n\nThe interface works. The product does not.\n\nA proper release check forces the system to reveal failure, prove the real integration, preserve validation, and verify durable state after the action.""",
+        'cta':'Use the Failure Mode Tests and Release Evidence Packet.',
+        'proof':'A before/after example of fake success versus verified failure.',
+    },
+    {
+        'day':'Wednesday, June 17', 'theme':'Authorization and data boundaries',
+        'goal':'Connect launch risk directly to user trust without making unsupported security guarantees.',
+        'flagship':"""Authentication answers: “Who are you?”\nAuthorization answers: “Are you allowed to do this to this record?”\n\nAn AI-built app can have a polished login page and still fail the second question.\n\nBefore launch, test with two ordinary accounts:\n- Can User A request User B’s record by changing an ID?\n- Can User A update or delete it?\n- Can a normal user call an admin endpoint directly?\n- Can a private file be guessed or opened with another account?\n- Does suspension or deletion invalidate the old session?\n\nDo not test permissions only from the developer account.""",
+        'cta':'Use the 12-case Authorization Test Matrix.',
+        'proof':'Show the matrix columns: actor, action, expected, actual, evidence.',
+    },
+    {
+        'day':'Thursday, June 18', 'theme':'Rollback before repair',
+        'goal':'Reach builders currently experiencing agent-caused regressions.',
+        'flagship':"""Before asking an AI coding agent to “fix everything,” create a recovery boundary.\n\nRecord:\n- the current branch and commit\n- the last known-good tag\n- uncommitted changes\n- current environment configuration\n- migration state\n- the command that verifies core behavior\n- the exact files the next task may change\n\nThen isolate the fix.\n\nA code rollback is not enough when the database, storage, or external configuration changed too. Recovery must restore a compatible system, not merely an older folder.""",
+        'cta':'Use the Checkpoint Protocol and Recovery Runbook.',
+        'proof':'Demonstrate the included checkpoint script on a harmless sample repository.',
+    },
+    {
+        'day':'Friday, June 19', 'theme':'Submission and launch evidence',
+        'goal':'Convert course participants and builders preparing a public release.',
+        'flagship':"""Before submitting or publishing an AI-built app, ask for evidence - not confidence.\n\nYour release packet should contain:\n- every changed file\n- commands run\n- test output\n- authorization results\n- secret and dependency checks\n- acceptance-criteria results\n- known limitations\n- rollback evidence\n- the final go/no-go decision\n\nA polished demo explains what the product does. A release packet proves what was actually verified.""",
+        'cta':'Complete the SHIPSAFE Launch Readiness Scorecard before submission.',
+        'proof':'Show a blurred/fictional release evidence packet and readiness decision.',
+    },
+    {
+        'day':'Saturday, June 20', 'theme':'From capstone or prototype to product',
+        'goal':'Transition from event urgency into the evergreen offer.',
+        'flagship':"""The capstone is finished. The product work begins.\n\nBefore turning a prototype into a portfolio asset, client deliverable, or micro-SaaS:\n- remove mock and privileged development paths\n- verify clean-account onboarding\n- test authorization across two users\n- separate production configuration\n- define monitoring and cost ceilings\n- prove rollback\n- record known limitations\n- make an explicit launch decision\n\nSHIPSAFE AI turns those tasks into one repeatable operating system rather than another round of improvised prompts.""",
+        'cta':'Founding launch pricing closes; standard pricing begins after the campaign.',
+        'proof':'Solo vs Commercial comparison and the complete file inventory.',
+    },
+]
+
+short_posts = [
+    'An AI agent saying “done” is a completion claim. Test output, changed files, security results, and acceptance criteria are completion evidence.',
+    'A page loading proves rendering. It does not prove authorization, durable state, or a real integration.',
+    'The most dangerous AI coding failure may be a fallback that looks exactly like success.',
+    'Do not let the agent delete a failing test to make the test suite green.',
+    'Hide an admin button if you want. Protect the admin action on the server if you need security.',
+    'Your .env file can be private while your browser bundle still exposes the value.',
+    'A Git rollback does not automatically reverse a database migration.',
+    'Test your app with two ordinary accounts, not only one privileged developer account.',
+    'The smaller the capstone scope, the stronger the evidence you can collect.',
+    '“Make the app production-ready” is not an acceptance criterion.',
+    'Every high-risk task should begin with a known-good checkpoint and end with a changed-file report.',
+    'If failure returns empty data and a success message, the interface is lying on behalf of the system.',
+    'Unknown is not pass. In SHIPSAFE, an unverified control scores zero until evidence exists.',
+    'A coding agent should stop when requirements conflict. Inventing the missing decision is not autonomy; it is uncontrolled scope.',
+    'If you cannot restore the previous compatible state, you do not have a tested rollback plan.',
+    'Mock data is useful in development. Undisclosed mock data is dangerous in a launch decision.',
+    'Client-side validation improves experience. Server-side validation protects the system.',
+    'A security checklist without an owner, evidence, and a go/no-go decision becomes decoration.',
+    'The app can be technically impressive and still be operationally unlaunchable.',
+    'SHIPSAFE AI is not a security guarantee. It is the system that stops “we assumed” from being treated as “we verified.”',
+    'The correct time to document recovery is before the incident, not while the agent is still editing.',
+    'One vague fix request can cross authentication, database, UI, and infrastructure boundaries. Scope it before execution.',
+    'A clean demo is marketing evidence. A regression suite is engineering evidence.',
+    'The objective is not zero risk. It is visible risk, verified controls, and an informed launch decision.',
+    'Before launch, search the codebase for mock, demo, fixture, fallback, TODO, FIXME, hardcoded, and placeholder.',
+    'A completed task report should include what changed, what ran, what passed, what failed, and what remains unknown.',
+    'The agent should make the smallest viable change, not the most impressive rewrite.',
+    'Production readiness is not a vibe. It is a collection of verified controls.',
+]
+
+emails = [
+    {
+        'name':'Launch announcement',
+        'subject':'Your AI-built app working is not proof it is ready',
+        'body':"""AI coding agents are excellent at producing complete-looking applications. They are less reliable as the only authority deciding whether those applications are safe, correct, recoverable, and ready for real users.\n\nSHIPSAFE AI is a complete launch-assurance system for AI-built applications. It gives you persistent agent guardrails, scope controls, security and authorization tests, regression checks, checkpoints, rollback procedures, release evidence, and a weighted readiness scorecard.\n\nIt is not a prompt dump, security guarantee, or implementation service. It is the operating system that turns “the agent says it is done” into a decision supported by evidence.\n\nFounding launch pricing:\n- Solo: US$39\n- Commercial: US$129\n\nStart with the free 12-point fast test, or get the complete edition."""
+    },
+    {
+        'name':'False success education',
+        'subject':'The failure that still looks like a successful demo',
+        'body':"""A generated application does not need to crash to be broken.\n\nIt can catch an exception, return an empty response, switch to static data, remove the failing validation, and continue displaying a success state.\n\nThat is why SHIPSAFE includes dedicated failure-mode tests and a release evidence packet. The goal is to force failures to become visible and require proof that the real integration completed.\n\nA polished interface is useful. It is not release evidence."""
+    },
+    {
+        'name':'Authorization education',
+        'subject':'A login page does not protect another user’s data',
+        'body':"""Authentication proves identity. Authorization decides whether that identity may read, update, delete, download, or administer a specific resource.\n\nBefore launch, create two ordinary accounts and deliberately attempt cross-user access. Test the API and storage directly, not only the visible interface.\n\nSHIPSAFE includes a 12-case authorization matrix and evidence fields so the result is recorded rather than assumed."""
+    },
+    {
+        'name':'Commercial licence',
+        'subject':'For consultants auditing AI-built client projects',
+        'body':"""The Commercial Edition is designed for freelancers, consultants, studios, and agencies that need a repeatable pre-launch control system inside paid client work.\n\nIt includes the complete Solo product plus editable premium source files, client intake, audit-report assets, deliverable acceptance, and commercial project-use rights.\n\nYou may use the framework across client engagements and deliver completed, project-specific outputs. You may not redistribute or resell the underlying SHIPSAFE system."""
+    },
+    {
+        'name':'Launch close',
+        'subject':'Founding SHIPSAFE pricing closes today',
+        'body':"""Founding launch pricing closes today.\n\nSHIPSAFE Solo moves from US$39 to US$59.\nSHIPSAFE Commercial moves from US$129 to US$179.\n\nThe product remains the same: a self-contained system for constraining coding agents, testing invisible failure paths, verifying permissions and secrets, preserving recovery points, collecting release evidence, and making an informed launch decision.\n\nNo subscription. No implementation service. No unsupported security guarantee."""
+    },
+]
+
+dms = [
+    ('Relevant reply - broken code', 'That failure pattern is exactly why I now isolate high-risk changes behind a known-good checkpoint, protected-file list, and explicit regression criteria. I put the free version of that process into a 12-point readiness test; happy to share the public link where community rules allow.'),
+    ('Relevant reply - security uncertainty', 'A useful first check is to test with two ordinary accounts and attempt cross-user read, update, delete, admin, and private-file access. I built a structured authorization matrix for this inside SHIPSAFE; the short test can be completed without uploading code.'),
+    ('Permission-based direct message', 'You mentioned you are preparing an AI-built app for launch. I created a structured readiness system covering agent boundaries, authorization, secrets, regression, rollback, and release evidence. May I send you the short 12-point test?'),
+    ('After permission', 'Here is the fast test. Treat every Critical unresolved item as a launch blocker until verified. The full SHIPSAFE pack contains the agent files, test matrices, recovery runbook, and weighted scorecard if you need the complete system.'),
+    ('Commercial prospect', 'I saw that your work includes client applications built with AI coding agents. SHIPSAFE Commercial is a reusable pre-launch control and audit system with client intake, editable reports, authorization tests, rollback procedures, and commercial project-use rights. It is designed to produce a client-specific evidence packet rather than resell templates.'),
+    ('No-pressure close', 'This will not automatically secure or fix a codebase, and it is not a penetration test. It is useful when you need a repeatable way to expose unknowns, control agent changes, record evidence, and make a defensible launch decision.'),
+]
+
+visual_cards = [
+    ('Category card','YOUR AI-BUILT APP WORKING IS NOT PROOF THAT IT IS READY TO LAUNCH.','Subline: Test the invisible paths before real users do.'),
+    ('False success card','THE INTERFACE WORKS. THE PRODUCT DOES NOT.','Mock data. Silent fallbacks. Suppressed failures. Premature success states.'),
+    ('Evidence card','“DONE” IS A CLAIM. EVIDENCE IS A RELEASE DECISION.','Changed files + commands + tests + security results + acceptance criteria + rollback.'),
+    ('Authorization card','A LOGIN PAGE DOES NOT PROTECT ANOTHER USER’S DATA.','Test two ordinary accounts. Try cross-user read, update, delete, admin, and file access.'),
+    ('Recovery card','A GIT ROLLBACK MAY NOT RESTORE YOUR DATABASE.','Recover a compatible system, not only an older code folder.'),
+    ('Scorecard card','68 CONTROLS. 10 CONTROL AREAS. ONE GO/NO-GO DECISION.','Unknown scores zero until evidence exists.'),
+    ('Product stack card','CONSTRAIN. INSPECT. TEST. SECURE. RECOVER. PROVE. LAUNCH.','The SHIPSAFE Verification Loop.'),
+    ('Solo card','SHIPSAFE SOLO','For builders launching their own AI-built projects. Founding price: US$39.'),
+    ('Commercial card','SHIPSAFE COMMERCIAL','Client audit assets + editable source + commercial project-use rights. Founding price: US$129.'),
+    ('Closing card','PRODUCTION READINESS IS NOT A VIBE.','It is a collection of verified controls.'),
+]
+
+launch_checklist = [
+    ('Product integrity','Confirm Solo and Commercial ZIPs open and match their licence scope.'),
+    ('Product integrity','Retain an untouched seller-master archive and SHA-256 checksums.'),
+    ('Product integrity','Confirm every customer-facing file uses the correct product version.'),
+    ('Claims','Remove any wording that implies guaranteed security, compliance, zero risk, or automatic remediation.'),
+    ('Claims','Keep the distinction between engineering framework and professional security/legal review visible.'),
+    ('Pricing','Set the founding and standard prices deliberately; avoid fake perpetual countdowns.'),
+    ('Pricing','Do not promise lifetime updates, unlimited support, or custom implementation unless operationally funded.'),
+    ('Licence','Display the correct Solo or Commercial rights before purchase and include the licence inside delivery.'),
+    ('Proof','Capture product screenshots: Quick Start, scorecard dashboard, agent guardrail, authorization matrix, recovery runbook, and file inventory.'),
+    ('Proof','Record one short demonstration using a harmless sample repository.'),
+    ('Diagnostic','Publish the 12-point fast test and score bands.'),
+    ('Content','Prepare the seven flagship posts and daily short posts before launch begins.'),
+    ('Content','Convert each flagship post into one carousel, one short video script, and three concise variants.'),
+    ('Community','Answer existing questions substantively; do not mass-post links or manufacture testimonials.'),
+    ('Customer experience','Ensure the post-purchase message tells buyers exactly which file to open first.'),
+    ('Customer experience','Keep customer support boundaries explicit: product questions versus implementation work.'),
+    ('Legal/admin','Complete name/trademark conflict review and jurisdiction-specific digital-product, consumer-law, privacy, tax, and refund review.'),
+    ('Measurement','Track qualified views, fast-test starts, completions, product views, edition selected, and purchases using the seller’s chosen system.'),
+    ('Iteration','Record every objection and confusion point, then improve copy without changing the product promise.'),
+]
+
+sources = [
+    ('Google and Kaggle AI Agents Intensive: Vibe Coding', 'https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/', 'Official confirmation of the June 15-19, 2026 course, production-ready agent focus, capstone, and prior course reach.'),
+    ('OpenAI - Codex for every role, tool, and workflow', 'https://openai.com/index/codex-for-every-role-tool-workflow/', 'Official June 2026 market context: more than five million weekly users and fast growth among non-developers.'),
+    ('Anthropic - Beyond permission prompts: making Claude Code more secure and autonomous', 'https://www.anthropic.com/engineering/claude-code-sandboxing', 'Official explanation of filesystem/network isolation, permission fatigue, prompt injection, and bounded agent access.'),
+    ('Anthropic - How we contain Claude across products', 'https://www.anthropic.com/engineering/how-we-contain-claude', 'Official May 2026 discussion of unexpected agent behavior and containment.'),
+    ('OpenAI Codex repository', 'https://github.com/openai/codex', 'Official description of Codex CLI as a local coding agent and supported editor workflows.'),
+]
+
+# ---------- Plain-text assets ----------
+def write_md(path, title, sections):
+    lines = [f'# {title}', '']
+    for heading, content in sections:
+        lines += [f'## {heading}', '']
+        if isinstance(content, str):
+            lines += [content, '']
+        else:
+            for item in content:
+                if isinstance(item, tuple):
+                    lines += [f'### {item[0]}', '', item[1], '']
+                else:
+                    lines += [item, '']
+    path.write_text('\n'.join(lines).strip()+'\n', encoding='utf-8')
+
+write_md(COPY/'01_CORE_BRAND_AND_MESSAGING.md','SHIPSAFE AI Core Brand and Messaging',[
+    ('Category',[brand['category']]),
+    ('One-line description',[brand['one_liner']]),
+    ('Core promise',[brand['core_promise']]),
+    ('Primary headline',[brand['primary_headline']]),
+    ('Secondary headline',[brand['secondary_headline']]),
+    ('Market enemy',[brand['enemy']]),
+    ('Proprietary mechanism',[brand['mechanism']]),
+    ('Voice',brand['tone']),
+    ('Avoid',brand['avoid']),
+])
+write_md(COPY/'02_LONG_FORM_SALES_PAGE.md','SHIPSAFE AI Long-Form Sales Page',sales_page)
+write_md(COPY/'03_PRICING_AND_EDITION_COPY.md','SHIPSAFE AI Pricing and Edition Copy',[
+    (p['tier'],[f"Founding price: {p['launch']}",f"Standard price: {p['standard']}",f"Buyer: {p['buyer']}",f"Rights: {p['rights']}",f"Contains: {p['contains']}"]) for p in pricing
+])
+write_md(COPY/'04_FAQ_AND_OBJECTION_HANDLING.md','SHIPSAFE AI FAQ and Objection Handling',[
+    ('Frequently asked questions',faq),('Objection handling',objections)
+])
+write_md(COPY/'05_CHECKOUT_AND_DELIVERY_COPY.md','SHIPSAFE AI Checkout and Delivery Copy',[(k.replace('_',' ').title(),[v]) for k,v in checkout_copy.items()])
+
+# Diagnostic copy
+sections = [
+    ('Diagnostic headline',['Is your AI-built app actually ready to launch?']),
+    ('Diagnostic subheadline',['Complete the 12-point test. No source-code upload required. Every unresolved Critical item should be treated as a launch blocker until verified.']),
+    ('Questions',[f'{i+1}. {q} [{sev}]' for i,(q,sev) in enumerate(fast_test)]),
+    ('Result bands',[f'{rng} - {label}: {copy}' for rng,label,copy in result_bands]),
+    ('Conversion CTA',['Resolve every failed control with SHIPSAFE AI: persistent agent guardrails, testing, security preflight, rollback, evidence, and a complete readiness scorecard.']),
+    ('Important note',['This test is an educational screening tool, not a security guarantee, penetration test, legal opinion, or certification.']),
+]
+write_md(COPY/'06_FREE_DIAGNOSTIC_FUNNEL_COPY.md','SHIPSAFE AI Free Diagnostic Funnel Copy',sections)
+
+# Campaign and posts
+camp_sections=[]
+for d in campaign:
+    camp_sections.append((f"{d['day']} - {d['theme']}",[f"Goal: {d['goal']}",d['flagship'],f"CTA: {d['cta']}",f"Proof asset: {d['proof']}"]))
+write_md(COPY/'07_SEVEN_DAY_LAUNCH_CAMPAIGN.md','SHIPSAFE AI Seven-Day Launch Campaign',camp_sections)
+write_md(COPY/'08_SHORT_POST_BANK.md','SHIPSAFE AI Short Post Bank',[('Posts',[f'{i+1}. {p}' for i,p in enumerate(short_posts)])])
+write_md(COPY/'09_EMAIL_AND_DM_COPY.md','SHIPSAFE AI Email and Direct Message Copy',[
+    ('Emails',[(f"{e['name']} - Subject: {e['subject']}",e['body']) for e in emails]),
+    ('Direct messages',dms),
+])
+write_md(VIS/'10_VISUAL_CARD_COPY.md','SHIPSAFE AI Visual Card Copy',[('Cards',[(t,f'{h}\n\n{s}') for t,h,s in visual_cards])])
+write_md(OPS/'11_LAUNCH_OPERATIONS_CHECKLIST.md','SHIPSAFE AI Launch Operations Checklist',[('Checklist',[f'[ ] {area}: {item}' for area,item in launch_checklist])])
+write_md(OPS/'12_MARKET_TIMING_AND_SOURCES.md','SHIPSAFE AI Market Timing and Sources',[
+    ('Timing note',['The June 13-20, 2026 campaign uses the Google/Kaggle course as a temporary acquisition angle. The permanent product positioning is evergreen launch assurance for AI-built applications.']),
+    ('Sources',[(name,f'{url}\n\nUse: {use}') for name,url,use in sources]),
+])
+
+# JSON structured copy bank
+(ROOT/'shipsafe_launch_copy.json').write_text(json.dumps({
+    'brand':brand,'pricing':pricing,'features':features,'hidden_failures':hidden_failures,
+    'who_for':who_for,'who_not':who_not,'faq':faq,'objections':objections,
+    'sales_page':sales_page,'checkout_copy':checkout_copy,'fast_test':fast_test,
+    'result_bands':result_bands,'campaign':campaign,'short_posts':short_posts,
+    'emails':emails,'dms':dms,'visual_cards':visual_cards,'launch_checklist':launch_checklist,
+    'sources':sources,
+}, indent=2), encoding='utf-8')
+
+# ---------- DOCX helpers ----------
+def set_cell_shading(cell, fill):
+    tcPr = cell._tc.get_or_add_tcPr()
+    shd = tcPr.find(qn('w:shd'))
+    if shd is None:
+        shd = OxmlElement('w:shd')
+        tcPr.append(shd)
+    shd.set(qn('w:fill'), fill)
+
+def set_cell_text_color(cell, color):
+    for p in cell.paragraphs:
+        for r in p.runs:
+            r.font.color.rgb = RGBColor.from_string(color)
+
+def set_repeat_table_header(row):
+    trPr = row._tr.get_or_add_trPr()
+    tblHeader = OxmlElement('w:tblHeader')
+    tblHeader.set(qn('w:val'), 'true')
+    trPr.append(tblHeader)
+
+def set_cell_margins(cell, top=100, start=120, bottom=100, end=120):
+    tc = cell._tc
+    tcPr = tc.get_or_add_tcPr()
+    tcMar = tcPr.first_child_found_in('w:tcMar')
+    if tcMar is None:
+        tcMar = OxmlElement('w:tcMar')
+        tcPr.append(tcMar)
+    for m,v in [('top',top),('start',start),('bottom',bottom),('end',end)]:
+        node = tcMar.find(qn(f'w:{m}'))
+        if node is None:
+            node = OxmlElement(f'w:{m}')
+            tcMar.append(node)
+        node.set(qn('w:w'), str(v))
+        node.set(qn('w:type'), 'dxa')
+
+def add_page_number(paragraph):
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    run = paragraph.add_run('SHIPSAFE AI  |  ')
+    run.font.size = Pt(8)
+    run.font.color.rgb = RGBColor.from_string('64748B')
+    fldChar1 = OxmlElement('w:fldChar'); fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText'); instrText.set(qn('xml:space'), 'preserve'); instrText.text = ' PAGE '
+    fldChar2 = OxmlElement('w:fldChar'); fldChar2.set(qn('w:fldCharType'), 'end')
+    run._r.append(fldChar1); run._r.append(instrText); run._r.append(fldChar2)
+
+def add_hyperlink(paragraph, text, url, color='0E7490'):
+    part = paragraph.part
+    r_id = part.relate_to(url, 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink', is_external=True)
+    hyperlink = OxmlElement('w:hyperlink'); hyperlink.set(qn('r:id'), r_id)
+    new_run = OxmlElement('w:r')
+    rPr = OxmlElement('w:rPr')
+    c = OxmlElement('w:color'); c.set(qn('w:val'), color); rPr.append(c)
+    u = OxmlElement('w:u'); u.set(qn('w:val'), 'single'); rPr.append(u)
+    new_run.append(rPr)
+    t = OxmlElement('w:t'); t.text = text; new_run.append(t)
+    hyperlink.append(new_run); paragraph._p.append(hyperlink)
+
+def add_heading(doc, text, level=1, before=10, after=6):
+    p = doc.add_paragraph(style=f'Heading {level}')
+    p.paragraph_format.space_before = Pt(before)
+    p.paragraph_format.space_after = Pt(after)
+    p.add_run(text)
+    return p
+
+def add_body(doc, text, bold_lead=None):
+    p = doc.add_paragraph(style='Body Text')
+    if bold_lead and text.startswith(bold_lead):
+        p.add_run(bold_lead).bold=True
+        p.add_run(text[len(bold_lead):])
+    else:
+        p.add_run(text)
+    return p
+
+def add_bullet(doc, text, level=0):
+    style = 'List Bullet' if level == 0 else 'List Bullet 2'
+    p = doc.add_paragraph(style=style)
+    p.add_run(text)
+    return p
+
+def add_number(doc, text):
+    p = doc.add_paragraph(style='List Number')
+    p.add_run(text)
+    return p
+
+def add_callout(doc, title, text, fill=LIGHT_TEAL, title_color=TEAL):
+    tbl = doc.add_table(rows=1, cols=1)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    cell = tbl.cell(0,0)
+    cell.width = Inches(6.55)
+    set_cell_shading(cell, fill)
+    set_cell_margins(cell, 180, 220, 180, 220)
+    p = cell.paragraphs[0]
+    p.paragraph_format.space_after = Pt(4)
+    r=p.add_run(title.upper())
+    r.bold=True; r.font.size=Pt(9); r.font.color.rgb=RGBColor.from_string(title_color)
+    p2=cell.add_paragraph()
+    p2.paragraph_format.space_after=Pt(0)
+    r2=p2.add_run(text); r2.font.size=Pt(10.5); r2.font.color.rgb=RGBColor.from_string(SLATE)
+    doc.add_paragraph().paragraph_format.space_after=Pt(0)
+
+def add_section_break(doc):
+    doc.add_page_break()
+
+def table_from_rows(doc, headers, rows, widths=None, header_fill=NAVY):
+    table = doc.add_table(rows=1, cols=len(headers))
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.style = 'Table Grid'
+    table.autofit = False
+    hdr=table.rows[0]
+    set_repeat_table_header(hdr)
+    for i,h in enumerate(headers):
+        c=hdr.cells[i]; c.text=str(h); set_cell_shading(c, header_fill); set_cell_text_color(c, WHITE); c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER; set_cell_margins(c)
+        for r in c.paragraphs[0].runs: r.bold=True; r.font.size=Pt(9)
+        if widths: c.width=Inches(widths[i])
+    for ridx,row in enumerate(rows):
+        cells=table.add_row().cells
+        for i,val in enumerate(row):
+            cells[i].text=str(val)
+            cells[i].vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.TOP
+            set_cell_margins(cells[i])
+            if widths: cells[i].width=Inches(widths[i])
+            if ridx%2==1: set_cell_shading(cells[i], 'F8FAFC')
+            for p in cells[i].paragraphs:
+                p.paragraph_format.space_after=Pt(0)
+                for r in p.runs: r.font.size=Pt(8.5); r.font.color.rgb=RGBColor.from_string(SLATE)
+    return table
+
+# ---------- Build master document ----------
+doc = Document()
+sec = doc.sections[0]
+sec.top_margin=Inches(0.68); sec.bottom_margin=Inches(0.65); sec.left_margin=Inches(0.78); sec.right_margin=Inches(0.78)
+sec.header_distance=Inches(0.25); sec.footer_distance=Inches(0.3)
+
+styles = doc.styles
+normal = styles['Normal']; normal.font.name='Aptos'; normal.font.size=Pt(10.5); normal.font.color.rgb=RGBColor.from_string(SLATE)
+normal.paragraph_format.space_after=Pt(5); normal.paragraph_format.line_spacing=1.08
+body = styles['Body Text']; body.font.name='Aptos'; body.font.size=Pt(10.5); body.font.color.rgb=RGBColor.from_string(SLATE); body.paragraph_format.space_after=Pt(6); body.paragraph_format.line_spacing=1.08
+for level,size,color in [(1,20,NAVY),(2,14,TEAL),(3,11,SLATE)]:
+    s=styles[f'Heading {level}']; s.font.name='Aptos Display'; s.font.size=Pt(size); s.font.bold=True; s.font.color.rgb=RGBColor.from_string(color); s.paragraph_format.keep_with_next=True
+for sname in ['List Bullet','List Bullet 2','List Number']:
+    s=styles[sname]; s.font.name='Aptos'; s.font.size=Pt(10); s.font.color.rgb=RGBColor.from_string(SLATE); s.paragraph_format.space_after=Pt(3)
+
+# Custom eyebrow style
+if 'Eyebrow' not in styles:
+    st=styles.add_style('Eyebrow', WD_STYLE_TYPE.PARAGRAPH); st.font.name='Aptos'; st.font.size=Pt(9); st.font.bold=True; st.font.color.rgb=RGBColor.from_string(TEAL); st.paragraph_format.space_after=Pt(8)
+if 'Pull Quote' not in styles:
+    st=styles.add_style('Pull Quote', WD_STYLE_TYPE.PARAGRAPH); st.font.name='Aptos Display'; st.font.size=Pt(18); st.font.bold=True; st.font.color.rgb=RGBColor.from_string(NAVY); st.paragraph_format.space_before=Pt(8); st.paragraph_format.space_after=Pt(12); st.paragraph_format.line_spacing=1.05
+
+# header/footer
+header=sec.header.paragraphs[0]
+header.text='SHIPSAFE AI  /  COMMERCIAL LAUNCH MASTER'
+header.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+for r in header.runs: r.font.name='Aptos'; r.font.size=Pt(8); r.font.bold=True; r.font.color.rgb=RGBColor.from_string('64748B')
+add_page_number(sec.footer.paragraphs[0])
+
+# Cover
+p=doc.add_paragraph(style='Eyebrow'); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.add_run('SELLER-ONLY COMMERCIALISATION SYSTEM  /  VERSION 1.0')
+p=doc.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_before=Pt(40); p.paragraph_format.space_after=Pt(6)
+r=p.add_run('SHIPSAFE AI'); r.font.name='Aptos Display'; r.font.size=Pt(34); r.font.bold=True; r.font.color.rgb=RGBColor.from_string(NAVY)
+p=doc.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after=Pt(24)
+r=p.add_run('COMMERCIAL LAUNCH MASTER'); r.font.name='Aptos Display'; r.font.size=Pt(22); r.font.bold=True; r.font.color.rgb=RGBColor.from_string(TEAL)
+p=doc.add_paragraph(style='Pull Quote'); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.add_run(brand['primary_headline'])
+p=doc.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.left_indent=Inches(0.7); p.paragraph_format.right_indent=Inches(0.7)
+r=p.add_run('Brand messaging, long-form sales copy, pricing, diagnostic funnel, objection handling, seven-day launch campaign, social content, visual copy, email and direct-message assets, and seller operations.'); r.font.size=Pt(12); r.font.color.rgb=RGBColor.from_string(SLATE)
+add_callout(doc,'Private seller asset','Do not include this master document inside either customer edition. Copy only the customer-facing text required for publication.',LIGHT_AMBER,AMBER)
+p=doc.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_before=Pt(22)
+r=p.add_run('Prepared 13 June 2026  |  Founding campaign: 13-20 June 2026'); r.font.size=Pt(9); r.font.color.rgb=RGBColor.from_string('64748B')
+add_section_break(doc)
+
+# How to use
+add_heading(doc,'How to use this master',1)
+add_body(doc,'This document separates the permanent product position from the temporary June 2026 acquisition campaign. The product remains evergreen. The Google/Kaggle course is used only as a timely path into the market.')
+for item in [
+    'Keep the primary category and promise consistent across every channel.',
+    'Change the entry problem to match the audience: broken code, security uncertainty, capstone submission, rollback, authorization, or production readiness.',
+    'Lead with a useful diagnosis or technical insight. Present the product after the buyer recognizes the gap.',
+    'Never imply guaranteed security, legal compliance, automatic remediation, or a result that has not been independently verified.',
+    'Do not bundle implementation support, custom reviews, or lifetime updates into the price unless intentionally added later.',
+    'Use the Solo and Commercial licence distinctions exactly; do not blur personal project use and client-service use.',
+]: add_bullet(doc,item)
+add_callout(doc,'Commercial principle','Sell certainty about what has and has not been verified - not certainty that the software can never fail.')
+
+# Contents
+add_heading(doc,'Contents',1)
+contents=[
+    '1. Brand and category architecture','2. Buyer, problem, and value architecture','3. Offer and pricing structure','4. Long-form sales-page copy','5. Edition and checkout copy','6. Free diagnostic funnel','7. Objections and FAQ','8. Seven-day launch campaign','9. Short-form content bank','10. Email and direct-message copy','11. Visual copy and product proof','12. Seller operations and measurement','13. Claims, licensing, and risk boundaries','14. Market timing and official sources'
+]
+for item in contents: add_body(doc,item)
+add_section_break(doc)
+
+# 1 Brand
+add_heading(doc,'1. Brand and category architecture',1)
+add_heading(doc,'Category',2); add_body(doc,brand['category'])
+add_heading(doc,'One-line description',2); add_body(doc,brand['one_liner'])
+add_heading(doc,'Core promise',2); add_callout(doc,'Promise',brand['core_promise'])
+add_heading(doc,'Primary market statement',2); p=doc.add_paragraph(style='Pull Quote'); p.add_run(brand['primary_headline'])
+add_heading(doc,'Supporting statement',2); add_body(doc,brand['secondary_headline'])
+add_heading(doc,'The market enemy',2); add_body(doc,brand['enemy'])
+add_heading(doc,'The SHIPSAFE Verification Loop',2); add_body(doc,brand['mechanism'])
+for item in ['Constrain the agent and the task.','Inspect the actual implementation and dependencies.','Test normal, failure, and cross-user paths.','Secure data, secrets, inputs, tools, and agent permissions.','Recover through known-good checkpoints and compatible rollback.','Prove completion with independently reviewable evidence.','Launch only after an explicit go/no-go decision.']: add_number(doc,item)
+add_heading(doc,'Voice and visual language',2)
+table_from_rows(doc,['Use','Avoid'],[[', '.join(brand['tone']),', '.join(brand['avoid'])]],widths=[3.15,3.4])
+add_heading(doc,'Message hierarchy',2)
+for h,b in [
+    ('Category message','Your AI-built app working is not proof that it is ready to launch.'),
+    ('Problem message','Generated software can conceal false success, missing authorization, exposed configuration, regressions, and untested recovery.'),
+    ('Mechanism message','SHIPSAFE turns launch confidence into a verification loop with persistent controls and evidence.'),
+    ('Product message','The buyer receives project files, tests, security checks, recovery procedures, a scorecard, and release evidence templates.'),
+    ('Action message','Install the guardrails, run the tests, resolve unknowns, and make the launch decision.'),
+]:
+    add_heading(doc,h,3); add_body(doc,b)
+add_section_break(doc)
+
+# 2 Buyer/value
+add_heading(doc,'2. Buyer, problem, and value architecture',1)
+add_heading(doc,'Primary buyer',2)
+add_body(doc,'A nontechnical or lightly technical builder who already has an AI-built application, agent, capstone, internal tool, or client project and cannot independently determine whether it is safe, correct, recoverable, and ready for users.')
+add_heading(doc,'Secondary buyer',2)
+add_body(doc,'A developer, freelancer, consultant, studio, or agency that wants a persistent control layer and repeatable pre-launch audit workflow around coding agents.')
+add_heading(doc,'Who it is for',2)
+for item in who_for: add_bullet(doc,item)
+add_heading(doc,'Who it is not for',2)
+for item in who_not: add_bullet(doc,item)
+add_heading(doc,'The invisible failures SHIPSAFE surfaces',2)
+for title,desc in hidden_failures:
+    add_heading(doc,title,3); add_body(doc,desc)
+add_heading(doc,'Value ladder',2)
+rows=[
+    ['Visible value','A complete set of editable and ready-to-use files.'],
+    ['Functional value','Fewer uncontrolled changes, stronger tests, explicit recovery, and a structured launch decision.'],
+    ['Economic value','Avoided rework, incident response, exposed customer data, failed delivery, and emergency rebuilds.'],
+    ['Emotional value','The builder knows what remains unknown instead of relying on the agent’s confidence.'],
+    ['Commercial value','The Commercial buyer can turn the framework into a repeatable paid readiness audit.'],
+]
+table_from_rows(doc,['Layer','Buyer value'],rows,widths=[1.55,5.0])
+add_section_break(doc)
+
+# 3 Offer/pricing
+add_heading(doc,'3. Offer and pricing structure',1)
+add_callout(doc,'Pricing rule','Use a one-time purchase. Do not add a subscription merely to create recurring revenue. The product is designed to be self-contained and low-obligation.')
+for pinfo in pricing:
+    add_heading(doc,pinfo['tier'],2)
+    table_from_rows(doc,['Founding price','Standard price','Designed for'],[[pinfo['launch'],pinfo['standard'],pinfo['buyer']]],widths=[1.2,1.2,4.1])
+    add_heading(doc,'Included',3); add_body(doc,pinfo['contains'])
+    add_heading(doc,'Licence position',3); add_body(doc,pinfo['rights'])
+add_heading(doc,'Price-change language',2)
+add_body(doc,'Founding pricing is available during the initial June 13-20, 2026 campaign. After the campaign, Solo moves to US$59 and Commercial moves to US$179. Use an honest date-based change. Do not reset or fabricate scarcity.')
+add_heading(doc,'What is deliberately excluded',2)
+for x in ['Custom implementation','Code review or penetration testing','Legal or compliance certification','Guaranteed launch approval','Unlimited support','Lifetime updates','Resale or redistribution rights','A hosted scanner or source-code upload service']: add_bullet(doc,x)
+add_heading(doc,'Edition comparison',2)
+comparison=[
+    ['Finished manuals and Quick Start','Included','Included'],
+    ['Agent guardrails and project controls','Included','Included'],
+    ['Security, testing, rollback, and scorecard','Included','Included'],
+    ['Capstone and portfolio pack','Included','Included'],
+    ['Use on purchaser-owned projects','Included','Included'],
+    ['Use inside paid client work','Not included','Included'],
+    ['Editable premium source documents','Not included','Included'],
+    ['Client intake and audit-report assets','Not included','Included'],
+    ['Resale or redistribution','Not permitted','Not permitted'],
+]
+table_from_rows(doc,['Capability','Solo','Commercial'],comparison,widths=[3.6,1.45,1.45])
+add_section_break(doc)
+
+# 4 Sales page
+add_heading(doc,'4. Long-form sales-page copy',1)
+add_callout(doc,'Use','This is publication-ready source copy. Adapt formatting and button labels to the seller’s chosen environment without weakening the claims boundary.')
+for heading,paras in sales_page:
+    add_heading(doc,heading.title(),2)
+    for text in paras:
+        if text.startswith(('1. ','2. ','3. ','4. ','5. ','6. ','7. ')):
+            add_body(doc,text)
+        elif text.startswith(('Primary CTA','Secondary CTA','CTA:','Microcopy:','Trust line:')):
+            add_callout(doc,text.split(':',1)[0],text.split(':',1)[1].strip(),LIGHT,SLATE)
+        elif ': ' in text and heading=='WHAT IS INCLUDED':
+            title,desc=text.split(': ',1); add_heading(doc,title,3); add_body(doc,desc)
+        else:
+            add_body(doc,text)
+add_section_break(doc)
+
+# 5 edition and checkout
+add_heading(doc,'5. Edition, checkout, and delivery copy',1)
+for k,v in checkout_copy.items():
+    add_heading(doc,k.replace('_',' ').title(),2); add_body(doc,v)
+add_heading(doc,'Compact edition cards',2)
+for pinfo in pricing:
+    add_callout(doc,pinfo['tier'],f"{pinfo['launch']} founding price. {pinfo['buyer']} {pinfo['contains']}")
+add_heading(doc,'Post-purchase start message',2)
+add_body(doc,'Your SHIPSAFE files are ready. Download the archive and keep the original ZIP unchanged as your master copy. Open 00_START_HERE/SHIPSAFE_AI_Quick_Start.pdf first. Then install the correct agent guardrail file, complete project context and scope controls, create a known-good checkpoint, and run the Launch Readiness Scorecard. Do not launch while any Critical control is failed or unknown.')
+add_section_break(doc)
+
+# 6 diagnostic
+add_heading(doc,'6. Free diagnostic funnel',1)
+add_heading(doc,'Headline',2); p=doc.add_paragraph(style='Pull Quote'); p.add_run('Is your AI-built app actually ready to launch?')
+add_body(doc,'Complete the 12-point test. No source-code upload required. Every unresolved Critical item should be treated as a launch blocker until verified.')
+add_heading(doc,'Question set',2)
+for i,(q,sev) in enumerate(fast_test,1):
+    p=doc.add_paragraph(style='List Number'); p.add_run(q+' '); r=p.add_run(f'[{sev}]'); r.bold=True; r.font.color.rgb=RGBColor.from_string(RED if sev=='Critical' else AMBER)
+add_heading(doc,'Result copy',2)
+for rng,label,copy in result_bands:
+    add_heading(doc,f'{rng}: {label}',3); add_body(doc,copy)
+add_heading(doc,'Conversion block',2)
+add_callout(doc,'Resolve the failed controls','SHIPSAFE AI gives you persistent agent guardrails, testing and security controls, checkpoint and rollback procedures, release evidence, and the complete 68-control readiness scorecard.')
+add_heading(doc,'Diagnostic disclaimer',2)
+add_body(doc,'This test is an educational screening tool. It is not a security guarantee, penetration test, legal opinion, compliance certification, or substitute for qualified review of high-risk systems.')
+add_section_break(doc)
+
+# 7 objections/FAQ
+add_heading(doc,'7. Objections and frequently asked questions',1)
+add_heading(doc,'Objection handling',2)
+for title,answer in objections:
+    add_heading(doc,title,3); add_body(doc,answer)
+add_heading(doc,'Frequently asked questions',2)
+for q,a in faq:
+    add_heading(doc,q,3); add_body(doc,a)
+add_section_break(doc)
+
+# 8 campaign
+add_heading(doc,'8. Seven-day launch campaign',1)
+add_body(doc,'Campaign objective: establish the category, distribute useful diagnosis and proof, intercept the June 15-19 AI-agent course attention, and transition into evergreen production-readiness positioning on June 20.')
+for d in campaign:
+    add_heading(doc,f"{d['day']} - {d['theme']}",2)
+    add_heading(doc,'Goal',3); add_body(doc,d['goal'])
+    add_heading(doc,'Flagship post',3)
+    for para in d['flagship'].split('\n\n'):
+        if para.startswith('- '):
+            for line in para.split('\n'): add_bullet(doc,line[2:])
+        elif '\n- ' in para:
+            first,*rest=para.split('\n'); add_body(doc,first)
+            for line in rest:
+                if line.startswith('- '): add_bullet(doc,line[2:])
+                else: add_body(doc,line)
+        else: add_body(doc,para)
+    add_heading(doc,'Call to action',3); add_body(doc,d['cta'])
+    add_heading(doc,'Proof asset',3); add_body(doc,d['proof'])
+add_section_break(doc)
+
+# 9 short posts
+add_heading(doc,'9. Short-form content bank',1)
+add_body(doc,'Use these as standalone posts, replies, carousel captions, video hooks, or supporting lines under product screenshots. Do not post them all at once.')
+for i,pst in enumerate(short_posts,1):
+    add_heading(doc,f'Post {i}',3); add_body(doc,pst)
+add_section_break(doc)
+
+# 10 email/DM
+add_heading(doc,'10. Email and direct-message copy',1)
+add_callout(doc,'Use responsibly','Do not mass-message strangers. Use email where consent or an existing relationship exists. Use direct messages as permission-based follow-up to a relevant public conversation.')
+add_heading(doc,'Email sequence',2)
+for e in emails:
+    add_heading(doc,e['name'],3); add_body(doc,'Subject: '+e['subject'])
+    for para in e['body'].split('\n\n'): add_body(doc,para)
+add_heading(doc,'Direct-message bank',2)
+for name,msg in dms:
+    add_heading(doc,name,3); add_body(doc,msg)
+add_section_break(doc)
+
+# 11 Visual/proof
+add_heading(doc,'11. Visual copy and product proof',1)
+add_heading(doc,'Visual direction',2)
+for x in ['Dark navy technical foundation','White or pale-slate content surfaces','Teal for verified/control states','Amber for unknown or conditional states','Red only for failed or critical controls','No robots, neon brains, fake code rain, padlock clichés, or speculative cyber imagery','Show real product artifacts: scorecard, guardrail files, matrices, checklists, and recovery procedures']: add_bullet(doc,x)
+add_heading(doc,'Ten launch cards',2)
+for title,headline,sub in visual_cards:
+    add_heading(doc,title,3); add_body(doc,headline); add_body(doc,sub)
+add_heading(doc,'Minimum proof set',2)
+for x in [
+    'Quick Start cover and first-use sequence','Operating Manual contents page','AGENTS.md or universal guardrail excerpt','Scorecard dashboard showing empty/unknown state and a completed fictional example','Authorization test matrix','Checkpoint protocol and recovery runbook','Solo versus Commercial inventory comparison','Commercial client audit template','ZIP file inventory and checksum evidence','Short sample-repository demonstration showing checkpoint -> constrained task -> tests -> changed-file report',
+]: add_bullet(doc,x)
+add_heading(doc,'Demonstration script',2)
+for x in [
+    'Open a harmless sample repository with one protected feature and one failing test.',
+    'Show PROJECT_CONTEXT, SCOPE_LOCK, PROTECTED_FILES, and ACCEPTANCE_CRITERIA.',
+    'Create a known-good checkpoint.',
+    'Give the agent a narrowly scoped task.',
+    'Show the resulting diff, commands run, test output, and task-completion report.',
+    'Run the relevant readiness controls and show how Unknown becomes Pass only after evidence is recorded.',
+    'End with the go/no-go decision; do not claim the sample proves universal security.',
+]: add_number(doc,x)
+add_section_break(doc)
+
+# 12 Seller ops
+add_heading(doc,'12. Seller operations and measurement',1)
+add_heading(doc,'Launch checklist',2)
+for area,item in launch_checklist:
+    p=doc.add_paragraph(style='Body Text'); p.add_run('☐ ').bold=True; r=p.add_run(area+': '); r.bold=True; p.add_run(item)
+add_heading(doc,'Signal hierarchy',2)
+rows=[
+    ['Signal','Meaning','Action'],
+    ['Fast-test completion','Buyer recognizes the problem strongly enough to finish diagnosis.','Improve result-page relevance and product bridge.'],
+    ['Commercial edition views','Buyer sees client-service or agency value.','Strengthen audit proof and licence clarity.'],
+    ['FAQ expansion','A recurring objection is blocking purchase.','Answer it directly in main copy.'],
+    ['Shares/saves','Educational content has durable utility.','Create additional assets around the same failure pattern.'],
+    ['Qualified replies','The content crossed the correct builders.','Respond substantively and collect exact language.'],
+    ['Purchases','Offer, proof, price, and timing aligned.','Preserve the winning message before testing alternatives.'],
+]
+table_from_rows(doc,rows[0],rows[1:],widths=[1.65,2.65,2.25])
+add_heading(doc,'Content repurposing rule',2)
+add_body(doc,'Each flagship idea should produce: one long educational post, one 5-8 card carousel, one 30-60 second demonstration or narration, three short posts, one useful community answer, and one product-proof image. The idea stays consistent; only the format changes.')
+add_heading(doc,'Support boundary',2)
+add_body(doc,'Customer support may clarify file location, licence scope, or intended use. It does not include debugging a buyer’s application, reviewing private code, confirming compliance, operating production systems, or guaranteeing launch approval. Any future implementation service should be separately scoped and priced.')
+add_section_break(doc)
+
+# 13 claims/legal
+add_heading(doc,'13. Claims, licensing, and risk boundaries',1)
+add_heading(doc,'Approved claim patterns',2)
+for x in [
+    'Helps expose missing launch evidence.','Provides persistent coding-agent guardrails.','Structures security, authorization, testing, and recovery checks.','Supports an informed go/no-go decision.','Reduces avoidable uncertainty and uncontrolled agent changes.','Can be used without uploading source code to SHIPSAFE.','Includes a weighted 68-control readiness scorecard.',
+]: add_bullet(doc,x)
+add_heading(doc,'Do not claim',2)
+for x in [
+    'Guaranteed secure, hack-proof, compliant, production-safe, or error-free.','Automatically finds or fixes every vulnerability.','Replaces a penetration test, legal review, security professional, or compliance audit.','Guarantees approval, revenue, course success, deployment success, or zero incidents.','Works identically for every stack without adaptation.','Includes support, updates, or services not actually delivered.',
+]: add_bullet(doc,x)
+add_heading(doc,'Licence summary',2)
+add_body(doc,'Solo permits use on the purchaser’s own projects. Commercial permits internal use across paid client engagements and delivery of completed project-specific outputs. Neither permits redistribution, resale, sublicensing, white-labelling of the underlying system, or creation of a competing template product. The included licence files remain controlling.')
+add_heading(doc,'Brand and legal preflight',2)
+add_body(doc,'Before public commercial release, complete a name and trademark conflict check, and obtain appropriate jurisdiction-specific review for consumer law, digital-product terms, privacy, tax, refund treatment, disclaimers, and commercial licensing. SHIPSAFE AI remains a working product name until that review is complete.')
+add_section_break(doc)
+
+# 14 Sources
+add_heading(doc,'14. Market timing and official sources',1)
+add_body(doc,'The launch timing uses current official signals. These sources support the temporary campaign angle and the underlying need for bounded, reviewable agentic workflows. They do not prove sales or guarantee demand.')
+for name,url,use in sources:
+    add_heading(doc,name,3); add_body(doc,use); p=doc.add_paragraph(); add_hyperlink(p,url,url)
+add_heading(doc,'Permanent versus temporary positioning',2)
+add_callout(doc,'Permanent','Launch assurance for any AI-built application, regardless of course, coding agent, or event.')
+add_callout(doc,'Temporary','A June 13-20 campaign that speaks directly to people building an AI-agent capstone during the Google/Kaggle course.')
+
+# Footer note end
+add_section_break(doc)
+add_heading(doc,'Final commercial standard',1)
+p=doc.add_paragraph(style='Pull Quote'); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.add_run('Production readiness is not a vibe. It is a collection of verified controls.')
+add_body(doc,'SHIPSAFE AI should be marketed with the same discipline it asks buyers to apply to software: precise scope, visible evidence, honest limitations, reversible decisions, and no unsupported claims.')
+
+# Save
+master_docx = ROOT/'SHIPSAFE_AI_Commercial_Launch_Master.docx'
+doc.save(master_docx)
+
+# Readme
+readme = f"""# SHIPSAFE AI Launch Pack v1.0
+
+Seller-only commercialisation system prepared 13 June 2026.
+
+## Start here
+
+1. Open `SHIPSAFE_AI_Commercial_Launch_Master.pdf`.
+2. Use the files in `COPY_BANK` as clean copy-and-paste sources.
+3. Keep the campaign timing separate from the evergreen product position.
+4. Use `SELLER_OPERATIONS/11_LAUNCH_OPERATIONS_CHECKLIST.md` before publication.
+5. Do not deliver this seller pack to Solo or Commercial customers.
+
+## Core commercial structure
+
+- SHIPSAFE Solo: US$39 founding / US$59 standard.
+- SHIPSAFE Commercial: US$129 founding / US$179 standard.
+- One-time purchase; no subscription, implementation, guaranteed security, or lifetime-update promise.
+
+## Important
+
+Complete product-name/trademark, consumer-law, privacy, tax, refund, and licence review before public commercial release.
+"""
+(ROOT/'README.md').write_text(readme, encoding='utf-8')
+
+# Inventory and checksums before PDF is added later
+print(master_docx)
+PY
+python /mnt/data/shipsafe_launch_build.py
+/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx
+Rendering content carefully
+I just need to render everything carefully using the skill renderer. I’ll make sure it looks good and consistent. There's probably some attention to detail needed to catch everything, but I think it’ll work smoothly once I get the process in place for the final output.
+
+Rendering document with PDF output
+bash -lc rm -rf /mnt/data/shipsafe_launch_render && python /home/oai/skills/docx/render_docx.py /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx --output_dir /mnt/data/shipsafe_launch_render --emit_pdf --verbose
+[render_docx] $ soffice -env:UserInstallation=file:///tmp/soffice_profile_x5oddlqw --invisible --headless --norestore --convert-to pdf --outdir /tmp/soffice_convert_5mws2sq0 /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx
+convert /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx as a Writer document -> /tmp/soffice_convert_5mws2sq0/SHIPSAFE_AI_Commercial_Launch_Master.pdf using filter : writer_pdf_Export
+
+Pages rendered to /mnt/data/shipsafe_launch_render
+Inspecting the pages
+I need to carefully inspect all pages and count them to ensure everything looks as expected. It's important to make sure the layout is consistent and there are no errors. This step will help confirm that everything is in order before proceeding further.
+
+Counting page images and inspecting PDF details
+bash -lc ls /mnt/data/shipsafe_launch_render/page-*.png | wc -l && ls -lh /mnt/data/shipsafe_launch_render/SHIPSAFE_AI_Commercial_Launch_Master.pdf
+37
+-rw-r--r-- 1 root root 392K Jun 13 03:39 /mnt/data/shipsafe_launch_render/SHIPSAFE_AI_Commercial_Launch_Master.pdf
+Inspecting and creating contact sheets
+I need to inspect every page carefully and create contact sheets, displaying 4 pages per sheet to keep things readable. I’ll use Python’s PIL library for this, which should help me combine the pages into a manageable format for easy review. Time to script this out!
+
+Creating contact sheets from pages
+bash -lc python - <<'PY'
+from PIL import Image, ImageOps, ImageDraw
+from pathlib import Path
+files=sorted(Path('/mnt/data/shipsafe_launch_render').glob('page-*.png'))
+out=Path('/mnt/data/shipsafe_launch_contacts'); out.mkdir(exist_ok=True)
+for idx in range(0,len(files),4):
+    chunk=files[idx:idx+4]
+    imgs=[]
+    for f in chunk:
+        im=Image.open(f).convert('RGB')
+        # resize to width 900, preserve
+        w=900; h=round(im.height*w/im.width)
+        im=im.resize((w,h))
+        canvas=Image.new('RGB',(w,h+44),'white')
+        canvas.paste(im,(0,44))
+        d=ImageDraw.Draw(canvas); d.text((12,12),f.stem,fill='black')
+        imgs.append(canvas)
+    maxw=max(i.width for i in imgs); maxh=max(i.height for i in imgs)
+    sheet=Image.new('RGB',(maxw*2,maxh*2),(210,210,210))
+    for j,im in enumerate(imgs):
+        sheet.paste(im,((j%2)*maxw,(j//2)*maxh))
+    sheet.save(out/f'contact-{idx//4+1:02d}.jpg',quality=88)
+print(len(list(out.glob('*.jpg'))))
+PY
+ls -lh /mnt/data/shipsafe_launch_contacts
+10
+total 4.7M
+-rw-r--r-- 1 root root 525K Jun 13 03:39 contact-01.jpg
+-rw-r--r-- 1 root root 465K Jun 13 03:39 contact-02.jpg
+-rw-r--r-- 1 root root 517K Jun 13 03:39 contact-03.jpg
+-rw-r--r-- 1 root root 566K Jun 13 03:39 contact-04.jpg
+-rw-r--r-- 1 root root 377K Jun 13 03:39 contact-05.jpg
+-rw-r--r-- 1 root root 566K Jun 13 03:39 contact-06.jpg
+-rw-r--r-- 1 root root 560K Jun 13 03:39 contact-07.jpg
+-rw-r--r-- 1 root root 432K Jun 13 03:39 contact-08.jpg
+-rw-r--r-- 1 root root 519K Jun 13 03:39 contact-09.jpg
+-rw-r--r-- 1 root root 200K Jun 13 03:39 contact-10.jpg
+Inspecting images
+I need to carefully inspect the images, so I’ll use the "open_image" function to view them multiple times. It seems like a good way to ensure each image meets the requirements. Let’s proceed with this step and make sure everything looks great!
+
+Analyzed
+Troubleshooting image access
+Hmm, I'm a bit puzzled. The "open_image" path might be isolated, but the "ls" command shows that the file exists. Could it be that "open_image" can't access the generated file? It should support JPG. Maybe there’s an issue with the file name? Let me try using "pwd" and recheck with "ls."
+
+Checking file existence and type
+bash -lc stat /mnt/data/shipsafe_launch_contacts/contact-01.jpg && file /mnt/data/shipsafe_launch_contacts/contact-01.jpg
+  File: /mnt/data/shipsafe_launch_contacts/contact-01.jpg
+  Size: 536932    	Blocks: 1049       IO Block: 4096   regular file
+Device: 0,17	Inode: 779         Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-06-13 03:39:25.760894013 +0000
+Modify: 2026-06-13 03:39:25.780221670 +0000
+Change: 2026-06-13 03:39:25.780221670 +0000
+ Birth: -
+/mnt/data/shipsafe_launch_contacts/contact-01.jpg: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1800x2418, components 3
+Testing user parameters for image access
+Hmm, maybe the issue lies with the user parameter for "open_image." I’ll try adjusting and see if that makes a difference. It could be that the path or format is causing some misunderstanding, so I’ll experiment with this adjustment and check if it resolves the issue.
+
+Analyzed image
+Output image
+Fixing page label sorting
+It looks like the pages are sorted lexicographically, which isn’t ideal for labels like "page-10," "page-11," and "page-12" showing up before "page-2." I need to adjust and use a natural sorting order instead. But, for now, I’ll inspect all pages and then regenerate the labels in the correct order.
+
+Regenerating contact sheet with natural sort order
+bash -lc rm -rf /mnt/data/shipsafe_launch_contacts && python - <<'PY'
+from PIL import Image, ImageDraw
+from pathlib import Path
+import re
+files=sorted(Path('/mnt/data/shipsafe_launch_render').glob('page-*.png'), key=lambda p:int(re.search(r'(\d+)$',p.stem).group(1)))
+out=Path('/mnt/data/shipsafe_launch_contacts'); out.mkdir(exist_ok=True)
+for idx in range(0,len(files),4):
+    chunk=files[idx:idx+4]
+    imgs=[]
+    for f in chunk:
+        im=Image.open(f).convert('RGB')
+        w=900; h=round(im.height*w/im.width)
+        im=im.resize((w,h))
+        canvas=Image.new('RGB',(w,h+44),'white'); canvas.paste(im,(0,44))
+        ImageDraw.Draw(canvas).text((12,12),f.stem,fill='black')
+        imgs.append(canvas)
+    maxw=max(i.width for i in imgs); maxh=max(i.height for i in imgs)
+    sheet=Image.new('RGB',(maxw*2,maxh*2),(210,210,210))
+    for j,im in enumerate(imgs): sheet.paste(im,((j%2)*maxw,(j//2)*maxh))
+    sheet.save(out/f'contact-{idx//4+1:02d}.jpg',quality=88)
+print('done',len(files))
+PY
+done 37
+Inspecting all 10 contact sheets
+I need to inspect all 10 contact sheets, so I'll use open_image on the root folder to go through them. This will help me ensure that everything is accounted for before proceeding with further actions. Looking forward to having this sorted methodically!
+
+Analyzed image
+Output image
+Continuing the inspection
+I’ll continue inspecting the documents for accuracy and completeness. This step is crucial to make sure everything is as expected before moving to the next phase. I’ll stay focused on going through them carefully to ensure nothing is missed!
+
+Analyzed image
+Output image
+Continuing the task
+Alright, I’ll keep going with what I was doing. There's always more to inspect, analyze, or organize, but I’ll stay focused and make sure everything gets done properly. I'll stay sharp and proceed one step at a time to stay on track!
+
+Analyzed image
+Output image
+Moving forward with the next steps
+Everything looks fine so far. Now, I'll continue with steps 4 to 10, keeping track of progress to stay efficient. It’s important to follow through and ensure nothing gets missed, so let’s keep up the pace and focus on addressing the remaining tasks!
+
+Analyzed image
+Output image
+Adjusting numbering for clarity and consistency
+I noticed an issue with the question numbering—it starts at 8 due to continuing list numbering. While it's technically fine, it’s not ideal. I'll fix the manual numbering for the body and adjust the diagnostic section to 1-12. The mechanism list and launch campaign bullets should be fine, though. Need to inspect the rest.
+
+Analyzed image
+Output image
+Analyzed image
+Output image
+Analyzed image
+Output image
+Analyzed image
+Output image
+Fixing numbering for clarity in the script
+There’s a numbering issue in the script, where the demonstration starts at 20 due to continued numbering. I’ll fix this by replacing the list-style numbering with manual numbers. Earlier, the numbering went from 1-7 for the list, 8-19 for diagnostics, and 20-26 for the demonstration. I’ll adjust this to use manual numbers for clarity. Now, I’ll continue addressing other issues.
+
+Analyzed image
+Output image
+Analyzed image
+Output image
+Patching numbering, formatting, and content details
+I need to fix the numbering issue and formatting for US$39. Also, on page 15, the diagnostic numbering needs adjustment. The script should be updated to use manual number functions and format sections correctly. I’ll adjust the "add_number" function for body text and switch to manual enumeration for brand mechanism, diagnostic, and demonstration. Afterward, I'll gather the necessary files, including the product’s terms for the one-time purchase, and run privacy scrubbing. Then, I’ll include references and checksums before finalizing the script.
+
+Patching script for manual numbering and formatting changes
+bash -lc python - <<'PY'
+from pathlib import Path
+p=Path('/mnt/data/shipsafe_launch_build.py')
+s=p.read_text()
+s=s.replace("for item in ['Constrain the agent and the task.','Inspect the actual implementation and dependencies.','Test normal, failure, and cross-user paths.','Secure data, secrets, inputs, tools, and agent permissions.','Recover through known-good checkpoints and compatible rollback.','Prove completion with independently reviewable evidence.','Launch only after an explicit go/no-go decision.']: add_number(doc,item)",
+"for i,item in enumerate(['Constrain the agent and the task.','Inspect the actual implementation and dependencies.','Test normal, failure, and cross-user paths.','Secure data, secrets, inputs, tools, and agent permissions.','Recover through known-good checkpoints and compatible rollback.','Prove completion with independently reviewable evidence.','Launch only after an explicit go/no-go decision.'],1): add_body(doc,f'{i}. {item}')")
+s=s.replace("for i,(q,sev) in enumerate(fast_test,1):\n    p=doc.add_paragraph(style='List Number'); p.add_run(q+' '); r=p.add_run(f'[{sev}]'); r.bold=True; r.font.color.rgb=RGBColor.from_string(RED if sev=='Critical' else AMBER)",
+"for i,(q,sev) in enumerate(fast_test,1):\n    p=doc.add_paragraph(style='Body Text'); p.add_run(f'{i}. {q} '); r=p.add_run(f'[{sev}]'); r.bold=True; r.font.color.rgb=RGBColor.from_string(RED if sev=='Critical' else AMBER)")
+s=s.replace("for x in [\n    'Open a harmless sample repository with one protected feature and one failing test.',\n    'Show PROJECT_CONTEXT, SCOPE_LOCK, PROTECTED_FILES, and ACCEPTANCE_CRITERIA.',\n    'Create a known-good checkpoint.',\n    'Give the agent a narrowly scoped task.',\n    'Show the resulting diff, commands run, test output, and task-completion report.',\n    'Run the relevant readiness controls and show how Unknown becomes Pass only after evidence is recorded.',\n    'End with the go/no-go decision; do not claim the sample proves universal security.',\n]: add_number(doc,x)",
+"for i,x in enumerate([\n    'Open a harmless sample repository with one protected feature and one failing test.',\n    'Show PROJECT_CONTEXT, SCOPE_LOCK, PROTECTED_FILES, and ACCEPTANCE_CRITERIA.',\n    'Create a known-good checkpoint.',\n    'Give the agent a narrowly scoped task.',\n    'Show the resulting diff, commands run, test output, and task-completion report.',\n    'Run the relevant readiness controls and show how Unknown becomes Pass only after evidence is recorded.',\n    'End with the go/no-go decision; do not claim the sample proves universal security.',\n],1): add_body(doc,f'{i}. {x}')")
+p.write_text(s)
+PY
+python /mnt/data/shipsafe_launch_build.py
+rm -rf /mnt/data/shipsafe_launch_render && python /home/oai/skills/docx/render_docx.py /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx --output_dir /mnt/data/shipsafe_launch_render --emit_pdf
+/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx
+Pages rendered to /mnt/data/shipsafe_launch_render
+Inspecting affected pages and contact sheets
+I need to check pages 3, 15, and 32 to ensure everything is correct. It might be best to regenerate the contact sheets or directly open the pages for review. If needed, I could use page images to help with this inspection to get a clearer view of any issues.
+
+Analyzed image
+Output image
+Reviewing page 15
+Alright, page 15 seems to be the focus. It’s time to check it thoroughly to see if everything looks good. If there’s anything off, I’ll make adjustments. Let’s focus on making sure this page fits nicely within the overall structure. I'll give this another look just to confirm.
+
+Analyzed image
+Output image
+Reviewing page 32
+Okay, now it’s time to focus on page 32. I want to make sure everything on this page is as it should be. I’ll give it a thorough check to ensure formatting and content are in line with expectations. Looking at it carefully will help avoid any issues. Let's do that!
+
+Analyzed image
+Output image
+Finalizing privacy and PDF checks
+I need to scrub the metadata for privacy, also copying the rendered PDF into the pack. We've already checked the original document and affected pages, and there were no issues besides the numbering. I should verify everything using the PDF renderer, though we already inspected the final files manually. I’ll ensure checksums, inventory, and privacy scrubbing are in place.
+
+Running privacy scrub and verification
+I should run the privacy scrub on the DOCX file, then render it again and inspect at least a sample. Since every meaningful edit must be rendered and inspected, we'll proceed with this process. After scrubbing, I’ll execute the render and use a diff comparison to verify changes.
+
+Scrubbing metadata and re-rendering PDF
+bash -lc python /home/oai/skills/docx/scripts/privacy_scrub.py /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx --out /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master_scrubbed.docx && mv /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master_scrubbed.docx /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx && rm -rf /mnt/data/shipsafe_launch_render_final && python /home/oai/skills/docx/render_docx.py /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx --output_dir /mnt/data/shipsafe_launch_render_final --emit_pdf && cp /mnt/data/shipsafe_launch_render_final/SHIPSAFE_AI_Commercial_Launch_Master.pdf /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.pdf
+[OK] wrote /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master_scrubbed.docx | {'rsid_attrs_removed': 3, 'core_props_scrubbed': 1, 'custom_props_removed': 0, 'rels_updated': 0, 'content_types_updated': 0}
+Pages rendered to /mnt/data/shipsafe_launch_render_final
+Comparing drafts and final version
+I should compare the page counts and possibly the image differences between the previous and final versions. I'll use render_and_diff.py, but since the prior DOCX has been overwritten, I’ll rely on the previous PDF and final PDF from shipsafe_launch_render. I’ll run a compare_renders on these PDFs.
+
+Comparing PDF renders and page counts
+bash -lc python /home/oai/skills/pdfs/scripts/compare_renders.py /mnt/data/shipsafe_launch_render/SHIPSAFE_AI_Commercial_Launch_Master.pdf /mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.pdf --out_dir /mnt/data/shipsafe_pdf_diff --dpi 120 >/tmp/shipsafe_diff.log 2>&1 || true; cat /tmp/shipsafe_diff.log | tail -40; ls /mnt/data/shipsafe_launch_render_final/page-*.png | wc -l
+Rendered 37 page(s) to /mnt/data/shipsafe_pdf_diff/render_a
+Rendered 37 page(s) to /mnt/data/shipsafe_pdf_diff/render_b
+/mnt/data/shipsafe_pdf_diff/summary.json
+37
+Inspecting summary
+I should take a closer look at the summary to ensure everything is in order, as it would be crucial for wrapping up the task. I want to make sure all key points are covered and properly conveyed before moving forward with the final steps.
+
+Inspecting summary from JSON file
+bash -lc cat /mnt/data/shipsafe_pdf_diff/summary.json
+{
+  "pdf_a": "/mnt/data/shipsafe_launch_render/SHIPSAFE_AI_Commercial_Launch_Master.pdf",
+  "pdf_b": "/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.pdf",
+  "dpi": 120,
+  "engine": "pdftoppm",
+  "pages_a": 37,
+  "pages_b": 37,
+  "changed_pages": 0,
+  "per_page": [
+    {
+      "page": 1,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-01.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-01.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 2,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-02.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-02.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 3,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-03.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-03.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 4,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-04.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-04.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 5,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-05.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-05.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 6,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-06.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-06.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 7,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-07.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-07.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 8,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-08.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-08.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 9,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-09.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-09.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 10,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-10.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-10.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 11,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-11.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-11.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 12,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-12.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-12.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 13,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-13.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-13.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 14,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-14.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-14.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 15,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-15.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-15.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 16,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-16.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-16.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 17,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-17.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-17.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 18,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-18.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-18.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 19,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-19.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-19.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 20,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-20.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-20.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 21,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-21.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-21.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 22,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-22.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-22.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 23,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-23.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-23.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 24,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-24.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-24.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 25,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-25.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-25.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 26,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-26.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-26.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 27,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-27.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-27.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 28,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-28.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-28.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 29,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-29.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-29.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 30,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-30.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-30.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 31,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-31.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-31.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 32,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-32.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-32.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 33,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-33.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-33.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 34,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-34.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-34.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 35,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-35.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-35.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 36,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-36.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-36.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    },
+    {
+      "page": 37,
+      "a": "/mnt/data/shipsafe_pdf_diff/render_a/page-37.png",
+      "b": "/mnt/data/shipsafe_pdf_diff/render_b/page-37.png",
+      "changed": false,
+      "pct_changed": 0.0,
+      "bbox": null,
+      "max_channel": 0
+    }
+  ]
+}
+Creating updated seller master v1.1
+I can start by creating a new directory for the updated version, SHIPSAFE_AI_Seller_Master_v1.1, which will contain both the extracted product and launch pack. I'll preserve the original master as a source, compute checksums, create zips, and include necessary files. I'll also ensure the integrity of the ZIP and update the README with details.
+
+Thought for 8m 19s
+Done
+
+Sources
+·
+38
+
+blog.google
+Google and Kaggle's GenAI Intensive Vibe Coding course ...
+April 27, 2026 — 27 Apr 2026 — Google and Kaggle are bringing back their free five-day AI Agents Intensive course from June 15–19, 2026. You will learn to build production- ...Read more
+
+OpenAI
+Codex for every role, tool, and workflow
+2 days ago — More than 5 million people now use Codex every week. Codex started as a tool for software development, but it's increasingly useful for more ...Read more
+
+openai.com
+Codex for every role, tool, and workflow
+2 days ago — More than 5 million people now use Codex every week. Codex started as a tool for software development, but it's increasingly useful for more ...Read more
+
+openai.com
+Codex is becoming a productivity tool for everyone
+Jun 2, 2026 — Codex now has more than 5 million weekly active users, up more than 6x since the launch of the desktop app in February. · The data suggests a ...Read more
+
+openai.com
+Codex for (almost) everything
+Apr 16, 2026 — Codex can now operate your computer alongside you, work with more of the tools and apps you use everyday, generate images, remember your ...Read more
+
+openai.com
+Codex | Đối tác mã hóa AI từ OpenAI
+Ứng dụng Codex là trung tâm chỉ huy cho lập trình chủ động bằng tác nhân (viết mã bằng tác nhân tự chủ). Với các cây công việc tích hợp sẵn và môi trường đám ...Read more
+
+openai.com
+Understanding the New Codex Limit System After the April ...
+Apr 10, 2026 — But under the temporary promotion running until May 31, 2026, it effectively provides 10× the Plus allowance instead of 5×. So in practical GPT- ...Read more
+
+openai.com
+GPT-5 and the new era of work
+Aug 7, 2025 — The launch of GPT‑5 also coincides with nearly 700 million people using ChatGPT weekly. ... Codex for every role, tool, and workflow. Product Jun ...Read more
+
+openai.com
+Codex now offers pay-as-you-go pricing for teams
+Apr 2, 2026 — Already, more than 9 million paying business users rely on ChatGPT for work and more than 2 million builders now use Codex every week. Within ...Read more
+
+openai.com
+ChatGPT usage and adoption patterns at work
+Jan 22, 2026 — A data-driven report on how workers across industries use ChatGPT—covering adoption trends, top tasks, departmental patterns, and the future ...
+
+openai.com
+OpenAI frontier models and Codex are now available on ...
+Jun 1, 2026 — Helping enterprises bring AI into production through their existing security, governance, and deployment workflows.Read more
+
+openai.com
+OpenAI News
+Rosalind5.5 ArtCard. Introducing new capabilities to GPT-Rosalind. Product Jun 3, 2026 ; 1 1 Art Card. Codex for every role, tool, and workflow. Product Jun 2, ...Read more
+
+openai.com
+Introducing GPT-5.5
+Apr 23, 2026 — Today, more than 85% of the company uses Codex every week across functions including software engineering, finance, communications, marketing, ...Read more
+
+openai.com
+ChatGPT — Release Notes
+June 8, 2026. ChatGPT app experience updates. Improvement to charts, table of contents and full screen writing. Also fixes long-standing issues around ...Read more
+
+openai.com
+Work with Codex from anywhere
+May 14, 2026 — More than 4 million people now use Codex every week, and we're ... Codex for every role, tool, and workflow. Product Jun 2, 2026. Open AI ...Read more
+
+openai.com
+Codex changelog
+Improved thread and tool rendering. 2026-04-12. Codex app 26.410. New features. Added command-menu file search, including Cmd+P routing into workspace file ...Read more
+
+openai.com
+OpenAI | Research & Deployment
+Codex for every role, tool, and workflow. Product7 min read. 1 1 Art Card. Codex for every role, tool, and workflow. Product7 min read. Art Card 1080x1080 (3).Read more
+
+openai.com
+Paying for ChatGPT Plus Just to Be Locked Out While “5h ...
+May 15, 2026 — There are 5 million people using Codex each month, and just a small few ... Millions of users barely touch advanced Codex workflows at all.Read more
+
+openai.com
+Introducing GPT-5.4
+Mar 5, 2026 — GPT‑5.4 brings together the best of our recent advances in reasoning, coding, and agentic workflows into a single frontier model. It ...Read more
+
+openai.com
+Codex | Parceiro de programação com IA da ...
+O melhor jeito de desenvolver com agentes. O Codex acelera trabalho de engenharia de verdade, do planejamento e desenvolvimento de features a refactors, ...
+
+openai.com
+Introducing Codex
+16 May 2025 — Codex can perform tasks for you such as writing features, answering questions about your codebase, fixing bugs, and proposing pull requests for review.Read more
+
+anthropic.com
+making Claude Code more secure and autonomous
+Oct 20, 2025 — Learn how Claude Code's new sandboxing feature protects developers with filesystem and network isolation, reducing permission prompts and ...
+
+anthropic.com
+Scaling Agentic Coding Across Your Organization
+missing security controls—and prioritize remediation efforts. Collaborative security education: Let Claude Code explain security issues in developer ...
+
+anthropic.com
+Quantifying infrastructure noise in agentic coding evals
+The sandboxing provider used by the Terminal-Bench maintainers is ... Claude Code Security · Code modernization · Coding · Customer support · Education ...Read more
+
+anthropic.com
+How we contain Claude across products
+25 May 2026 — At Anthropic, we've seen Claude models “helpfully” escape a sandbox in order to complete a task, examine git history to find answers to a coding ...Read more
+
+anthropic.com
+Code execution with MCP: building more efficient AI agents
+Nov 4, 2025 — Running agent-generated code requires a secure execution environment with appropriate sandboxing, resource limits, and monitoring. ... Claude Code ...Read more
+
+anthropic.com
+Demystifying evals for AI agents
+Jan 9, 2026 — Combined with production monitoring, A/B tests, user research, and more, evals provide signals to continue improving Claude Code as it scales.Read more
+
+anthropic.com
+Best practices for Claude Code - Claude Code Docs
+This guide covers patterns that have proven effective across Anthropic's internal teams and for engineers using Claude Code across various codebases, languages, ...Read more
+
+anthropic.com
+Claude Opus 4.6 - Sabotage Risk Report
+○ In agentic coding, some of this increase in initiative is fixable by prompting, and we have made changes to Claude Code to mitigate this issue. However, ...Read more
+
+anthropic.com
+Scaling Managed Agents: Decoupling the brain from ...
+Apr 8, 2026 — The structural fix was to make sure the tokens are never reachable from the sandbox where Claude's generated code runs. ... Claude Code Security ...Read more
+
+anthropic.com
+Agent SDK reference - Python - Claude API Docs
+Complete API reference for the Python Agent SDK, including all functions, types, and classes.
+
+anthropic.com
+Redacted Risk Report Feb 2026
+○ The inclusion of the real Claude Code system prompt and Claude Code tool set, as they appear in common internal use, in many of our automated behavioral ...Read more
+
+anthropic.com
+Natural-emergent-misalignment-from-reward-hacking- ...
+by M MacDiarmid · Cited by 15 — When we place models into an unmodified Claude Code agent scaffold working on the research codebase of this paper (among other settings), we ...Read more
+
+anthropic.com
+Detecting and Countering Malicious Uses of Claude
+Apr 23, 2025 — This report outlines several case studies on how actors have misused our models, as well as the steps we have taken to detect and counter such misuse.Read more
+github.com
+openai/codex: Lightweight coding agent that runs in your ...
+Codex CLI is a coding agent from OpenAI that runs locally on your computer. Codex CLI splash. If you want Codex in your code editor (VS Code, Cursor, ...
+
+apple.com
+Claude by Anthropic - App Store - Apple
+Meet Claude, your AI problem solver and thinking partner. Claude works with you to write, research, code, and tackle complex problems with depth and ...Read more
+
+codex.online
+CODEX
+Fast and reliable recording media, storage and workflow solutions from CODEX. Protecting your work, your time, and your budget.
+
+google.com
+Claude by Anthropic – Apps on Google Play
+Meet Claude, your AI problem solver and thinking partner. Claude works with you to write, research,
+
+The **commercial launch system is complete**.
+
+It keeps SHIPSAFE AI positioned as a premium, evidence-led product—not another prompt bundle—and separates the permanent brand from the temporary June campaign. The campaign timing aligns with Google/Kaggle’s June 15–19 AI Agents Intensive and capstone, while the underlying offer remains evergreen. Codex’s rapidly expanding non-developer audience further supports targeting founders and operators rather than only software engineers. ([blog.google][1])
+
+## Private seller master — updated
+
+[Download SHIPSAFE AI Seller Master v1.1](sandbox:/mnt/data/SHIPSAFE_AI_Seller_Master_v1.1.zip)
+
+This combines:
+
+* The complete original product source
+* The new commercial launch system
+* Seller instructions
+* Copy banks
+* Source documents
+* Inventories and SHA-256 checksums
+
+Keep this private. Continue delivering the separate Solo or Commercial customer editions.
+
+## Commercial launch pack
+
+[Download the complete Launch Pack ZIP](sandbox:/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0.zip)
+
+Contains 18 seller-only assets:
+
+* Core brand and messaging system
+* Full long-form sales-page copy
+* Solo and Commercial edition copy
+* Pricing architecture
+* Checkout and delivery language
+* Free 12-point diagnostic funnel
+* Result-page conversion copy
+* FAQ and objection handling
+* Seven-day launch campaign
+* 28 short-form posts
+* Five-email sequence
+* Permission-based DM copy
+* Ten launch graphic concepts
+* Product-proof and demonstration plan
+* Seller operations checklist
+* Official market-timing sources
+* Structured JSON copy bank
+* File inventory and checksums
+
+## Master documents
+
+[Open the finished 37-page Commercial Launch Master PDF](sandbox:/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.pdf)
+
+[Download the editable Commercial Launch Master DOCX](sandbox:/mnt/data/SHIPSAFE_AI_Launch_Pack_v1.0/SHIPSAFE_AI_Commercial_Launch_Master.docx)
+
+Both were rendered and visually reviewed page by page. The ZIP archives passed integrity testing.
+
+## Locked commercial structure
+
+* **SHIPSAFE Solo:** US$39 founding price → US$59 standard
+* **SHIPSAFE Commercial:** US$129 founding price → US$179 standard
+* One-time purchase
+* No subscription
+* No implementation service bundled in
+* No unlimited-support obligation
+* No lifetime-update promise
+* No unsupported security or compliance guarantees
+
+The core launch statement is:
+
+Your AI-built app working is not proof that it is ready to launch.
+
+A generated application can load, accept input, and produce a clean demo while still:
+
+* returning mocked data when the real integration fails
+* allowing one user to request another user’s records
+* shipping private configuration inside the browser bundle
+* suppressing failures until every result looks successful
+* changing working functionality during an unrelated fix
+* leaving no compatible rollback path for the database
+
+The dangerous failures are not always the ones that crash.
+
+They are the ones that survive the demonstration.
+
+SHIPSAFE AI gives AI-assisted builders persistent agent guardrails, security and authorization tests, regression controls, recovery procedures, release evidence, and a 68-control launch-readiness decision system.
+
+An agent saying the task is complete is not evidence.
+
+Changed files, commands, tests, security results, acceptance criteria, and a recovery point are evidence.
+
+[1]: https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/?utm_source=chatgpt.com "Google and Kaggle's GenAI Intensive Vibe Coding course ..."
